@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5C02DA42118A27600CC60FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DA32118A27600CC60FA /* AppDelegate.swift */; };
+		C5C02DA62118A27600CC60FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DA52118A27600CC60FA /* ViewController.swift */; };
+		C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DA72118A27600CC60FA /* Main.storyboard */; };
+		C5C02DAC2118A27600CC60FA /* Halanx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DAA2118A27600CC60FA /* Halanx.xcdatamodeld */; };
+		C5C02DAE2118A27700CC60FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DAD2118A27700CC60FA /* Assets.xcassets */; };
+		C5C02DB12118A27700CC60FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DAF2118A27700CC60FA /* LaunchScreen.storyboard */; };
+		C5C02DBC2118A27700CC60FA /* HalanxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DBB2118A27700CC60FA /* HalanxTests.swift */; };
+		C5C02DC72118A27700CC60FA /* HalanxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DC62118A27700CC60FA /* HalanxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5C02DB82118A27700CC60FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5C02D982118A27600CC60FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5C02D9F2118A27600CC60FA;
+			remoteInfo = Halanx;
+		};
+		C5C02DC32118A27700CC60FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5C02D982118A27600CC60FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5C02D9F2118A27600CC60FA;
+			remoteInfo = Halanx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5C02DA02118A27600CC60FA /* Halanx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halanx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C02DA32118A27600CC60FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5C02DA52118A27600CC60FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5C02DA82118A27600CC60FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5C02DAB2118A27600CC60FA /* Halanx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Halanx.xcdatamodel; sourceTree = "<group>"; };
+		C5C02DAD2118A27700CC60FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5C02DB02118A27700CC60FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5C02DB22118A27700CC60FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C02DB72118A27700CC60FA /* HalanxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C02DBB2118A27700CC60FA /* HalanxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanxTests.swift; sourceTree = "<group>"; };
+		C5C02DBD2118A27700CC60FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C02DC22118A27700CC60FA /* HalanxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C02DC62118A27700CC60FA /* HalanxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanxUITests.swift; sourceTree = "<group>"; };
+		C5C02DC82118A27700CC60FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5C02D9D2118A27600CC60FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C02DB42118A27700CC60FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C02DBF2118A27700CC60FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5C02D972118A27600CC60FA = {
+			isa = PBXGroup;
+			children = (
+				C5C02DA22118A27600CC60FA /* Halanx */,
+				C5C02DBA2118A27700CC60FA /* HalanxTests */,
+				C5C02DC52118A27700CC60FA /* HalanxUITests */,
+				C5C02DA12118A27600CC60FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5C02DA12118A27600CC60FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5C02DA02118A27600CC60FA /* Halanx.app */,
+				C5C02DB72118A27700CC60FA /* HalanxTests.xctest */,
+				C5C02DC22118A27700CC60FA /* HalanxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5C02DA22118A27600CC60FA /* Halanx */ = {
+			isa = PBXGroup;
+			children = (
+				C5C02DA32118A27600CC60FA /* AppDelegate.swift */,
+				C5C02DA52118A27600CC60FA /* ViewController.swift */,
+				C5C02DA72118A27600CC60FA /* Main.storyboard */,
+				C5C02DAD2118A27700CC60FA /* Assets.xcassets */,
+				C5C02DAF2118A27700CC60FA /* LaunchScreen.storyboard */,
+				C5C02DB22118A27700CC60FA /* Info.plist */,
+				C5C02DAA2118A27600CC60FA /* Halanx.xcdatamodeld */,
+			);
+			path = Halanx;
+			sourceTree = "<group>";
+		};
+		C5C02DBA2118A27700CC60FA /* HalanxTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5C02DBB2118A27700CC60FA /* HalanxTests.swift */,
+				C5C02DBD2118A27700CC60FA /* Info.plist */,
+			);
+			path = HalanxTests;
+			sourceTree = "<group>";
+		};
+		C5C02DC52118A27700CC60FA /* HalanxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5C02DC62118A27700CC60FA /* HalanxUITests.swift */,
+				C5C02DC82118A27700CC60FA /* Info.plist */,
+			);
+			path = HalanxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5C02D9F2118A27600CC60FA /* Halanx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C02DCB2118A27700CC60FA /* Build configuration list for PBXNativeTarget "Halanx" */;
+			buildPhases = (
+				C5C02D9C2118A27600CC60FA /* Sources */,
+				C5C02D9D2118A27600CC60FA /* Frameworks */,
+				C5C02D9E2118A27600CC60FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Halanx;
+			productName = Halanx;
+			productReference = C5C02DA02118A27600CC60FA /* Halanx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5C02DB62118A27700CC60FA /* HalanxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C02DCE2118A27700CC60FA /* Build configuration list for PBXNativeTarget "HalanxTests" */;
+			buildPhases = (
+				C5C02DB32118A27700CC60FA /* Sources */,
+				C5C02DB42118A27700CC60FA /* Frameworks */,
+				C5C02DB52118A27700CC60FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5C02DB92118A27700CC60FA /* PBXTargetDependency */,
+			);
+			name = HalanxTests;
+			productName = HalanxTests;
+			productReference = C5C02DB72118A27700CC60FA /* HalanxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5C02DC12118A27700CC60FA /* HalanxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C02DD12118A27700CC60FA /* Build configuration list for PBXNativeTarget "HalanxUITests" */;
+			buildPhases = (
+				C5C02DBE2118A27700CC60FA /* Sources */,
+				C5C02DBF2118A27700CC60FA /* Frameworks */,
+				C5C02DC02118A27700CC60FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5C02DC42118A27700CC60FA /* PBXTargetDependency */,
+			);
+			name = HalanxUITests;
+			productName = HalanxUITests;
+			productReference = C5C02DC22118A27700CC60FA /* HalanxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5C02D982118A27600CC60FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Shubham Arora";
+				TargetAttributes = {
+					C5C02D9F2118A27600CC60FA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C5C02DB62118A27700CC60FA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C5C02D9F2118A27600CC60FA;
+					};
+					C5C02DC12118A27700CC60FA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C5C02D9F2118A27600CC60FA;
+					};
+				};
+			};
+			buildConfigurationList = C5C02D9B2118A27600CC60FA /* Build configuration list for PBXProject "Halanx" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5C02D972118A27600CC60FA;
+			productRefGroup = C5C02DA12118A27600CC60FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5C02D9F2118A27600CC60FA /* Halanx */,
+				C5C02DB62118A27700CC60FA /* HalanxTests */,
+				C5C02DC12118A27700CC60FA /* HalanxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5C02D9E2118A27600CC60FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C02DB12118A27700CC60FA /* LaunchScreen.storyboard in Resources */,
+				C5C02DAE2118A27700CC60FA /* Assets.xcassets in Resources */,
+				C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C02DB52118A27700CC60FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C02DC02118A27700CC60FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5C02D9C2118A27600CC60FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C02DA62118A27600CC60FA /* ViewController.swift in Sources */,
+				C5C02DA42118A27600CC60FA /* AppDelegate.swift in Sources */,
+				C5C02DAC2118A27600CC60FA /* Halanx.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C02DB32118A27700CC60FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C02DBC2118A27700CC60FA /* HalanxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C02DBE2118A27700CC60FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C02DC72118A27700CC60FA /* HalanxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5C02DB92118A27700CC60FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5C02D9F2118A27600CC60FA /* Halanx */;
+			targetProxy = C5C02DB82118A27700CC60FA /* PBXContainerItemProxy */;
+		};
+		C5C02DC42118A27700CC60FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5C02D9F2118A27600CC60FA /* Halanx */;
+			targetProxy = C5C02DC32118A27700CC60FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5C02DA72118A27600CC60FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5C02DA82118A27600CC60FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5C02DAF2118A27700CC60FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5C02DB02118A27700CC60FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5C02DC92118A27700CC60FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5C02DCA2118A27700CC60FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5C02DCC2118A27700CC60FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KRLXP623S;
+				INFOPLIST_FILE = Halanx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.halanx.Halanx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5C02DCD2118A27700CC60FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KRLXP623S;
+				INFOPLIST_FILE = Halanx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.halanx.Halanx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5C02DCF2118A27700CC60FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KRLXP623S;
+				INFOPLIST_FILE = HalanxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.halanx.HalanxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Halanx.app/Halanx";
+			};
+			name = Debug;
+		};
+		C5C02DD02118A27700CC60FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KRLXP623S;
+				INFOPLIST_FILE = HalanxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.halanx.HalanxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Halanx.app/Halanx";
+			};
+			name = Release;
+		};
+		C5C02DD22118A27700CC60FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KRLXP623S;
+				INFOPLIST_FILE = HalanxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.halanx.HalanxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Halanx;
+			};
+			name = Debug;
+		};
+		C5C02DD32118A27700CC60FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KRLXP623S;
+				INFOPLIST_FILE = HalanxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.halanx.HalanxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Halanx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5C02D9B2118A27600CC60FA /* Build configuration list for PBXProject "Halanx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C02DC92118A27700CC60FA /* Debug */,
+				C5C02DCA2118A27700CC60FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C02DCB2118A27700CC60FA /* Build configuration list for PBXNativeTarget "Halanx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C02DCC2118A27700CC60FA /* Debug */,
+				C5C02DCD2118A27700CC60FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C02DCE2118A27700CC60FA /* Build configuration list for PBXNativeTarget "HalanxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C02DCF2118A27700CC60FA /* Debug */,
+				C5C02DD02118A27700CC60FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C02DD12118A27700CC60FA /* Build configuration list for PBXNativeTarget "HalanxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C02DD22118A27700CC60FA /* Debug */,
+				C5C02DD32118A27700CC60FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5C02DAA2118A27600CC60FA /* Halanx.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5C02DAB2118A27600CC60FA /* Halanx.xcdatamodel */,
+			);
+			currentVersion = C5C02DAB2118A27600CC60FA /* Halanx.xcdatamodel */;
+			path = Halanx.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C5C02D982118A27600CC60FA /* Project object */;
+}
