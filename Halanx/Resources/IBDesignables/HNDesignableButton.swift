@@ -78,7 +78,7 @@ import UIKit
             }else {
                 
                 self.layer.cornerRadius = self.frame.width/2
-                self.layer.masksToBounds = true
+                //self.layer.masksToBounds = true
             }
         }
     }

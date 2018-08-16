@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kGQ-Pl-WIF">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,23 +15,49 @@
             <objects>
                 <viewController storyboardIdentifier="HNMessagingViewController" id="Vyr-8D-hKv" customClass="HNMessagingViewController" customModule="Halanx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rcu-fi-OuE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-QK-FtC">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Vyr-8D-hKv" id="3zO-4A-ZtP"/>
                                     <outlet property="delegate" destination="Vyr-8D-hKv" id="Qpf-Pl-RDw"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d3-es-OZB" customClass="HNDesignableButton" customModule="Halanx" customModuleProvider="target">
+                                <rect key="frame" x="253" y="388" width="55" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Y3J-It-1W3"/>
+                                    <constraint firstAttribute="height" constant="55" id="u2i-3Q-hX4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleImage" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1.5" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XfH-ud-U6i" firstAttribute="bottom" secondItem="OW6-QK-FtC" secondAttribute="bottom" id="3oj-zw-mnz"/>
                             <constraint firstItem="OW6-QK-FtC" firstAttribute="leading" secondItem="XfH-ud-U6i" secondAttribute="leading" id="JtX-ec-pS3"/>
+                            <constraint firstItem="XfH-ud-U6i" firstAttribute="bottom" secondItem="0d3-es-OZB" secondAttribute="bottom" constant="12" id="ZgY-Bg-826"/>
                             <constraint firstItem="OW6-QK-FtC" firstAttribute="trailing" secondItem="XfH-ud-U6i" secondAttribute="trailing" id="by4-eN-ytz"/>
+                            <constraint firstItem="XfH-ud-U6i" firstAttribute="trailing" secondItem="0d3-es-OZB" secondAttribute="trailing" constant="12" id="lY8-Px-69p"/>
                             <constraint firstItem="OW6-QK-FtC" firstAttribute="top" secondItem="XfH-ud-U6i" secondAttribute="top" id="umf-5F-0RG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XfH-ud-U6i"/>
@@ -50,11 +76,11 @@
             <objects>
                 <viewController storyboardIdentifier="HNNeighbourViewController" id="Nnc-Kt-7GV" customClass="HNNeighbourViewController" customModule="Halanx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lO4-il-jsr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lBn-eb-Jc1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Nnc-Kt-7GV" id="BNx-Jf-xBx"/>
@@ -83,11 +109,11 @@
         <scene sceneID="Xk8-pU-PKt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kGQ-Pl-WIF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Messaging" id="f53-Cj-YPK"/>
+                    <tabBarItem key="tabBarItem" title="Messaging" image="messageUnSelect" selectedImage="messageSelect" id="f53-Cj-YPK"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t3g-0a-PiM">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="t3g-0a-PiM">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -100,4 +126,8 @@
             <point key="canvasLocation" x="994" y="869"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="messageSelect" width="48" height="48"/>
+        <image name="messageUnSelect" width="48" height="48"/>
+    </resources>
 </document>

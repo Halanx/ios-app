@@ -43,6 +43,9 @@ class HNCreatePostViewController: UIViewController {
         
         ConstraintDistanceX.constant = -(view.frame.width)
         ConstraintCategoryX.constant = -(view.frame.width)
+        btnBackground.alpha = 0.0
+        self.viewDistance.alpha = 0
+        self.viewCategory.alpha = 0
     }
     
     // MARK: IBActions
@@ -55,15 +58,28 @@ class HNCreatePostViewController: UIViewController {
         
         if ConstaraintBottomView.constant == 0 {
             
-            ConstaraintBottomView.constant = -60
             stackButton.isHidden = true
             stackImage.isHidden = false
+            ConstaraintBottomView.constant = -60
+            btnArrow.setImage(#imageLiteral(resourceName: "upArrow"), for: .normal)
+            UIView.animate(withDuration: 0.2) {
+                
+                self.view.layoutIfNeeded()
+            }
+
+
             
         }else {
             
             ConstaraintBottomView.constant = 0
             stackButton.isHidden = false
             stackImage.isHidden = true
+            btnArrow.setImage(#imageLiteral(resourceName: "downArrow"), for: .normal)
+            UIView.animate(withDuration: 0.2) {
+                
+                self.view.layoutIfNeeded()
+            }
+
         }
     }
     
@@ -112,7 +128,7 @@ class HNCreatePostViewController: UIViewController {
 
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             self.viewDistance.alpha = 1.0
-            self.btnBackground.alpha = 1.0
+            self.btnBackground.alpha = 0.5
             self.view.layoutIfNeeded()
         }, completion: nil)
     }
@@ -137,7 +153,7 @@ class HNCreatePostViewController: UIViewController {
         
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             self.viewCategory.alpha = 1.0
-            self.btnBackground.alpha = 1.0
+            self.btnBackground.alpha = 0.5
             self.view.layoutIfNeeded()
         }, completion: nil)
     }

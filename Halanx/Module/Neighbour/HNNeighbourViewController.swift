@@ -13,7 +13,7 @@ class HNNeighbourViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    fileprivate let messageCell = CellIdentifier.messageCell
+    fileprivate let neighbourCell = CellIdentifier.neighbourCell
 
     
     override func viewDidLoad() {
@@ -25,8 +25,8 @@ class HNNeighbourViewController: UIViewController {
     /// Register Cell Nib
     func registerNib() {
         
-        let messageNib = UINib(nibName: CellNib.messageCell, bundle: Bundle.main)
-        tableView.register(messageNib, forCellReuseIdentifier: messageCell)
+        let messageNib = UINib(nibName: CellNib.neighbourCell, bundle: Bundle.main)
+        tableView.register(messageNib, forCellReuseIdentifier: neighbourCell)
     }
 
 

@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		3A91DC9D8F69BF081DDE2E2A /* Pods_HalanxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713204E72456C4C051E4F379 /* Pods_HalanxTests.framework */; };
 		B3D9F1CE113E784966679BA3 /* Pods_Halanx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8127EA82161B0E8BBB25C94C /* Pods_Halanx.framework */; };
+		C507363B21260F70003886DD /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507363921260F70003886DD /* MarketTableViewCell.swift */; };
+		C507363C21260F70003886DD /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C507363A21260F70003886DD /* MarketTableViewCell.xib */; };
+		C507364021260FDC003886DD /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507363E21260FDC003886DD /* MarketCollectionViewCell.swift */; };
+		C507364121260FDC003886DD /* MarketCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C507363F21260FDC003886DD /* MarketCollectionViewCell.xib */; };
+		C507364C21261FF2003886DD /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507364B21261FF2003886DD /* HeaderTableViewCell.swift */; };
 		C5807B6E2124A66B002AB7F3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5807B6D2124A66B002AB7F3 /* Feed.storyboard */; };
 		C5807B712124A935002AB7F3 /* HNInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B702124A935002AB7F3 /* HNInterestViewController.swift */; };
 		C5807B762124AA83002AB7F3 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B742124AA83002AB7F3 /* InterestCollectionViewCell.swift */; };
 		C5807B772124AA83002AB7F3 /* InterestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5807B752124AA83002AB7F3 /* InterestCollectionViewCell.xib */; };
 		C5807B7A2124BAD8002AB7F3 /* HNNeighbourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B792124BAD8002AB7F3 /* HNNeighbourViewController.swift */; };
+		C5807B802125DD7C002AB7F3 /* HNEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B7F2125DD7C002AB7F3 /* HNEditProfileViewController.swift */; };
+		C5807B842125E0B4002AB7F3 /* NeighbourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B822125E0B4002AB7F3 /* NeighbourTableViewCell.swift */; };
+		C5807B852125E0B4002AB7F3 /* NeighbourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5807B832125E0B4002AB7F3 /* NeighbourTableViewCell.xib */; };
 		C5C02DA42118A27600CC60FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DA32118A27600CC60FA /* AppDelegate.swift */; };
 		C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DA72118A27600CC60FA /* Main.storyboard */; };
 		C5C02DAE2118A27700CC60FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DAD2118A27700CC60FA /* Assets.xcassets */; };
@@ -88,11 +96,19 @@
 		8127EA82161B0E8BBB25C94C /* Pods_Halanx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Halanx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7C78907F9F6A79EE272E8A /* Pods-HalanxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalanxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HalanxUITests/Pods-HalanxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5D75AFF2E6FEF5559726804 /* Pods-Halanx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halanx.release.xcconfig"; path = "Pods/Target Support Files/Pods-Halanx/Pods-Halanx.release.xcconfig"; sourceTree = "<group>"; };
+		C507363921260F70003886DD /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		C507363A21260F70003886DD /* MarketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
+		C507363E21260FDC003886DD /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
+		C507363F21260FDC003886DD /* MarketCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketCollectionViewCell.xib; sourceTree = "<group>"; };
+		C507364B21261FF2003886DD /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		C5807B6D2124A66B002AB7F3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		C5807B702124A935002AB7F3 /* HNInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNInterestViewController.swift; sourceTree = "<group>"; };
 		C5807B742124AA83002AB7F3 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
 		C5807B752124AA83002AB7F3 /* InterestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5807B792124BAD8002AB7F3 /* HNNeighbourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNNeighbourViewController.swift; sourceTree = "<group>"; };
+		C5807B7F2125DD7C002AB7F3 /* HNEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNEditProfileViewController.swift; sourceTree = "<group>"; };
+		C5807B822125E0B4002AB7F3 /* NeighbourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourTableViewCell.swift; sourceTree = "<group>"; };
+		C5807B832125E0B4002AB7F3 /* NeighbourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NeighbourTableViewCell.xib; sourceTree = "<group>"; };
 		C5C02DA02118A27600CC60FA /* Halanx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halanx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C02DA32118A27600CC60FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5C02DA82118A27600CC60FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,9 +193,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C507363821260F56003886DD /* Market Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C507363921260F70003886DD /* MarketTableViewCell.swift */,
+				C507363A21260F70003886DD /* MarketTableViewCell.xib */,
+			);
+			path = "Market Cell";
+			sourceTree = "<group>";
+		};
+		C507363D21260FC0003886DD /* Market Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C507363E21260FDC003886DD /* MarketCollectionViewCell.swift */,
+				C507363F21260FDC003886DD /* MarketCollectionViewCell.xib */,
+			);
+			path = "Market Cell";
+			sourceTree = "<group>";
+		};
+		C507364A21261F5D003886DD /* Header Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C507364B21261FF2003886DD /* HeaderTableViewCell.swift */,
+			);
+			path = "Header Cell";
+			sourceTree = "<group>";
+		};
 		C53E8BBB2119D64A009947F3 /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C507363821260F56003886DD /* Market Cell */,
+				C5807B812125E09A002AB7F3 /* Neighbour Cell */,
 				C5E6BE33212458D500519CA4 /* Notification Cell */,
 				C5ED077B211CF87700BFB42C /* Poll Cell */,
 				C5ED0773211CBFA600BFB42C /* Message Cell */,
@@ -199,6 +243,7 @@
 		C5807B722124AA5C002AB7F3 /* Collection View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C507363D21260FC0003886DD /* Market Cell */,
 				C5807B732124AA68002AB7F3 /* Interest Cell */,
 			);
 			path = "Collection View Cell";
@@ -219,6 +264,15 @@
 				C5807B792124BAD8002AB7F3 /* HNNeighbourViewController.swift */,
 			);
 			path = Neighbour;
+			sourceTree = "<group>";
+		};
+		C5807B812125E09A002AB7F3 /* Neighbour Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5807B822125E0B4002AB7F3 /* NeighbourTableViewCell.swift */,
+				C5807B832125E0B4002AB7F3 /* NeighbourTableViewCell.xib */,
+			);
+			path = "Neighbour Cell";
 			sourceTree = "<group>";
 		};
 		C5C02D972118A27600CC60FA = {
@@ -280,6 +334,7 @@
 		C5C02DD42118A28B00CC60FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C507364A21261F5D003886DD /* Header Cell */,
 				C5807B722124AA5C002AB7F3 /* Collection View Cell */,
 				C53E8BBB2119D64A009947F3 /* Table View Cell */,
 				C5C02DD92118A2BC00CC60FA /* Storyboard */,
@@ -343,6 +398,7 @@
 			children = (
 				C5C02DF72118B58D00CC60FA /* HNLoginViewController.swift */,
 				C5ED0789211D0F0A00BFB42C /* HNPasswordViewController.swift */,
+				C5807B7F2125DD7C002AB7F3 /* HNEditProfileViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -691,11 +747,14 @@
 				C5807B6E2124A66B002AB7F3 /* Feed.storyboard in Resources */,
 				C5C02DB12118A27700CC60FA /* LaunchScreen.storyboard in Resources */,
 				C5ED0777211CBFBE00BFB42C /* MessageTableViewCell.xib in Resources */,
+				C507363C21260F70003886DD /* MarketTableViewCell.xib in Resources */,
 				C5C02DAE2118A27700CC60FA /* Assets.xcassets in Resources */,
 				C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */,
+				C5807B852125E0B4002AB7F3 /* NeighbourTableViewCell.xib in Resources */,
 				C5ED0769211CAC5C00BFB42C /* PostTableViewCell.xib in Resources */,
 				C5ED076E211CAC7500BFB42C /* NewsTableViewCell.xib in Resources */,
 				C5807B772124AA83002AB7F3 /* InterestCollectionViewCell.xib in Resources */,
+				C507364121260FDC003886DD /* MarketCollectionViewCell.xib in Resources */,
 				C5D9D7402123F6600009AF65 /* Chat.storyboard in Resources */,
 				C5ED077F211CF88D00BFB42C /* PollTableViewCell.xib in Resources */,
 				C5E6BE37212458F100519CA4 /* NotificationTableViewCell.xib in Resources */,
@@ -823,6 +882,7 @@
 				C5C02E202118CAB600CC60FA /* HNMarketPlaceViewController.swift in Sources */,
 				C5C02DF22118B52700CC60FA /* HNAppStoryboard.swift in Sources */,
 				C5ED077E211CF88D00BFB42C /* PollTableViewCell.swift in Sources */,
+				C507364C21261FF2003886DD /* HeaderTableViewCell.swift in Sources */,
 				C5ED0768211CAC5C00BFB42C /* PostTableViewCell.swift in Sources */,
 				C5807B712124A935002AB7F3 /* HNInterestViewController.swift in Sources */,
 				C5C02E262118CE3E00CC60FA /* StringExtension.swift in Sources */,
@@ -848,12 +908,16 @@
 				C5C02DA42118A27600CC60FA /* AppDelegate.swift in Sources */,
 				C5C02E242118CADB00CC60FA /* HNMeViewController.swift in Sources */,
 				C5C02E042118B8AF00CC60FA /* MBProgressHUD.m in Sources */,
+				C507364021260FDC003886DD /* MarketCollectionViewCell.swift in Sources */,
 				C5ED0781211CFAD900BFB42C /* HNDesignableTF.swift in Sources */,
 				C5ED079E211D3BBA00BFB42C /* HNDesignableView.swift in Sources */,
 				C5ED078A211D0F0A00BFB42C /* HNPasswordViewController.swift in Sources */,
+				C5807B802125DD7C002AB7F3 /* HNEditProfileViewController.swift in Sources */,
+				C507363B21260F70003886DD /* MarketTableViewCell.swift in Sources */,
 				C5C02E0A2118C7EC00CC60FA /* Reachability.m in Sources */,
 				C5E6BE322124586000519CA4 /* HNNotificationViewController.swift in Sources */,
 				C5E6BE2B2124307C00519CA4 /* HNCreatePostViewController.swift in Sources */,
+				C5807B842125E0B4002AB7F3 /* NeighbourTableViewCell.swift in Sources */,
 				C5807B7A2124BAD8002AB7F3 /* HNNeighbourViewController.swift in Sources */,
 				C5C02DF82118B58D00CC60FA /* HNLoginViewController.swift in Sources */,
 			);
