@@ -9,45 +9,49 @@
 import UIKit
 
 
-class CellNib {
+struct CellNib {
     
-    static let shared = CellNib()
+    static let postCell = "PostTableViewCell"
     
-    let postCell = "PostTableViewCell"
+    static let newsCell = "NewsTableViewCell"
     
-    let newsCell = "NewsTableViewCell"
+    static let messageCell = "MessageTableViewCell"
     
-    let messageCell = "MessageTableViewCell"
+    static let pollCell = "PollTableViewCell"
     
-    let pollCell = "PollTableViewCell"
+    static let notificationCell = "NotificationTableViewCell"
     
-    let notificationCell = "NotificationTableViewCell"
+    static let interestCell = "InterestCollectionViewCell"
     
-    let interestCell = "InterestCollectionViewCell"
+    static let marketTableCell = "MarketTableViewCell"
     
-    private init() {}
+    static let marketCollectionCell = "MarketCollectionViewCell"
+    
+    static let neighbourCell = "NeighbourTableViewCell"
     
 }
 
 
 
-class CellIdentifier {
+struct CellIdentifier {
     
-    static let shared = CellIdentifier()
+    static let postCell = "cellPost"
     
-    let postCell = "cellPost"
+    static let newsCell = "cellNews"
     
-    let newsCell = "cellNews"
+    static let messageCell = "cellMessage"
     
-    let messageCell = "cellMessage"
+    static let pollCell = "cellPoll"
     
-    let pollCell = "cellPoll"
+    static let notificationCell = "cellNotification"
     
-    let notificationCell = "cellNotification"
+    static let interestCell = "cellInterest"
     
-    let interestCell = "cellInterest"
+    static let marketTableCell = "cellTableMarket"
     
-    private init() {}
+    static let marketCollectionCell = "cellCollectionMarket"
+    
+    static let neighbourCell = "cellNeighbour"
 }
 
 

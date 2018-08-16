@@ -113,7 +113,80 @@
                     <view key="view" contentMode="scaleToFill" id="PkR-6S-ZzS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-pU-RUs">
+                                <rect key="frame" x="0.0" y="64" width="320" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lRY-sU-Dlc">
+                                        <rect key="frame" x="12" y="10" width="296" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYj-y6-kFh" customClass="HNDesignableButton" customModule="Halanx" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="40"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="0 Hcash"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.5" height="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnHcashAction:" destination="KGp-b1-Mc3" eventType="touchUpInside" id="oMg-Uh-ACr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltj-pc-l5q" customClass="HNDesignableButton" customModule="Halanx" customModuleProvider="target">
+                                                <rect key="frame" x="158" y="0.0" width="138" height="40"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Order"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.5" height="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnOrderAction:" destination="KGp-b1-Mc3" eventType="touchUpInside" id="Sdd-w2-hw9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8rv-kt-eA2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lRY-sU-Dlc" secondAttribute="trailing" constant="12" id="12B-7w-Mo5"/>
+                                    <constraint firstItem="lRY-sU-Dlc" firstAttribute="leading" secondItem="ESJ-pU-RUs" secondAttribute="leading" constant="12" id="BGH-MB-Bf1"/>
+                                    <constraint firstItem="lRY-sU-Dlc" firstAttribute="centerY" secondItem="ESJ-pU-RUs" secondAttribute="centerY" id="T8f-zq-Epo"/>
+                                    <constraint firstAttribute="height" constant="60" id="sji-Wl-M2w"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HE7-6P-3qw">
+                                <rect key="frame" x="0.0" y="124" width="320" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bUN-Hh-iiy" firstAttribute="trailing" secondItem="ESJ-pU-RUs" secondAttribute="trailing" id="100-dY-Xo1"/>
+                            <constraint firstItem="bUN-Hh-iiy" firstAttribute="bottom" secondItem="HE7-6P-3qw" secondAttribute="bottom" id="5E5-7c-Gg3"/>
+                            <constraint firstItem="ESJ-pU-RUs" firstAttribute="top" secondItem="bUN-Hh-iiy" secondAttribute="top" id="5uA-Pv-pwX"/>
+                            <constraint firstItem="HE7-6P-3qw" firstAttribute="top" secondItem="ESJ-pU-RUs" secondAttribute="bottom" id="P2f-MK-WAX"/>
+                            <constraint firstItem="HE7-6P-3qw" firstAttribute="leading" secondItem="bUN-Hh-iiy" secondAttribute="leading" id="btm-w8-b5V"/>
+                            <constraint firstItem="bUN-Hh-iiy" firstAttribute="trailing" secondItem="HE7-6P-3qw" secondAttribute="trailing" id="eCQ-Fu-ou5"/>
+                            <constraint firstItem="ESJ-pU-RUs" firstAttribute="leading" secondItem="bUN-Hh-iiy" secondAttribute="leading" id="pJh-hk-kFP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bUN-Hh-iiy"/>
                     </view>
                     <navigationItem key="navigationItem" id="Asr-Ab-Dez">
@@ -123,6 +196,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="HE7-6P-3qw" id="SCd-bc-H2D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yj-Mj-8Oa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8hF-Na-CjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3020" y="112"/>
+            <point key="canvasLocation" x="3053" y="97"/>
         </scene>
         <!--Me View Controller-->
         <scene sceneID="TCL-PL-faf">

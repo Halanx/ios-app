@@ -13,8 +13,8 @@ class HNFeedViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnCreatePost: UIButton!
     
-    fileprivate let postCellIdentifier = CellIdentifier.shared.postCell
-    fileprivate let newsCellIdentifier = CellIdentifier.shared.newsCell
+    fileprivate let postCellIdentifier = CellIdentifier.postCell
+    fileprivate let newsCellIdentifier = CellIdentifier.newsCell
     fileprivate let tableViewEstimateHeight: CGFloat = 320
     fileprivate let postCellHeight: CGFloat = 500
     fileprivate let newsCellHeight: CGFloat = 400
@@ -31,12 +31,13 @@ class HNFeedViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
     }
 
+    /// Register Cell Nib
     func registerNib() {
         
-        let postNib = UINib(nibName: "PostTableViewCell", bundle: Bundle.main)
+        let postNib = UINib(nibName: CellNib.postCell, bundle: Bundle.main)
         tableView.register(postNib, forCellReuseIdentifier: postCellIdentifier)
         
-        let newsNib = UINib(nibName: "NewsTableViewCell", bundle: Bundle.main)
+        let newsNib = UINib(nibName: CellNib.newsCell, bundle: Bundle.main)
         tableView.register(newsNib, forCellReuseIdentifier: newsCellIdentifier)
     }
     
@@ -54,16 +55,21 @@ class HNFeedViewController: UIViewController {
         navigationItem.leftBarButtonItem =  imageItem
     }
  
-    
+    // MARK: IBActions
     @IBAction func btnCreatePostAction(_ sender: Any) {
         
-        let createPostVc = HNCreatePostViewController.instantiateViewController(fromAppstoryboard: .Main)
+        let createPostVc = HNCreatePostViewController.instantiateViewController(fromAppstoryboard: .Feed)
         createPostVc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(createPostVc, animated: true)
         
     }
     
-
+    @IBAction func btnInterestClicked(_ sender: Any) {
+        
+        let interestVc = HNInterestViewController.instantiateViewController(fromAppstoryboard: .Feed)
+        self.navigationController?.pushViewController(interestVc, animated: true)
+    }
+    
     
 }
 

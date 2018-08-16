@@ -12,7 +12,7 @@ class HNInterestViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    fileprivate var interestCell = CellIdentifier.shared.interestCell
+    fileprivate var interestCell = CellIdentifier.interestCell
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +20,10 @@ class HNInterestViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    /// Register Cell Nib
     func registerNib() {
         
-        let interestNib = UINib(nibName: CellNib.shared.interestCell, bundle: Bundle.main)
+        let interestNib = UINib(nibName: CellNib.interestCell, bundle: Bundle.main)
         collectionView.register(interestNib, forCellWithReuseIdentifier: interestCell)
     }
 
@@ -40,7 +41,7 @@ extension HNInterestViewController: UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return 16
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -51,12 +52,14 @@ extension HNInterestViewController: UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 0, height: 0)
+        return CGSize(width: collectionView.frame.size.width/2, height: 50)
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        <#code#>
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 0
+    }
+    
 //
 //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        <#code#>

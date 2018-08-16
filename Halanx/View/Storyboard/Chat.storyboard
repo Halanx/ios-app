@@ -45,10 +45,43 @@
             </objects>
             <point key="canvasLocation" x="1934" y="869"/>
         </scene>
+        <!--Neighbour View Controller-->
+        <scene sceneID="eZp-lH-90v">
+            <objects>
+                <viewController storyboardIdentifier="HNNeighbourViewController" id="Nnc-Kt-7GV" customClass="HNNeighbourViewController" customModule="Halanx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lO4-il-jsr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lBn-eb-Jc1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nnc-Kt-7GV" id="BNx-Jf-xBx"/>
+                                    <outlet property="delegate" destination="Nnc-Kt-7GV" id="sSl-lU-jdX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m5c-Q5-JxK" firstAttribute="bottom" secondItem="lBn-eb-Jc1" secondAttribute="bottom" id="A6E-jT-uEh"/>
+                            <constraint firstItem="lBn-eb-Jc1" firstAttribute="top" secondItem="m5c-Q5-JxK" secondAttribute="top" id="WtT-PU-wdl"/>
+                            <constraint firstItem="lBn-eb-Jc1" firstAttribute="leading" secondItem="m5c-Q5-JxK" secondAttribute="leading" id="buE-hR-CMc"/>
+                            <constraint firstItem="m5c-Q5-JxK" firstAttribute="trailing" secondItem="lBn-eb-Jc1" secondAttribute="trailing" id="m0c-Cx-2Ks"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m5c-Q5-JxK"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="lBn-eb-Jc1" id="SnW-9R-Ah8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcv-lM-umB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660" y="864"/>
+        </scene>
         <!--Messaging-->
         <scene sceneID="Xk8-pU-PKt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Afl-d3-bW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kGQ-Pl-WIF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Messaging" id="f53-Cj-YPK"/>
                     <toolbarItems/>
@@ -62,6 +95,7 @@
                         <segue destination="Vyr-8D-hKv" kind="relationship" relationship="rootViewController" id="RBG-Nq-P52"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afl-d3-bW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="994" y="869"/>
         </scene>

@@ -13,13 +13,47 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellInterest" id="gTV-IL-0wX" customClass="InterestCollectionViewCell" customModule="Halanx" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="211" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="211" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phm-TK-xBQ" customClass="HNDesignableView" customModule="Halanx" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="195" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOGA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrf-Ds-2dx">
+                                <rect key="frame" x="73" y="7.5" width="48.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rrf-Ds-2dx" firstAttribute="centerX" secondItem="phm-TK-xBQ" secondAttribute="centerX" id="Uix-oj-Xh0"/>
+                            <constraint firstItem="rrf-Ds-2dx" firstAttribute="centerY" secondItem="phm-TK-xBQ" secondAttribute="centerY" id="qU7-Ox-wv1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="phm-TK-xBQ" secondAttribute="trailing" constant="8" id="9FD-eS-sGF"/>
+                <constraint firstAttribute="bottom" secondItem="phm-TK-xBQ" secondAttribute="bottom" constant="8" id="S5i-hg-S0b"/>
+                <constraint firstItem="phm-TK-xBQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Yrs-ho-NNz"/>
+                <constraint firstItem="phm-TK-xBQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="eEA-kN-eZA"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="211" height="50"/>
+            <point key="canvasLocation" x="31.5" y="50"/>
         </collectionViewCell>
     </objects>
 </document>

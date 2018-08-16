@@ -12,17 +12,17 @@ class HNNotificationViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate var notificationCell = CellIdentifier.shared.notificationCell
+    fileprivate var notificationCell = CellIdentifier.notificationCell
 
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
-        // Do any additional setup after loading the view.
+        
     }
     
     func registerNib() {
         
-        let notificationNib = UINib(nibName: CellNib.shared.notificationCell, bundle: Bundle.main)
+        let notificationNib = UINib(nibName: CellNib.notificationCell, bundle: Bundle.main)
         tableView.register(notificationNib, forCellReuseIdentifier: notificationCell)
         
     }

@@ -13,7 +13,7 @@ class HNMessagingViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    fileprivate let messageCell = CellIdentifier.shared.messageCell
+    fileprivate let messageCell = CellIdentifier.messageCell
     
     
     override func viewDidLoad() {
@@ -22,9 +22,10 @@ class HNMessagingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    /// Register Cell Nib
     func registerNib() {
         
-        let messageNib = UINib(nibName: CellNib.shared.messageCell, bundle: Bundle.main)
+        let messageNib = UINib(nibName: CellNib.messageCell, bundle: Bundle.main)
         tableView.register(messageNib, forCellReuseIdentifier: messageCell)
     }
    

@@ -18,7 +18,7 @@ class HNPollViewController: UIViewController {
     
     @IBOutlet weak var btnSubmitHeight: NSLayoutConstraint!
     
-    fileprivate let pollCellIdentifier = CellIdentifier.shared.pollCell
+    fileprivate let pollCellIdentifier = CellIdentifier.pollCell
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +34,10 @@ class HNPollViewController: UIViewController {
         
     }
     
-    
+    /// Register Cell Nib
     func registerNib() {
         
-        let pollNib = UINib(nibName: CellNib.shared.pollCell, bundle: Bundle.main)
+        let pollNib = UINib(nibName: CellNib.pollCell, bundle: Bundle.main)
         tableView.register(pollNib, forCellReuseIdentifier: pollCellIdentifier)
         
         tableView.layer.borderWidth = 0.5
