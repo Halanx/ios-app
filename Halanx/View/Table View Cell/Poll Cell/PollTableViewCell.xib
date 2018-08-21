@@ -41,6 +41,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgSelection" destination="Fnt-jp-WeH" id="LBw-CF-c7W"/>
+                <outlet property="lblName" destination="4Fd-lW-uUe" id="OSc-y4-p6d"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

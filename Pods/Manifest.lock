@@ -26,6 +26,13 @@ PODS:
   - FBSDKShareKit (4.35.0):
     - FBSDKCoreKit (~> 4.35.0)
   - FLAnimatedImage (1.0.12)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
   - IQKeyboardManagerSwift (6.1.1)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -33,6 +40,7 @@ PODS:
   - SDWebImage/GIF (4.4.2):
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
+  - StretchHeader (1.1.0)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
@@ -40,9 +48,12 @@ DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
   - FacebookShare
+  - GoogleMaps
+  - GooglePlaces
   - IQKeyboardManagerSwift
   - SDWebImage
   - SDWebImage/GIF
+  - StretchHeader
   - SwiftyJSON
 
 SPEC REPOS:
@@ -56,8 +67,11 @@ SPEC REPOS:
     - FBSDKLoginKit
     - FBSDKShareKit
     - FLAnimatedImage
+    - GoogleMaps
+    - GooglePlaces
     - IQKeyboardManagerSwift
     - SDWebImage
+    - StretchHeader
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -70,10 +84,13 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: 00a3d65d1226852f9d76dcddff01981e5e6d9c38
   FBSDKShareKit: 2ddbd7e6432023fff957af62e23a3671b84319f7
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  StretchHeader: 2ae5ef71f07fc7a9e7d9faec69a3b630f0c4383f
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: d52be46d85d644edb2b162605954ccc194968be6
+PODFILE CHECKSUM: b9e645daaf3a4166aecbf3c852336e48a44a69ca
 
 COCOAPODS: 1.5.3

@@ -14,6 +14,29 @@
 		C507364021260FDC003886DD /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507363E21260FDC003886DD /* MarketCollectionViewCell.swift */; };
 		C507364121260FDC003886DD /* MarketCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C507363F21260FDC003886DD /* MarketCollectionViewCell.xib */; };
 		C507364C21261FF2003886DD /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507364B21261FF2003886DD /* HeaderTableViewCell.swift */; };
+		C507364F212632A8003886DD /* HNViewAllMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507364E212632A8003886DD /* HNViewAllMarketViewController.swift */; };
+		C50D094F2128ED060008846C /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D094D2128ED060008846C /* AboutTableViewCell.swift */; };
+		C50D09502128ED060008846C /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C50D094E2128ED060008846C /* AboutTableViewCell.xib */; };
+		C50D09532128F1B50008846C /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D09512128F1B50008846C /* AddressTableViewCell.swift */; };
+		C50D09542128F1B50008846C /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C50D09522128F1B50008846C /* AddressTableViewCell.xib */; };
+		C50D09572128F37E0008846C /* VouchersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D09552128F37E0008846C /* VouchersTableViewCell.swift */; };
+		C50D09582128F37E0008846C /* VouchersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C50D09562128F37E0008846C /* VouchersTableViewCell.xib */; };
+		C50D095C212915FF0008846C /* ClaimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D095B212915FF0008846C /* ClaimTableViewCell.swift */; };
+		C51190302128036D009BDEA0 /* ViewAllCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511902E2128036D009BDEA0 /* ViewAllCollectionViewCell.swift */; };
+		C51190312128036D009BDEA0 /* ViewAllCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C511902F2128036D009BDEA0 /* ViewAllCollectionViewCell.xib */; };
+		C5119038212825F4009BDEA0 /* HNMarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5119037212825F4009BDEA0 /* HNMarketDetailViewController.swift */; };
+		C534290421268FE600D9405C /* Market.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C534290321268FE600D9405C /* Market.storyboard */; };
+		C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5342905212691D600D9405C /* HNSettingViewController.swift */; };
+		C53429082126967200D9405C /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53429072126967200D9405C /* Payment.storyboard */; };
+		C534290B2126DF5100D9405C /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534290A2126DF5100D9405C /* SwitchTableViewCell.swift */; };
+		C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B0212C5803009ED826 /* HNClaimViewController.swift */; };
+		C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B3212C6C42009ED826 /* HNCartViewController.swift */; };
+		C57576B7212C7335009ED826 /* HNPaymentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */; };
+		C57576BA212C7AE1009ED826 /* HNUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B9212C7AE1009ED826 /* HNUserProfileViewController.swift */; };
+		C57576BE212C8184009ED826 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576BC212C8184009ED826 /* PhotoCollectionViewCell.swift */; };
+		C57576BF212C8184009ED826 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57576BD212C8184009ED826 /* PhotoCollectionViewCell.xib */; };
+		C57576C3212C86E3009ED826 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576C1212C86E3009ED826 /* PhotoTableViewCell.swift */; };
+		C57576C4212C86E3009ED826 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57576C2212C86E3009ED826 /* PhotoTableViewCell.xib */; };
 		C5807B6E2124A66B002AB7F3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5807B6D2124A66B002AB7F3 /* Feed.storyboard */; };
 		C5807B712124A935002AB7F3 /* HNInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B702124A935002AB7F3 /* HNInterestViewController.swift */; };
 		C5807B762124AA83002AB7F3 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B742124AA83002AB7F3 /* InterestCollectionViewCell.swift */; };
@@ -101,6 +124,29 @@
 		C507363E21260FDC003886DD /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
 		C507363F21260FDC003886DD /* MarketCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketCollectionViewCell.xib; sourceTree = "<group>"; };
 		C507364B21261FF2003886DD /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		C507364E212632A8003886DD /* HNViewAllMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNViewAllMarketViewController.swift; sourceTree = "<group>"; };
+		C50D094D2128ED060008846C /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		C50D094E2128ED060008846C /* AboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
+		C50D09512128F1B50008846C /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		C50D09522128F1B50008846C /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		C50D09552128F37E0008846C /* VouchersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersTableViewCell.swift; sourceTree = "<group>"; };
+		C50D09562128F37E0008846C /* VouchersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VouchersTableViewCell.xib; sourceTree = "<group>"; };
+		C50D095B212915FF0008846C /* ClaimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimTableViewCell.swift; sourceTree = "<group>"; };
+		C511902E2128036D009BDEA0 /* ViewAllCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAllCollectionViewCell.swift; sourceTree = "<group>"; };
+		C511902F2128036D009BDEA0 /* ViewAllCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAllCollectionViewCell.xib; sourceTree = "<group>"; };
+		C5119037212825F4009BDEA0 /* HNMarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNMarketDetailViewController.swift; sourceTree = "<group>"; };
+		C534290321268FE600D9405C /* Market.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Market.storyboard; sourceTree = "<group>"; };
+		C5342905212691D600D9405C /* HNSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNSettingViewController.swift; sourceTree = "<group>"; };
+		C53429072126967200D9405C /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		C534290A2126DF5100D9405C /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		C57576B0212C5803009ED826 /* HNClaimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClaimViewController.swift; sourceTree = "<group>"; };
+		C57576B3212C6C42009ED826 /* HNCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCartViewController.swift; sourceTree = "<group>"; };
+		C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNPaymentOptionsViewController.swift; sourceTree = "<group>"; };
+		C57576B9212C7AE1009ED826 /* HNUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNUserProfileViewController.swift; sourceTree = "<group>"; };
+		C57576BC212C8184009ED826 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		C57576BD212C8184009ED826 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		C57576C1212C86E3009ED826 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		C57576C2212C86E3009ED826 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		C5807B6D2124A66B002AB7F3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		C5807B702124A935002AB7F3 /* HNInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNInterestViewController.swift; sourceTree = "<group>"; };
 		C5807B742124AA83002AB7F3 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -219,9 +265,115 @@
 			path = "Header Cell";
 			sourceTree = "<group>";
 		};
+		C507364D2126324E003886DD /* View Market Place */ = {
+			isa = PBXGroup;
+			children = (
+				C507364E212632A8003886DD /* HNViewAllMarketViewController.swift */,
+			);
+			path = "View Market Place";
+			sourceTree = "<group>";
+		};
+		C50D09492128EC570008846C /* Market Detail Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C50D095A212915EF0008846C /* Claim Cell */,
+				C50D094C2128EC950008846C /* Vouchers Cell */,
+				C50D094B2128EC8C0008846C /* Address Cell */,
+				C50D094A2128EC670008846C /* About Cell */,
+			);
+			path = "Market Detail Cell";
+			sourceTree = "<group>";
+		};
+		C50D094A2128EC670008846C /* About Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C50D094D2128ED060008846C /* AboutTableViewCell.swift */,
+				C50D094E2128ED060008846C /* AboutTableViewCell.xib */,
+			);
+			path = "About Cell";
+			sourceTree = "<group>";
+		};
+		C50D094B2128EC8C0008846C /* Address Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C50D09512128F1B50008846C /* AddressTableViewCell.swift */,
+				C50D09522128F1B50008846C /* AddressTableViewCell.xib */,
+			);
+			path = "Address Cell";
+			sourceTree = "<group>";
+		};
+		C50D094C2128EC950008846C /* Vouchers Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C50D09552128F37E0008846C /* VouchersTableViewCell.swift */,
+				C50D09562128F37E0008846C /* VouchersTableViewCell.xib */,
+			);
+			path = "Vouchers Cell";
+			sourceTree = "<group>";
+		};
+		C50D095A212915EF0008846C /* Claim Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C50D095B212915FF0008846C /* ClaimTableViewCell.swift */,
+			);
+			path = "Claim Cell";
+			sourceTree = "<group>";
+		};
+		C511902D21280354009BDEA0 /* View All Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C511902E2128036D009BDEA0 /* ViewAllCollectionViewCell.swift */,
+				C511902F2128036D009BDEA0 /* ViewAllCollectionViewCell.xib */,
+			);
+			path = "View All Cell";
+			sourceTree = "<group>";
+		};
+		C511903321282549009BDEA0 /* Market Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C5119037212825F4009BDEA0 /* HNMarketDetailViewController.swift */,
+			);
+			path = "Market Detail";
+			sourceTree = "<group>";
+		};
+		C511903421282572009BDEA0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C5C02DF72118B58D00CC60FA /* HNLoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C51190352128257F009BDEA0 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				C5ED0789211D0F0A00BFB42C /* HNPasswordViewController.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		C51190362128258A009BDEA0 /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C5807B7F2125DD7C002AB7F3 /* HNEditProfileViewController.swift */,
+			);
+			path = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		C53429092126DF2F00D9405C /* Setting Switch Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C534290A2126DF5100D9405C /* SwitchTableViewCell.swift */,
+			);
+			path = "Setting Switch Cell";
+			sourceTree = "<group>";
+		};
 		C53E8BBB2119D64A009947F3 /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C57576C0212C86B0009ED826 /* Photo Cell */,
+				C50D09492128EC570008846C /* Market Detail Cell */,
+				C53429092126DF2F00D9405C /* Setting Switch Cell */,
 				C507363821260F56003886DD /* Market Cell */,
 				C5807B812125E09A002AB7F3 /* Neighbour Cell */,
 				C5E6BE33212458D500519CA4 /* Notification Cell */,
@@ -230,6 +382,56 @@
 				C5ED0764211CAC3C00BFB42C /* Feed Cell */,
 			);
 			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		C5757698212BEDFB009ED826 /* Claim */ = {
+			isa = PBXGroup;
+			children = (
+				C57576B0212C5803009ED826 /* HNClaimViewController.swift */,
+			);
+			path = Claim;
+			sourceTree = "<group>";
+		};
+		C57576B2212C6C2B009ED826 /* View Cart */ = {
+			isa = PBXGroup;
+			children = (
+				C57576B3212C6C42009ED826 /* HNCartViewController.swift */,
+			);
+			path = "View Cart";
+			sourceTree = "<group>";
+		};
+		C57576B5212C7312009ED826 /* Payment Options */ = {
+			isa = PBXGroup;
+			children = (
+				C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */,
+			);
+			path = "Payment Options";
+			sourceTree = "<group>";
+		};
+		C57576B8212C7AC3009ED826 /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C57576B9212C7AE1009ED826 /* HNUserProfileViewController.swift */,
+			);
+			path = "User Profile";
+			sourceTree = "<group>";
+		};
+		C57576BB212C815E009ED826 /* Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C57576BC212C8184009ED826 /* PhotoCollectionViewCell.swift */,
+				C57576BD212C8184009ED826 /* PhotoCollectionViewCell.xib */,
+			);
+			path = "Photo Cell";
+			sourceTree = "<group>";
+		};
+		C57576C0212C86B0009ED826 /* Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C57576C1212C86E3009ED826 /* PhotoTableViewCell.swift */,
+				C57576C2212C86E3009ED826 /* PhotoTableViewCell.xib */,
+			);
+			path = "Photo Cell";
 			sourceTree = "<group>";
 		};
 		C5807B6F2124A90D002AB7F3 /* Interest */ = {
@@ -243,6 +445,8 @@
 		C5807B722124AA5C002AB7F3 /* Collection View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C57576BB212C815E009ED826 /* Photo Cell */,
+				C511902D21280354009BDEA0 /* View All Cell */,
 				C507363D21260FC0003886DD /* Market Cell */,
 				C5807B732124AA68002AB7F3 /* Interest Cell */,
 			);
@@ -345,13 +549,22 @@
 		C5C02DD52118A29300CC60FA /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C57576B8212C7AC3009ED826 /* User Profile */,
+				C57576B5212C7312009ED826 /* Payment Options */,
+				C57576B2212C6C2B009ED826 /* View Cart */,
+				C5757698212BEDFB009ED826 /* Claim */,
+				C51190362128258A009BDEA0 /* Edit Profile */,
+				C51190352128257F009BDEA0 /* Password */,
+				C511903421282572009BDEA0 /* Login */,
+				C511903321282549009BDEA0 /* Market Detail */,
+				C507364D2126324E003886DD /* View Market Place */,
 				C5807B782124BAB1002AB7F3 /* Neighbour */,
 				C5807B6F2124A90D002AB7F3 /* Interest */,
 				C5E6BE302124584C00519CA4 /* Notification */,
 				C5E6BE2C2124420800519CA4 /* Map  */,
 				C5E6BE2721242E9300519CA4 /* Create Post */,
 				C5ED0782211D016E00BFB42C /* On boarding */,
-				C5C02DDF2118A65800CC60FA /* User */,
+				C5C02DDF2118A65800CC60FA /* Setting */,
 				C5C02DDA2118A47700CC60FA /* Tab Bar */,
 			);
 			path = Module;
@@ -376,6 +589,8 @@
 				C5C02DA72118A27600CC60FA /* Main.storyboard */,
 				C5D9D73F2123F6600009AF65 /* Chat.storyboard */,
 				C5807B6D2124A66B002AB7F3 /* Feed.storyboard */,
+				C534290321268FE600D9405C /* Market.storyboard */,
+				C53429072126967200D9405C /* Payment.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -393,14 +608,12 @@
 			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
-		C5C02DDF2118A65800CC60FA /* User */ = {
+		C5C02DDF2118A65800CC60FA /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				C5C02DF72118B58D00CC60FA /* HNLoginViewController.swift */,
-				C5ED0789211D0F0A00BFB42C /* HNPasswordViewController.swift */,
-				C5807B7F2125DD7C002AB7F3 /* HNEditProfileViewController.swift */,
+				C5342905212691D600D9405C /* HNSettingViewController.swift */,
 			);
-			path = User;
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		C5C02DE22118A6D100CC60FA /* App Utility */ = {
@@ -647,6 +860,7 @@
 				C5C02D9D2118A27600CC60FA /* Frameworks */,
 				C5C02D9E2118A27600CC60FA /* Resources */,
 				0918EFEDA9B2F543B6B6C128 /* [CP] Embed Pods Frameworks */,
+				55218C10A7753BBD335DF423 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -751,12 +965,20 @@
 				C5C02DAE2118A27700CC60FA /* Assets.xcassets in Resources */,
 				C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */,
 				C5807B852125E0B4002AB7F3 /* NeighbourTableViewCell.xib in Resources */,
+				C53429082126967200D9405C /* Payment.storyboard in Resources */,
+				C534290421268FE600D9405C /* Market.storyboard in Resources */,
+				C50D09502128ED060008846C /* AboutTableViewCell.xib in Resources */,
 				C5ED0769211CAC5C00BFB42C /* PostTableViewCell.xib in Resources */,
 				C5ED076E211CAC7500BFB42C /* NewsTableViewCell.xib in Resources */,
+				C50D09582128F37E0008846C /* VouchersTableViewCell.xib in Resources */,
 				C5807B772124AA83002AB7F3 /* InterestCollectionViewCell.xib in Resources */,
 				C507364121260FDC003886DD /* MarketCollectionViewCell.xib in Resources */,
+				C51190312128036D009BDEA0 /* ViewAllCollectionViewCell.xib in Resources */,
 				C5D9D7402123F6600009AF65 /* Chat.storyboard in Resources */,
+				C50D09542128F1B50008846C /* AddressTableViewCell.xib in Resources */,
+				C57576BF212C8184009ED826 /* PhotoCollectionViewCell.xib in Resources */,
 				C5ED077F211CF88D00BFB42C /* PollTableViewCell.xib in Resources */,
+				C57576C4212C86E3009ED826 /* PhotoTableViewCell.xib in Resources */,
 				C5E6BE37212458F100519CA4 /* NotificationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -796,6 +1018,7 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/StretchHeader/StretchHeader.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -811,11 +1034,32 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StretchHeader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Halanx/Pods-Halanx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55218C10A7753BBD335DF423 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Halanx/Pods-Halanx-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Halanx/Pods-Halanx-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		780EE51167AC40F6B3E4608A /* [CP] Check Pods Manifest.lock */ = {
@@ -879,31 +1123,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57576C3212C86E3009ED826 /* PhotoTableViewCell.swift in Sources */,
+				C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */,
 				C5C02E202118CAB600CC60FA /* HNMarketPlaceViewController.swift in Sources */,
 				C5C02DF22118B52700CC60FA /* HNAppStoryboard.swift in Sources */,
 				C5ED077E211CF88D00BFB42C /* PollTableViewCell.swift in Sources */,
 				C507364C21261FF2003886DD /* HeaderTableViewCell.swift in Sources */,
 				C5ED0768211CAC5C00BFB42C /* PostTableViewCell.swift in Sources */,
 				C5807B712124A935002AB7F3 /* HNInterestViewController.swift in Sources */,
+				C50D095C212915FF0008846C /* ClaimTableViewCell.swift in Sources */,
 				C5C02E262118CE3E00CC60FA /* StringExtension.swift in Sources */,
+				C50D09572128F37E0008846C /* VouchersTableViewCell.swift in Sources */,
 				C5ED077A211CC58000BFB42C /* CellManager.swift in Sources */,
 				C5C02DF62118B56A00CC60FA /* HNMainTabViewController.swift in Sources */,
 				C5ED0772211CB3B300BFB42C /* HNDesignableButton.swift in Sources */,
 				C5C02E282118CF9500CC60FA /* ViewControllerExtension.swift in Sources */,
+				C507364F212632A8003886DD /* HNViewAllMarketViewController.swift in Sources */,
+				C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */,
 				C5C02DF02118B4F100CC60FA /* HNDesignableUIImage.swift in Sources */,
+				C534290B2126DF5100D9405C /* SwitchTableViewCell.swift in Sources */,
 				C5C02E1C2118CA7F00CC60FA /* HNFeedViewController.swift in Sources */,
 				C5ED0788211D097200BFB42C /* iCarousel.m in Sources */,
+				C57576B7212C7335009ED826 /* HNPaymentOptionsViewController.swift in Sources */,
+				C50D094F2128ED060008846C /* AboutTableViewCell.swift in Sources */,
 				C5ED076D211CAC7500BFB42C /* NewsTableViewCell.swift in Sources */,
 				C5C02DFF2118B74600CC60FA /* HNConstants.swift in Sources */,
 				C5807B762124AA83002AB7F3 /* InterestCollectionViewCell.swift in Sources */,
 				C5D9D7352123ECD80009AF65 /* FBManager.swift in Sources */,
+				C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */,
+				C57576BA212C7AE1009ED826 /* HNUserProfileViewController.swift in Sources */,
 				C5ED07A02120697700BFB42C /* HNUserDefaultManager.swift in Sources */,
 				C5C02E1E2118CA9D00CC60FA /* HNPollViewController.swift in Sources */,
 				C5ED0784211D018600BFB42C /* HNOnboardingViewController.swift in Sources */,
+				C57576BE212C8184009ED826 /* PhotoCollectionViewCell.swift in Sources */,
+				C51190302128036D009BDEA0 /* ViewAllCollectionViewCell.swift in Sources */,
 				C5C02DF42118B53400CC60FA /* HNUtility.swift in Sources */,
 				C5E6BE2E2124421700519CA4 /* HNMapViewController.swift in Sources */,
 				C5ED0776211CBFBE00BFB42C /* MessageTableViewCell.swift in Sources */,
 				C5E6BE36212458F100519CA4 /* NotificationTableViewCell.swift in Sources */,
+				C50D09532128F1B50008846C /* AddressTableViewCell.swift in Sources */,
 				C5C02E222118CACA00CC60FA /* HNMessagingViewController.swift in Sources */,
 				C5C02DA42118A27600CC60FA /* AppDelegate.swift in Sources */,
 				C5C02E242118CADB00CC60FA /* HNMeViewController.swift in Sources */,
@@ -912,6 +1170,7 @@
 				C5ED0781211CFAD900BFB42C /* HNDesignableTF.swift in Sources */,
 				C5ED079E211D3BBA00BFB42C /* HNDesignableView.swift in Sources */,
 				C5ED078A211D0F0A00BFB42C /* HNPasswordViewController.swift in Sources */,
+				C5119038212825F4009BDEA0 /* HNMarketDetailViewController.swift in Sources */,
 				C5807B802125DD7C002AB7F3 /* HNEditProfileViewController.swift in Sources */,
 				C507363B21260F70003886DD /* MarketTableViewCell.swift in Sources */,
 				C5C02E0A2118C7EC00CC60FA /* Reachability.m in Sources */,

@@ -16,7 +16,7 @@ class HNMeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addLeftBarIcon(named: "blue_circle")
         
     }
 
@@ -42,17 +42,17 @@ class HNMeViewController: UIViewController {
         
         let setting = UIAlertAction(title: "Settings", style: .default) { (settingAction) in
             
-            
+            self.openSetting()
         }
         
         let help = UIAlertAction(title: "Help", style: .default) { (helpAction) in
             
-            
+            self.openHelp()
         }
         
         let signOut = UIAlertAction(title: "Sign Out", style: .destructive) { (signOutAction) in
             
-            self.signOut()
+            self.signOutAction()
         }
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -67,10 +67,13 @@ class HNMeViewController: UIViewController {
     
     @IBAction func btnEditProfileAction(_ sender: Any) {
         
-        
+        let editVc = HNEditProfileViewController.instantiateViewController(fromAppstoryboard: .Main)
+        editVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(editVc, animated: true)
     }
     
-    func signOut() {
+    /// Sign Out Action
+    func signOutAction() {
         
         let alertController = UIAlertController(title: "Sign Out!", message: "Are you sure to logout?", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default) { (okAction) in
@@ -83,6 +86,18 @@ class HNMeViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    /// Open Setting Controller
+    func openSetting() {
+        
+        let settingVc = HNSettingViewController.instantiateViewController(fromAppstoryboard: .Main)
+        self.navigationController?.pushViewController(settingVc, animated: true)
+    }
+    
+    /// Open Help
+    func openHelp() {
+        
+        
+    }
     
 
 }

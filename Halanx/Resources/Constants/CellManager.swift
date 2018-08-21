@@ -29,6 +29,17 @@ struct CellNib {
     
     static let neighbourCell = "NeighbourTableViewCell"
     
+    static let viewAllCell = "ViewAllCollectionViewCell"
+    
+    static let aboutCell = "AboutTableViewCell"
+    
+    static let addressCell = "AddressTableViewCell"
+    
+    static let voucherCell = "VouchersTableViewCell"
+    
+    static let photoTableCell = "PhotoTableViewCell"
+    
+    static let photoCollectionCell = "PhotoCollectionViewCell"
 }
 
 
@@ -52,6 +63,24 @@ struct CellIdentifier {
     static let marketCollectionCell = "cellCollectionMarket"
     
     static let neighbourCell = "cellNeighbour"
+    
+    static let switchCell = "cellSwitch"
+    
+    static let viewAllCell = "cellViewAll"
+    
+    static let aboutCell = "cellAbout"
+    
+    static let addressCell = "cellAddress"
+    
+    static let voucherCell = "cellVoucher"
+    
+    static let claimCell = "cellClaim"
+    
+    static let paymentOptionCell = "cellPaymentOption"
+    
+    static let photoTableCell = "cellTablePhoto"
+    
+    static let photoCollectionCell = "cellCollectionPhoto"
 }
 
 

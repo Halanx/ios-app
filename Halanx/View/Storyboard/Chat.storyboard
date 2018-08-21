@@ -28,12 +28,11 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d3-es-OZB" customClass="HNDesignableButton" customModule="Halanx" customModuleProvider="target">
                                 <rect key="frame" x="253" y="388" width="55" height="55"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="Y3J-It-1W3"/>
                                     <constraint firstAttribute="height" constant="55" id="u2i-3Q-hX4"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="circleImage" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -49,6 +48,9 @@
                                         <size key="value" width="1.5" height="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnNeighbourAction:" destination="Vyr-8D-hKv" eventType="touchUpInside" id="czb-bp-zdV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,7 +125,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afl-d3-bW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="869"/>
+            <point key="canvasLocation" x="1146" y="863"/>
         </scene>
     </scenes>
     <resources>

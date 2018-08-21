@@ -29,6 +29,15 @@ class HNMessagingViewController: UIViewController {
         tableView.register(messageNib, forCellReuseIdentifier: messageCell)
     }
    
+    // MARK: IBActions
+    @IBAction func btnNeighbourAction(_ sender: Any) {
+        
+        let neighbourVc = HNNeighbourViewController.instantiateViewController(fromAppstoryboard: .Chat)
+        neighbourVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(neighbourVc, animated: true)
+        
+    }
+    
 
 }
 

@@ -15,10 +15,10 @@ class HNPollViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtSearch: UITextField!
     @IBOutlet weak var btnSubmit: UIButton!
-    
     @IBOutlet weak var btnSubmitHeight: NSLayoutConstraint!
     
     fileprivate let pollCellIdentifier = CellIdentifier.pollCell
+    let name = ["Shubham","Nikhil","Akash","Sidhant","Ronak","Di","Raja","Ria","Arushi"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,12 +93,14 @@ extension HNPollViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 10
+        return name.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: pollCellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: pollCellIdentifier, for: indexPath) as! PollTableViewCell
+        
+        cell.lblName.text = name[indexPath.row]
         
         return cell
     }

@@ -16,7 +16,12 @@ target 'Halanx' do
     #pod 'SkyFloatingLabelTextField'
     #pod 'StepSlider', '~> 1.2.0'
     #pod 'DLRadioButton'
+    pod 'StretchHeader'
     
+    #Google Map Pods
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
+
     
     #Facebook Pods
     pod 'FacebookCore'

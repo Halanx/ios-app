@@ -15,6 +15,8 @@ enum AppStoryboard: String {
     case Main
     case Chat
     case Feed
+    case Market
+    case Payment
     
     var instance: UIStoryboard {
         

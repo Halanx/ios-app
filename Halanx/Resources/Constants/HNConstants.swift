@@ -17,9 +17,13 @@ let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
 // MARK: Images
 let introImages = [#imageLiteral(resourceName: "introscreen1"),#imageLiteral(resourceName: "introscreen2"),#imageLiteral(resourceName: "introscreen3"),#imageLiteral(resourceName: "introscreen4")]
 
-//Userdefault
+// MARK: Userdefault
 let userDefault = UserDefaults.standard
 
+// MARK: Settings Constant
+let notificationArray: [String] = ["Show me on Halanx", "Notifications"]
+let shareArrayText: [String] = ["Connect with Founder", "Like us on Facebook", "Follow us on Twitter", "Follow us on Instagram", "Spread the work"]
+let shareArrayImage: [String] = ["halanx_icon","facebook","twitter","insta","share"]
 
 
 

@@ -18,7 +18,7 @@ class HNMarketPlaceViewController: UIViewController {
     
     fileprivate var marketTableCell = CellIdentifier.marketTableCell
     fileprivate var marketCollectionCell = CellIdentifier.marketCollectionCell
-    fileprivate let tableSectionHeaderHeight: CGFloat = 60.0
+    fileprivate let tableSectionHeaderHeight: CGFloat = 80.0
     fileprivate let tableSectionFooterHeight: CGFloat = 20.0
     fileprivate let tableViewEstimateHeight: CGFloat = 250
     fileprivate let cellHeight: CGFloat = 180
@@ -27,7 +27,7 @@ class HNMarketPlaceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
-
+        setUpUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +36,7 @@ class HNMarketPlaceViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
+    
     /// Register Cell Nib
     func registerNib() {
 
@@ -43,14 +44,20 @@ class HNMarketPlaceViewController: UIViewController {
         tableView.register(marketTableNib, forCellReuseIdentifier: marketTableCell)
 
     }
+    
+    /// Setting up UI
+    func setUpUI() {
+        
+        self.navigationController?.view.backgroundColor = UIColor.white
+
+    }
 
     // MARK: IBActions
     @IBAction func btnNotificationClicked(_ sender: Any) {
         
-        let notificationVc = HNNotificationViewController.instantiateViewController(fromAppstoryboard: .Main)
+        let notificationVc = HNNotificationViewController.instantiateViewController(fromAppstoryboard: .Market)
         notificationVc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(notificationVc, animated: true)
-        
         
     }
     
@@ -62,6 +69,12 @@ class HNMarketPlaceViewController: UIViewController {
     @IBAction func btnOrderAction(_ sender: Any) {
         
         print("Order Clicked")
+    }
+    
+    @IBAction func btnViewAllCliecked(_ sender: Any) {
+        
+        let viewAllVc = HNViewAllMarketViewController.instantiateViewController(fromAppstoryboard: .Market)
+        self.navigationController?.pushViewController(viewAllVc, animated: true)
     }
     
 
@@ -99,17 +112,16 @@ extension HNMarketPlaceViewController: UITableViewDataSource, UITableViewDelegat
         return tableSectionHeaderHeight
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        
-        return tableSectionFooterHeight
-    }
+//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        
+//        return tableSectionFooterHeight
+//    }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell")
-        
-        cell?.backgroundColor = UIColor.white
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! HeaderTableViewCell
+        cell.backgroundColor = UIColor.white
+        cell.btnViewAll.addTarget(self, action: #selector(btnViewAllCliecked(_:)), for: .touchUpInside)
         return cell
     }
     
@@ -152,10 +164,13 @@ extension HNMarketPlaceViewController: UICollectionViewDataSource, UICollectionV
 
         return UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
     }
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let marketDetailVc = HNMarketDetailViewController.instantiateViewController(fromAppstoryboard: .Market)
+        marketDetailVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(marketDetailVc, animated: true)
+    }
     
 }
 
