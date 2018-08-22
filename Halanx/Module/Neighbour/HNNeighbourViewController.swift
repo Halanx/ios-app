@@ -11,6 +11,9 @@ import UIKit
 class HNNeighbourViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var btnBackground: UIButton!
+    @IBOutlet weak var viewFilter: UIView!
+    @IBOutlet weak var ConstraintFilterX: NSLayoutConstraint!
     
     
     fileprivate let neighbourCell = CellIdentifier.neighbourCell
@@ -22,6 +25,11 @@ class HNNeighbourViewController: UIViewController {
         setUpUI()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        
+        changeNavigationTitle(title: "Neighbour")
+    }
+    
     /// Register Cell Nib
     func registerNib() {
         
@@ -35,13 +43,50 @@ class HNNeighbourViewController: UIViewController {
         let btnFilter = UIBarButtonItem(image: #imageLiteral(resourceName: "interest"), style: .plain, target: self, action: #selector(btnFilterTapped(_:)))
         btnFilter.tintColor = UIColor.black
         navigationItem.rightBarButtonItem = btnFilter
+        
+        ConstraintFilterX.constant = -(view.frame.width)
+        btnBackground.alpha = 0.0
+        self.viewFilter.alpha = 0
+        
+    }
+    
+    /// Show Distance View
+    func showFilterView() {
+        
+        ConstraintFilterX.constant = 0
+        
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+            self.viewFilter.alpha = 1.0
+            self.btnBackground.alpha = 0.5
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+    
+    /// Remove Distance View
+    func removeFilterView() {
+        
+        ConstraintFilterX.constant = -(view.frame.width)
+        
+        UIView.animate(withDuration: 0.1) {
+            self.btnBackground.alpha = 0
+            self.viewFilter.alpha = 0
+            self.view.layoutIfNeeded()
+        }
+        
     }
 
     // MARK: IBActions
     @IBAction func btnFilterTapped(_ sender: Any) {
         
+        showFilterView()
         
     }
+    
+    @IBAction func btnBackgroundClicked(_ sender: Any) {
+        
+        removeFilterView()
+    }
+    
 }
 
 // MARK: Table View

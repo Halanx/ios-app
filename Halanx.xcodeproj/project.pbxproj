@@ -45,9 +45,15 @@
 		C5807B802125DD7C002AB7F3 /* HNEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B7F2125DD7C002AB7F3 /* HNEditProfileViewController.swift */; };
 		C5807B842125E0B4002AB7F3 /* NeighbourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5807B822125E0B4002AB7F3 /* NeighbourTableViewCell.swift */; };
 		C5807B852125E0B4002AB7F3 /* NeighbourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5807B832125E0B4002AB7F3 /* NeighbourTableViewCell.xib */; };
+		C5B5E5F7212CCA5C006318FA /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B5E5F5212CCA5C006318FA /* UserInfoTableViewCell.swift */; };
+		C5B5E5F8212CCA5C006318FA /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5B5E5F6212CCA5C006318FA /* UserInfoTableViewCell.xib */; };
+		C5B5E5FC212CDB27006318FA /* PeopleLikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B5E5FA212CDB27006318FA /* PeopleLikeTableViewCell.swift */; };
+		C5B5E5FD212CDB27006318FA /* PeopleLikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5B5E5FB212CDB27006318FA /* PeopleLikeTableViewCell.xib */; };
+		C5B5E600212CEDC0006318FA /* HNEducationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B5E5FF212CEDC0006318FA /* HNEducationDetailViewController.swift */; };
+		C5B5E603212CF0E3006318FA /* HNWorkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B5E602212CF0E3006318FA /* HNWorkDetailViewController.swift */; };
+		C5B5E605212CF76E006318FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B5E604212CF76D006318FA /* Assets.xcassets */; };
 		C5C02DA42118A27600CC60FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DA32118A27600CC60FA /* AppDelegate.swift */; };
 		C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DA72118A27600CC60FA /* Main.storyboard */; };
-		C5C02DAE2118A27700CC60FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DAD2118A27700CC60FA /* Assets.xcassets */; };
 		C5C02DB12118A27700CC60FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5C02DAF2118A27700CC60FA /* LaunchScreen.storyboard */; };
 		C5C02DBC2118A27700CC60FA /* HalanxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DBB2118A27700CC60FA /* HalanxTests.swift */; };
 		C5C02DC72118A27700CC60FA /* HalanxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C02DC62118A27700CC60FA /* HalanxUITests.swift */; };
@@ -155,10 +161,16 @@
 		C5807B7F2125DD7C002AB7F3 /* HNEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNEditProfileViewController.swift; sourceTree = "<group>"; };
 		C5807B822125E0B4002AB7F3 /* NeighbourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighbourTableViewCell.swift; sourceTree = "<group>"; };
 		C5807B832125E0B4002AB7F3 /* NeighbourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NeighbourTableViewCell.xib; sourceTree = "<group>"; };
+		C5B5E5F5212CCA5C006318FA /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		C5B5E5F6212CCA5C006318FA /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		C5B5E5FA212CDB27006318FA /* PeopleLikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleLikeTableViewCell.swift; sourceTree = "<group>"; };
+		C5B5E5FB212CDB27006318FA /* PeopleLikeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleLikeTableViewCell.xib; sourceTree = "<group>"; };
+		C5B5E5FF212CEDC0006318FA /* HNEducationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNEducationDetailViewController.swift; sourceTree = "<group>"; };
+		C5B5E602212CF0E3006318FA /* HNWorkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNWorkDetailViewController.swift; sourceTree = "<group>"; };
+		C5B5E604212CF76D006318FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5C02DA02118A27600CC60FA /* Halanx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halanx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C02DA32118A27600CC60FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5C02DA82118A27600CC60FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5C02DAD2118A27700CC60FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5C02DB02118A27700CC60FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5C02DB22118A27700CC60FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C02DB72118A27700CC60FA /* HalanxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,6 +383,8 @@
 		C53E8BBB2119D64A009947F3 /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C5B5E5F9212CDA84006318FA /* People Like */,
+				C5B5E5F4212CCA45006318FA /* User Info */,
 				C57576C0212C86B0009ED826 /* Photo Cell */,
 				C50D09492128EC570008846C /* Market Detail Cell */,
 				C53429092126DF2F00D9405C /* Setting Switch Cell */,
@@ -479,6 +493,40 @@
 			path = "Neighbour Cell";
 			sourceTree = "<group>";
 		};
+		C5B5E5F4212CCA45006318FA /* User Info */ = {
+			isa = PBXGroup;
+			children = (
+				C5B5E5F5212CCA5C006318FA /* UserInfoTableViewCell.swift */,
+				C5B5E5F6212CCA5C006318FA /* UserInfoTableViewCell.xib */,
+			);
+			path = "User Info";
+			sourceTree = "<group>";
+		};
+		C5B5E5F9212CDA84006318FA /* People Like */ = {
+			isa = PBXGroup;
+			children = (
+				C5B5E5FA212CDB27006318FA /* PeopleLikeTableViewCell.swift */,
+				C5B5E5FB212CDB27006318FA /* PeopleLikeTableViewCell.xib */,
+			);
+			path = "People Like";
+			sourceTree = "<group>";
+		};
+		C5B5E5FE212CED9E006318FA /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				C5B5E5FF212CEDC0006318FA /* HNEducationDetailViewController.swift */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		C5B5E601212CF0D1006318FA /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				C5B5E602212CF0E3006318FA /* HNWorkDetailViewController.swift */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
 		C5C02D972118A27600CC60FA = {
 			isa = PBXGroup;
 			children = (
@@ -510,7 +558,7 @@
 				C5C02DD42118A28B00CC60FA /* View */,
 				C5C02E052118BE1100CC60FA /* Network Requests */,
 				C5C02DD82118A2B000CC60FA /* Resources */,
-				C5C02DAD2118A27700CC60FA /* Assets.xcassets */,
+				C5B5E604212CF76D006318FA /* Assets.xcassets */,
 				C5C02DAF2118A27700CC60FA /* LaunchScreen.storyboard */,
 				C5C02DB22118A27700CC60FA /* Info.plist */,
 			);
@@ -549,6 +597,8 @@
 		C5C02DD52118A29300CC60FA /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C5B5E601212CF0D1006318FA /* Work */,
+				C5B5E5FE212CED9E006318FA /* Education */,
 				C57576B8212C7AC3009ED826 /* User Profile */,
 				C57576B5212C7312009ED826 /* Payment Options */,
 				C57576B2212C6C2B009ED826 /* View Cart */,
@@ -959,10 +1009,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5807B6E2124A66B002AB7F3 /* Feed.storyboard in Resources */,
+				C5B5E5F8212CCA5C006318FA /* UserInfoTableViewCell.xib in Resources */,
 				C5C02DB12118A27700CC60FA /* LaunchScreen.storyboard in Resources */,
 				C5ED0777211CBFBE00BFB42C /* MessageTableViewCell.xib in Resources */,
 				C507363C21260F70003886DD /* MarketTableViewCell.xib in Resources */,
-				C5C02DAE2118A27700CC60FA /* Assets.xcassets in Resources */,
 				C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */,
 				C5807B852125E0B4002AB7F3 /* NeighbourTableViewCell.xib in Resources */,
 				C53429082126967200D9405C /* Payment.storyboard in Resources */,
@@ -974,11 +1024,13 @@
 				C5807B772124AA83002AB7F3 /* InterestCollectionViewCell.xib in Resources */,
 				C507364121260FDC003886DD /* MarketCollectionViewCell.xib in Resources */,
 				C51190312128036D009BDEA0 /* ViewAllCollectionViewCell.xib in Resources */,
+				C5B5E5FD212CDB27006318FA /* PeopleLikeTableViewCell.xib in Resources */,
 				C5D9D7402123F6600009AF65 /* Chat.storyboard in Resources */,
 				C50D09542128F1B50008846C /* AddressTableViewCell.xib in Resources */,
 				C57576BF212C8184009ED826 /* PhotoCollectionViewCell.xib in Resources */,
 				C5ED077F211CF88D00BFB42C /* PollTableViewCell.xib in Resources */,
 				C57576C4212C86E3009ED826 /* PhotoTableViewCell.xib in Resources */,
+				C5B5E605212CF76E006318FA /* Assets.xcassets in Resources */,
 				C5E6BE37212458F100519CA4 /* NotificationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1009,6 +1061,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Halanx/Pods-Halanx-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
@@ -1016,8 +1069,13 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RSKGrowingTextView/RSKGrowingTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/RSKPlaceholderTextView/RSKPlaceholderTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/StepSlider/StepSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/StretchHeader/StretchHeader.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -1025,6 +1083,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
@@ -1032,8 +1091,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKGrowingTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKPlaceholderTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StepSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StretchHeader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -1129,10 +1193,12 @@
 				C5C02DF22118B52700CC60FA /* HNAppStoryboard.swift in Sources */,
 				C5ED077E211CF88D00BFB42C /* PollTableViewCell.swift in Sources */,
 				C507364C21261FF2003886DD /* HeaderTableViewCell.swift in Sources */,
+				C5B5E5F7212CCA5C006318FA /* UserInfoTableViewCell.swift in Sources */,
 				C5ED0768211CAC5C00BFB42C /* PostTableViewCell.swift in Sources */,
 				C5807B712124A935002AB7F3 /* HNInterestViewController.swift in Sources */,
 				C50D095C212915FF0008846C /* ClaimTableViewCell.swift in Sources */,
 				C5C02E262118CE3E00CC60FA /* StringExtension.swift in Sources */,
+				C5B5E5FC212CDB27006318FA /* PeopleLikeTableViewCell.swift in Sources */,
 				C50D09572128F37E0008846C /* VouchersTableViewCell.swift in Sources */,
 				C5ED077A211CC58000BFB42C /* CellManager.swift in Sources */,
 				C5C02DF62118B56A00CC60FA /* HNMainTabViewController.swift in Sources */,
@@ -1145,6 +1211,7 @@
 				C5C02E1C2118CA7F00CC60FA /* HNFeedViewController.swift in Sources */,
 				C5ED0788211D097200BFB42C /* iCarousel.m in Sources */,
 				C57576B7212C7335009ED826 /* HNPaymentOptionsViewController.swift in Sources */,
+				C5B5E603212CF0E3006318FA /* HNWorkDetailViewController.swift in Sources */,
 				C50D094F2128ED060008846C /* AboutTableViewCell.swift in Sources */,
 				C5ED076D211CAC7500BFB42C /* NewsTableViewCell.swift in Sources */,
 				C5C02DFF2118B74600CC60FA /* HNConstants.swift in Sources */,
@@ -1155,6 +1222,7 @@
 				C5ED07A02120697700BFB42C /* HNUserDefaultManager.swift in Sources */,
 				C5C02E1E2118CA9D00CC60FA /* HNPollViewController.swift in Sources */,
 				C5ED0784211D018600BFB42C /* HNOnboardingViewController.swift in Sources */,
+				C5B5E600212CEDC0006318FA /* HNEducationDetailViewController.swift in Sources */,
 				C57576BE212C8184009ED826 /* PhotoCollectionViewCell.swift in Sources */,
 				C51190302128036D009BDEA0 /* ViewAllCollectionViewCell.swift in Sources */,
 				C5C02DF42118B53400CC60FA /* HNUtility.swift in Sources */,

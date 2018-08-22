@@ -22,8 +22,22 @@ class HNPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        changeNavigationTitle(title: "Forgot Password")
+
+    }
+    
+    func setUpUI() {
         
         otpViewConstraintX.constant = -(view.frame.width)
+        viewOtp.alpha = 0
+        viewLogo.alpha = 0
+        btnBackground.alpha = 0
         
     }
     
@@ -31,7 +45,7 @@ class HNPasswordViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             
-            let mainTabBarVc = mainStoryboard.instantiateViewController(withIdentifier: "HNMainTabViewController") as! HNMainTabViewController
+            let mainTabBarVc = HNMainTabViewController.instantiateViewController(fromAppstoryboard: .Main)
             appDelegate.window?.rootViewController = mainTabBarVc
             
         }
@@ -91,6 +105,7 @@ class HNPasswordViewController: UIViewController {
     @IBAction func btnLoginAction(_ sender: Any) {
         
         showMainTabBar()
+
     }
     
     @IBAction func btnBackgroundAction(_ sender: Any) {

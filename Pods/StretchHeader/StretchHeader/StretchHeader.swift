@@ -31,7 +31,7 @@ open class StretchHeader: UIView {
     // MARK: Private
     fileprivate func commonInit() {
         imageView = UIImageView()
-        imageView.backgroundColor = UIColor.red
+        imageView.backgroundColor = UIColor.orange
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
         imageView.isUserInteractionEnabled = true

@@ -40,6 +40,8 @@ class HNMarketDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        changeNavigationTitle(title: "BTW")
+        
         tableView.estimatedRowHeight = tableViewEstimateHeight
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -48,6 +50,9 @@ class HNMarketDetailViewController: UIViewController {
     /// Set Up UI
     func setUpUI() {
         
+        let btnFilter = UIBarButtonItem(image: #imageLiteral(resourceName: "heart"), style: .plain, target: self, action: #selector(btnHeartTapped(_:)))
+        btnFilter.tintColor = UIColor.black
+        navigationItem.rightBarButtonItem = btnFilter
         
     }
     
@@ -120,6 +125,11 @@ class HNMarketDetailViewController: UIViewController {
         
         let cartVc = HNCartViewController.instantiateViewController(fromAppstoryboard: .Market)
         self.navigationController?.pushViewController(cartVc, animated: true)
+    }
+    
+    @IBAction func btnHeartTapped(_ sender: Any) {
+        
+        
     }
     
 }

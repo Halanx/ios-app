@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vwP-R5-ghs" customClass="HNDesignableImage" customModule="Halanx" customModuleProvider="target">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drake2" translatesAutoresizingMaskIntoConstraints="NO" id="vwP-R5-ghs" customClass="HNDesignableImage" customModule="Halanx" customModuleProvider="target">
                         <rect key="frame" x="12" y="7.5" width="65" height="65"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -48,9 +48,9 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xw6-vk-5Pz">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="read" translatesAutoresizingMaskIntoConstraints="NO" id="xw6-vk-5Pz">
                         <rect key="frame" x="296" y="32" width="20" height="20"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="GKN-Ha-cvi"/>
                             <constraint firstAttribute="height" constant="20" id="TMD-Gi-YzI"/>
@@ -75,4 +75,8 @@
             <point key="canvasLocation" x="34" y="72"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="drake2" width="80" height="80"/>
+        <image name="read" width="24" height="24"/>
+    </resources>
 </document>

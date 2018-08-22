@@ -40,6 +40,10 @@ struct CellNib {
     static let photoTableCell = "PhotoTableViewCell"
     
     static let photoCollectionCell = "PhotoCollectionViewCell"
+    
+    static let userInfoCell = "UserInfoTableViewCell"
+    
+    static let peopleLikeCell = "PeopleLikeTableViewCell"
 }
 
 
@@ -81,6 +85,10 @@ struct CellIdentifier {
     static let photoTableCell = "cellTablePhoto"
     
     static let photoCollectionCell = "cellCollectionPhoto"
+    
+    static let userInfoCell = "cellUserInfo"
+    
+    static let peopleLikeCell = "cellPeopleLike"
 }
 
 

@@ -20,6 +20,12 @@ class HNNotificationViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        changeNavigationTitle(title: "Notifications")
+    }
+    
+    /// Registering Cell Nib
     func registerNib() {
         
         let notificationNib = UINib(nibName: CellNib.notificationCell, bundle: Bundle.main)

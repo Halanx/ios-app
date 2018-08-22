@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="czl-tU-Vml" customClass="HNDesignableImage" customModule="Halanx" customModuleProvider="target">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drake2" translatesAutoresizingMaskIntoConstraints="NO" id="czl-tU-Vml" customClass="HNDesignableImage" customModule="Halanx" customModuleProvider="target">
                         <rect key="frame" x="12" y="7.5" width="65" height="65"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -30,7 +30,7 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="circleImage" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J17-l7-dAP">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J17-l7-dAP">
                         <rect key="frame" x="89" y="11.5" width="41" height="18"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                         <nil key="textColor"/>
@@ -63,4 +63,7 @@
             <point key="canvasLocation" x="34" y="60"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="drake2" width="80" height="80"/>
+    </resources>
 </document>

@@ -28,6 +28,11 @@ class HNClaimViewController: UIViewController {
         setUpUI()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        changeNavigationTitle(title: "Claim")
+    }
 
     /// Setting Up UI
     func setUpUI() {

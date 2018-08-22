@@ -12,12 +12,13 @@ target 'Halanx' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
     pod 'IQKeyboardManagerSwift'
-    #pod 'RSKGrowingTextView'
-    #pod 'SkyFloatingLabelTextField'
-    #pod 'StepSlider', '~> 1.2.0'
-    #pod 'DLRadioButton'
+    pod 'RSKGrowingTextView'
+    pod 'SkyFloatingLabelTextField'
+    pod 'StepSlider', '~> 1.2.0'
+    pod 'DLRadioButton'
+    pod 'HCSStarRatingView', '~> 1.5'
     pod 'StretchHeader'
-    
+
     #Google Map Pods
     pod 'GoogleMaps'
     pod 'GooglePlaces'

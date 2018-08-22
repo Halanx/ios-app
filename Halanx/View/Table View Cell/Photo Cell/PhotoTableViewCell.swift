@@ -11,6 +11,8 @@ import UIKit
 class PhotoTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var lblPhoto: UILabel!
+    @IBOutlet weak var btnAddPhoto: HNDesignableButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {

@@ -19,6 +19,10 @@ class HNInterestViewController: UIViewController {
         registerNib()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        changeNavigationTitle(title: "Choose Interest")
+    }
 
     /// Register Cell Nib
     func registerNib() {

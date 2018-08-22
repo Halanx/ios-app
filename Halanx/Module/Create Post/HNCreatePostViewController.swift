@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RSKGrowingTextView
+import StepSlider
 
 class HNCreatePostViewController: UIViewController {
 
@@ -22,16 +24,25 @@ class HNCreatePostViewController: UIViewController {
     @IBOutlet weak var viewDistance: HNDesignableView!
     @IBOutlet weak var viewCategory: HNDesignableView!
     @IBOutlet weak var btnBackground: UIButton!
+    @IBOutlet weak var txtPostDetail: RSKGrowingTextView!
+    @IBOutlet weak var slider: StepSlider!
     
     // MARK: Variables
     var pickerController = UIImagePickerController()
     var lblSliderValue = UILabel()
+    
+    lazy var lblSlider = UILabel()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        changeNavigationTitle(title: "Create Post")
     }
 
     func setUpUI() {
@@ -46,6 +57,10 @@ class HNCreatePostViewController: UIViewController {
         btnBackground.alpha = 0.0
         self.viewDistance.alpha = 0
         self.viewCategory.alpha = 0
+        
+        txtPostDetail.layer.borderWidth = 1.0
+        txtPostDetail.layer.borderColor = UIColor.red.cgColor
+        
     }
     
     // MARK: IBActions
@@ -120,6 +135,10 @@ class HNCreatePostViewController: UIViewController {
         
     }
     
+    @IBAction func sliderDrag(_ sender: Any) {
+        
+        
+    }
     
     /// Show Distance View
     func showDistanceView() {

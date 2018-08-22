@@ -9,7 +9,10 @@
 import UIKit
 import IQKeyboardManagerSwift
 import FacebookCore
+import GoogleMaps
+import GooglePlaces
 
+let googleApi = "AIzaSyAmInuO5Lac61uWJ1Btb3hqHz3pR2qw-As"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        GMSServices.provideAPIKey(googleApi)
+        GMSPlacesClient.provideAPIKey(googleApi)
         
         return true
     }
