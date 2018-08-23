@@ -22,7 +22,8 @@ class HNNotificationViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Notifications")
+        //changeNavigationTitle(title: "Notifications")
+        self.title = "Notifications"
     }
     
     /// Registering Cell Nib

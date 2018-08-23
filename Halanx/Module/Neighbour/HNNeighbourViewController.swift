@@ -27,7 +27,8 @@ class HNNeighbourViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Neighbour")
+        //changeNavigationTitle(title: "Neighbour")
+        self.title = "Neighbour"
     }
     
     /// Register Cell Nib

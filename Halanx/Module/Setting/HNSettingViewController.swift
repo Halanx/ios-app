@@ -27,7 +27,8 @@ class HNSettingViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Setiings")
+        //changeNavigationTitle(title: "Setiings")
+        self.title = "Settings"
     }
     
     /// Register Nib Cell

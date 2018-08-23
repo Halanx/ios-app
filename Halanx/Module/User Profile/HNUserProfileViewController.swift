@@ -31,7 +31,8 @@ class HNUserProfileViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setUpUI()
-        changeNavigationTitle(title: "User Info")
+        //changeNavigationTitle(title: "User Info")
+        self.title = "Nishant Talwar"
     }
     
     /// Register Cell Nib
@@ -68,9 +69,18 @@ class HNUserProfileViewController: UIViewController {
                                      options: options)
         headerView.imageView.image = UIImage(named: "download")
         
-        lblName.frame = CGRect(x: 20, y: headerView.frame.size.height - 30, width: self.view.frame.size.width - 40, height: 20)
+        
+        btnFollow.frame = CGRect(x: headerView.frame.size.width - 140, y:  headerView.frame.size.height - 35, width: 100, height: 25)
+        btnFollow.borderWidth = 1.0
+        btnFollow.borderColor = UIColor.white
+        btnFollow.setTitle("Follow", for: .normal)
+        btnFollow.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 18)
+        btnFollow.cornerRadius = 6
+        headerView.addSubview(btnFollow)
+        
+        lblName.frame = CGRect(x: 20, y: headerView.frame.size.height - 30, width: btnFollow.frame.origin.x, height: 20)
         lblName.text = "Sidhant"
-        lblName.font = UIFont(name: "HelveticaNeue-Medium", size: 17)
+        lblName.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
         lblName.textColor = UIColor.white
         headerView.addSubview(lblName)
         
@@ -105,9 +115,9 @@ extension HNUserProfileViewController: UITableViewDataSource, UITableViewDelegat
             
             let cellUserInfo = tableView.dequeueReusableCell(withIdentifier: userInfoCell, for: indexPath) as! UserInfoTableViewCell
             
-            cellUserInfo.progressBar.alpha = 1.0
-            cellUserInfo.lblPercent.alpha = 1.0
-            cellUserInfo.lblProfileStrength.alpha = 1.0
+            cellUserInfo.progressBar.alpha = 0
+            cellUserInfo.lblPercent.alpha = 0
+            cellUserInfo.lblProfileStrength.alpha = 0
             
             return cellUserInfo
         }

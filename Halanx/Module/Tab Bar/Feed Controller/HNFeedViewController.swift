@@ -29,6 +29,7 @@ class HNFeedViewController: UIViewController {
         
         tableView.estimatedRowHeight = tableViewEstimateHeight
         tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
 
     /// Register Cell Nib

@@ -49,7 +49,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="read" translatesAutoresizingMaskIntoConstraints="NO" id="xw6-vk-5Pz">
-                        <rect key="frame" x="296" y="32" width="20" height="20"/>
+                        <rect key="frame" x="288" y="32" width="20" height="20"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="GKN-Ha-cvi"/>
@@ -63,7 +63,7 @@
                     <constraint firstItem="XsC-tH-zfM" firstAttribute="top" secondItem="vwP-R5-ghs" secondAttribute="top" constant="4" id="Cj2-XS-1Pi"/>
                     <constraint firstItem="vwP-R5-ghs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Hg2-NE-3ip"/>
                     <constraint firstItem="rTQ-iV-xJ7" firstAttribute="top" secondItem="XsC-tH-zfM" secondAttribute="top" id="Q89-PG-zFv"/>
-                    <constraint firstAttribute="trailing" secondItem="xw6-vk-5Pz" secondAttribute="trailing" constant="4" id="eBe-Ii-sZ0"/>
+                    <constraint firstAttribute="trailing" secondItem="xw6-vk-5Pz" secondAttribute="trailing" constant="12" id="eBe-Ii-sZ0"/>
                     <constraint firstItem="cmc-an-ICo" firstAttribute="leading" secondItem="vwP-R5-ghs" secondAttribute="trailing" constant="12" id="eXB-X6-jxy"/>
                     <constraint firstItem="XsC-tH-zfM" firstAttribute="leading" secondItem="vwP-R5-ghs" secondAttribute="trailing" constant="12" id="ew6-ce-GnB"/>
                     <constraint firstItem="xw6-vk-5Pz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="2" id="kkF-eA-aso"/>

@@ -26,7 +26,9 @@ class HNEducationDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Education Detail")
+//        changeNavigationTitle(title: "Education Detail")
+        
+        self.title = "Education Detail"
     }
 
 

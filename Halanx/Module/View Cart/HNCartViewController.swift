@@ -18,7 +18,8 @@ class HNCartViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Cart")
+        //changeNavigationTitle(title: "Cart")
+        self.title = "Cart"
     }
     
     // MARK: IBActions

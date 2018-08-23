@@ -25,7 +25,8 @@ class HNPaymentOptionsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Payment")
+        //changeNavigationTitle(title: "Payment")
+        self.title = "Payment"
     }
 
 }

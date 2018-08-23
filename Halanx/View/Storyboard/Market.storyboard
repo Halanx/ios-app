@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6a-RX-sk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2953" y="98"/>
+            <point key="canvasLocation" x="2708" y="96"/>
         </scene>
         <!--Marketplace-->
         <scene sceneID="q8r-d6-0it">
@@ -383,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYC-yY-Exz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2951.25" y="799.64788732394368"/>
+            <point key="canvasLocation" x="2708" y="799"/>
         </scene>
         <!--Cart View Controller-->
         <scene sceneID="IKw-jE-Vqo">
@@ -486,7 +486,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H-Cash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICJ-hD-SBg">
-                                        <rect key="frame" x="8" y="61" width="48" height="21"/>
+                                        <rect key="frame" x="36" y="61" width="48" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="BIr-mr-qa6"/>
                                         </constraints>
@@ -500,12 +500,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mej-Tl-2T4">
+                                        <rect key="frame" x="8" y="61.5" width="20" height="20"/>
+                                        <color key="backgroundColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="V6R-UT-iec"/>
+                                            <constraint firstAttribute="width" constant="20" id="gzq-jG-cx9"/>
+                                        </constraints>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="ICJ-hD-SBg" firstAttribute="leading" secondItem="Jm9-hr-FtH" secondAttribute="leading" constant="8" id="011-TQ-1uX"/>
                                     <constraint firstItem="lNJ-bT-JuE" firstAttribute="top" secondItem="Jm9-hr-FtH" secondAttribute="top" constant="8" id="0pc-p1-ezM"/>
                                     <constraint firstItem="HaI-wf-Y0O" firstAttribute="centerY" secondItem="2ua-sY-t1W" secondAttribute="centerY" id="1gu-me-C9K"/>
+                                    <constraint firstItem="Mej-Tl-2T4" firstAttribute="leading" secondItem="Jm9-hr-FtH" secondAttribute="leading" constant="8" id="5yx-Nr-scv"/>
                                     <constraint firstItem="ICJ-hD-SBg" firstAttribute="top" secondItem="2ua-sY-t1W" secondAttribute="bottom" constant="8" id="BLi-dg-Jov"/>
                                     <constraint firstItem="DsS-zN-X3p" firstAttribute="centerY" secondItem="ICJ-hD-SBg" secondAttribute="centerY" id="ChT-6h-WHe"/>
                                     <constraint firstAttribute="trailing" secondItem="DsS-zN-X3p" secondAttribute="trailing" constant="12" id="LJx-aw-7ZJ"/>
@@ -517,6 +525,8 @@
                                     <constraint firstItem="2ua-sY-t1W" firstAttribute="baseline" secondItem="HaI-wf-Y0O" secondAttribute="baseline" id="f33-5T-6P9"/>
                                     <constraint firstAttribute="trailing" secondItem="HaI-wf-Y0O" secondAttribute="trailing" constant="12" id="kvJ-Pv-bTb"/>
                                     <constraint firstItem="lNJ-bT-JuE" firstAttribute="leading" secondItem="Jm9-hr-FtH" secondAttribute="leading" constant="8" id="mrH-Un-EPx"/>
+                                    <constraint firstItem="ICJ-hD-SBg" firstAttribute="leading" secondItem="Mej-Tl-2T4" secondAttribute="trailing" constant="8" id="nep-h5-t1s"/>
+                                    <constraint firstItem="Mej-Tl-2T4" firstAttribute="centerY" secondItem="ICJ-hD-SBg" secondAttribute="centerY" id="uwa-6X-hTH"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7F-D8-DoQ">
@@ -571,7 +581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9f3-WP-Jqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3862.5" y="799.64788732394368"/>
+            <point key="canvasLocation" x="3236" y="799"/>
         </scene>
         <!--Claim View Controller-->
         <scene sceneID="dj0-QV-R45">
@@ -629,15 +639,17 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQh-pn-m5x">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQh-pn-m5x" customClass="RSKGrowingTextView" customModule="RSKGrowingTextView">
                                 <rect key="frame" x="0.0" y="164" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oZ9-yg-djZ"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type Here"/>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p47-8d-Rd8">
                                 <rect key="frame" x="0.0" y="508" width="320" height="120"/>
@@ -705,7 +717,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="244" height="33.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Rate Your Experience" image="distance24">
+                                                        <state key="normal" title="Rate your experience" image="distance24">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -767,16 +779,17 @@
                             </imageView>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOa-Ld-ZC1">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="btnBackgroundAction:" destination="DmG-Sk-uk6" eventType="touchUpInside" id="LyM-KT-nf5"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-xa-GD6" customClass="HCSStarRatingView">
-                                <rect key="frame" x="48" y="244" width="224" height="80"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-xa-GD6" customClass="HCSStarRatingView">
+                                <rect key="frame" x="48" y="244" width="224" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="rnS-AJ-hWP"/>
+                                    <constraint firstAttribute="height" constant="50" id="rnS-AJ-hWP"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
@@ -913,7 +926,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3B-0x-1dP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3862.5" y="96.126760563380287"/>
+            <point key="canvasLocation" x="3418" y="98"/>
         </scene>
     </scenes>
     <resources>

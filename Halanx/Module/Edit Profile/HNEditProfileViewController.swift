@@ -41,7 +41,8 @@ class HNEditProfileViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Edit Profile")
+        //changeNavigationTitle(title: "Edit Profile")
+        self.title = "Edit Profile"
     }
     
     /// Setiing Up UI
@@ -146,14 +147,18 @@ extension HNEditProfileViewController: UITextFieldDelegate {
         else if textField == txtEducation {
             
             let educationVc = HNEducationDetailViewController.instantiateViewController(fromAppstoryboard: .Main)
+            self.view.endEditing(true)
             self.navigationController?.pushViewController(educationVc, animated: true)
         }else if textField == txtWork {
             
             let workVC = HNWorkDetailViewController.instantiateViewController(fromAppstoryboard: .Main)
+            self.view.endEditing(true)
             self.navigationController?.pushViewController(workVC, animated: true)
         }
         
     }
+    
+    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         

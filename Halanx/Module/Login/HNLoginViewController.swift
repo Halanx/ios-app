@@ -33,6 +33,8 @@ class HNLoginViewController: UIViewController {
         self.navigationController?.pushViewController(passVc, animated: true)
     }
     
+    
+    
     @IBAction func btnFbAction(_ sender: UIButton) {
         
         let loginManager = LoginManager()

@@ -95,7 +95,7 @@
                             </tableView>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1W2-HI-9B0">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="btnBackgroundClicked:" destination="Nnc-Kt-7GV" eventType="touchUpInside" id="Rjt-jK-H7O"/>
                                 </connections>
@@ -143,7 +143,6 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-u9-sg6" customClass="StepSlider">
                                         <rect key="frame" x="12" y="150.5" width="232" height="25"/>
-                                        <color key="backgroundColor" red="0.123830734" green="0.57936838909999999" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="sEz-q6-NFu"/>
                                         </constraints>

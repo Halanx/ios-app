@@ -42,7 +42,8 @@ class HNCreatePostViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        changeNavigationTitle(title: "Create Post")
+        //changeNavigationTitle(title: "Create Post")
+        self.title = "Create Post"
     }
 
     func setUpUI() {
