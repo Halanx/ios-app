@@ -9,14 +9,16 @@
 import UIKit
 import FacebookCore
 import FacebookLogin
+import SkyFloatingLabelTextField
 
 class HNLoginViewController: UIViewController {
 
     @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var txtMobileNumber: SkyFloatingLabelTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpUI()
         
         
     }
@@ -24,6 +26,12 @@ class HNLoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         
+    }
+    
+    /// Setiing up UI
+    func setUpUI() {
+        
+        txtMobileNumber.textAlignment = .center
     }
     
     // MARK: IBActions

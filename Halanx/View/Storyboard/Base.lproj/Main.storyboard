@@ -1127,7 +1127,7 @@
                                     <constraint firstItem="G2T-KG-3VJ" firstAttribute="top" secondItem="tSh-zV-YVJ" secondAttribute="top" constant="20" id="iHN-7B-IUL"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1Ne-ig-fm0" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1Ne-ig-fm0" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                 <rect key="frame" x="16" y="284" width="288" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RJ2-bq-vB0"/>
@@ -1196,8 +1196,8 @@
                         <constraints>
                             <constraint firstItem="f1R-qj-KH4" firstAttribute="top" secondItem="1Ne-ig-fm0" secondAttribute="bottom" constant="20" id="2KR-sS-ILK"/>
                             <constraint firstItem="G1G-A3-CvG" firstAttribute="centerX" secondItem="f1R-qj-KH4" secondAttribute="centerX" id="3gQ-HO-kCk"/>
-                            <constraint firstItem="1Ne-ig-fm0" firstAttribute="leading" secondItem="dgN-4v-j4Q" secondAttribute="leading" constant="16" id="90V-ea-Ivf"/>
-                            <constraint firstItem="dgN-4v-j4Q" firstAttribute="trailing" secondItem="1Ne-ig-fm0" secondAttribute="trailing" constant="16" id="AMp-hh-UEP"/>
+                            <constraint firstItem="1Ne-ig-fm0" firstAttribute="leading" secondItem="dgN-4v-j4Q" secondAttribute="leading" constant="30" id="90V-ea-Ivf"/>
+                            <constraint firstItem="dgN-4v-j4Q" firstAttribute="trailing" secondItem="1Ne-ig-fm0" secondAttribute="trailing" constant="30" id="AMp-hh-UEP"/>
                             <constraint firstItem="1Ne-ig-fm0" firstAttribute="centerX" secondItem="yEK-Cg-egs" secondAttribute="centerX" id="HOc-Mf-plh"/>
                             <constraint firstItem="dgN-4v-j4Q" firstAttribute="trailing" secondItem="G1G-A3-CvG" secondAttribute="trailing" constant="16" id="LDw-1V-wh5"/>
                             <constraint firstItem="tSh-zV-YVJ" firstAttribute="height" secondItem="yEK-Cg-egs" secondAttribute="height" multiplier="0.3" id="REe-Nu-tgN"/>
@@ -1214,6 +1214,7 @@
                     <navigationItem key="navigationItem" title="Login" id="NQh-G9-8Jx"/>
                     <connections>
                         <outlet property="imgLogo" destination="G2T-KG-3VJ" id="xe0-ut-FEv"/>
+                        <outlet property="txtMobileNumber" destination="1Ne-ig-fm0" id="bxs-ge-bDh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dN4-CG-2Es" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -38,6 +38,9 @@ class HNCommentViewController: UIViewController {
     /// Stting Up UI
     func setUpUI() {
         
+        txtComent.layer.cornerRadius = 10
+        txtComent.layer.borderWidth = 0.5
+        txtComent.layer.borderColor = UIColor.lightGray.cgColor
     }
 
 }
