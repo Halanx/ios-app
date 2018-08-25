@@ -1136,7 +1136,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="486"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-Cc-7cP" customClass="OrderTableView" customModule="Halanx" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-Cc-7cP" customClass="OrderTableView" customModule="Halanx" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -1152,6 +1152,7 @@
                             <constraint firstAttribute="trailing" secondItem="4mJ-Cc-7cP" secondAttribute="trailing" id="Mtb-lW-N5W"/>
                             <constraint firstItem="4mJ-Cc-7cP" firstAttribute="top" secondItem="D2J-rb-xaA" secondAttribute="top" id="mvj-YD-Vnd"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="a5g-25-gwX"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="4mJ-Cc-7cP" id="aWB-aK-TRq"/>
@@ -1169,7 +1170,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="486"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ivR-Kd-A3W" customClass="OrderTableView" customModule="Halanx" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ivR-Kd-A3W" customClass="OrderTableView" customModule="Halanx" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -1185,6 +1186,7 @@
                             <constraint firstItem="ivR-Kd-A3W" firstAttribute="top" secondItem="yv5-Kp-7Dj" secondAttribute="top" id="ZVH-83-zxw"/>
                             <constraint firstItem="ivR-Kd-A3W" firstAttribute="leading" secondItem="yv5-Kp-7Dj" secondAttribute="leading" id="hPR-GT-FdS"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="TE6-Ec-kA3"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="ivR-Kd-A3W" id="Im5-uh-aTo"/>

@@ -23,6 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="244" height="141"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vN-0Q-aJg" customClass="HNDesignableView" customModule="Halanx" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="54.5" width="244" height="86.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.0% cashback," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZn-qA-fs9">
                         <rect key="frame" x="12" y="117.5" width="220" height="15.5"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
@@ -61,9 +73,13 @@
                 <constraint firstItem="P0Z-9o-Eh0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yhq-zf-MHR"/>
                 <constraint firstItem="hIO-de-wLe" firstAttribute="leading" secondItem="dZn-qA-fs9" secondAttribute="leading" id="ai9-ON-yHh"/>
                 <constraint firstAttribute="trailing" secondItem="dZn-qA-fs9" secondAttribute="trailing" constant="12" id="h1C-Px-pN5"/>
+                <constraint firstItem="7vN-0Q-aJg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hoi-Ci-7Qi"/>
+                <constraint firstItem="7vN-0Q-aJg" firstAttribute="top" secondItem="hIO-de-wLe" secondAttribute="top" id="mfB-BV-Gyd"/>
+                <constraint firstAttribute="bottom" secondItem="7vN-0Q-aJg" secondAttribute="bottom" id="o2U-1q-TeZ"/>
                 <constraint firstItem="H06-MM-4tp" firstAttribute="leading" secondItem="hIO-de-wLe" secondAttribute="trailing" constant="8" id="ogP-Fa-9VY"/>
                 <constraint firstItem="mty-p7-XsA" firstAttribute="top" secondItem="hIO-de-wLe" secondAttribute="top" id="qTN-au-KrV"/>
                 <constraint firstItem="dZn-qA-fs9" firstAttribute="top" secondItem="hIO-de-wLe" secondAttribute="bottom" constant="8" id="ury-9f-yBs"/>
+                <constraint firstAttribute="trailing" secondItem="7vN-0Q-aJg" secondAttribute="trailing" id="uzc-XL-n7u"/>
                 <constraint firstItem="mty-p7-XsA" firstAttribute="leading" secondItem="hIO-de-wLe" secondAttribute="trailing" constant="8" id="zvl-1V-sOI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

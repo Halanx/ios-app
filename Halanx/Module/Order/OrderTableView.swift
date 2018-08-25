@@ -22,7 +22,9 @@ class OrderTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         registerNib()
         delegate = self
         dataSource = self
-        
+        showsHorizontalScrollIndicator = false
+        showsVerticalScrollIndicator = false
+        bouncesZoom = false
         estimatedRowHeight = 90
         rowHeight = UITableViewAutomaticDimension
         
