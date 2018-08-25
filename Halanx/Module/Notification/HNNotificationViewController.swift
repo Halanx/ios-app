@@ -13,6 +13,7 @@ class HNNotificationViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     fileprivate var notificationCell = CellIdentifier.notificationCell
+    fileprivate let tableViewEstimateHeight: CGFloat = 80
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,8 @@ class HNNotificationViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        //changeNavigationTitle(title: "Notifications")
+        tableView.estimatedRowHeight = tableViewEstimateHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
         self.title = "Notifications"
     }
     
@@ -33,7 +35,7 @@ class HNNotificationViewController: UIViewController {
         tableView.register(notificationNib, forCellReuseIdentifier: notificationCell)
         
     }
-
+    
 
 }
 
@@ -60,7 +62,7 @@ extension HNNotificationViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 60
+        return 80
     }
     
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

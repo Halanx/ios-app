@@ -14,12 +14,11 @@ class HNSettingViewController: UIViewController {
     
     
     fileprivate var switchCell = CellIdentifier.switchCell
-    fileprivate var notificationCell = CellIdentifier.notificationCell
+    fileprivate var shareCell = CellIdentifier.shareCell
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerNib()
         
         tableView.tableFooterView = UIView()
         
@@ -31,12 +30,7 @@ class HNSettingViewController: UIViewController {
         self.title = "Settings"
     }
     
-    /// Register Nib Cell
-    func registerNib() {
-        
-        let notificationNib = UINib(nibName: CellNib.notificationCell, bundle: Bundle.main)
-        tableView.register(notificationNib, forCellReuseIdentifier: notificationCell)
-    }
+
 
 }
 
@@ -64,12 +58,11 @@ extension HNSettingViewController: UITableViewDataSource, UITableViewDelegate {
         }
         else {
             
-            let shareCell = tableView.dequeueReusableCell(withIdentifier: notificationCell, for: indexPath) as! NotificationTableViewCell
-            shareCell.imgNotification.image = UIImage(named: "\(shareArrayImage[indexPath.row - 2])")
-            shareCell.lblDetail.text = shareArrayText[indexPath.row - 2]
-            
-            return shareCell
-           
+            let cellShare = tableView.dequeueReusableCell(withIdentifier: shareCell, for: indexPath) as! SettingShareTableViewCell
+            cellShare.imgSocial.image = UIImage(named: shareArrayImage[indexPath.row - 2])
+            cellShare.lblSocial.text = shareArrayText[indexPath.row - 2]
+            return cellShare
+        
         }
    
     }

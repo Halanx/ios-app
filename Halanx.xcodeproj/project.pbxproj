@@ -25,6 +25,14 @@
 		C51190302128036D009BDEA0 /* ViewAllCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511902E2128036D009BDEA0 /* ViewAllCollectionViewCell.swift */; };
 		C51190312128036D009BDEA0 /* ViewAllCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C511902F2128036D009BDEA0 /* ViewAllCollectionViewCell.xib */; };
 		C5119038212825F4009BDEA0 /* HNMarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5119037212825F4009BDEA0 /* HNMarketDetailViewController.swift */; };
+		C5144570212F5A8400C0C768 /* SettingShareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514456F212F5A8400C0C768 /* SettingShareTableViewCell.swift */; };
+		C51445772130412900C0C768 /* OrderVoucherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51445752130412900C0C768 /* OrderVoucherTableViewCell.swift */; };
+		C51445782130412900C0C768 /* OrderVoucherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51445762130412900C0C768 /* OrderVoucherTableViewCell.xib */; };
+		C514457A21305CF400C0C768 /* HNHCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514457921305CF400C0C768 /* HNHCashViewController.swift */; };
+		C514457F21305EF700C0C768 /* HNPastOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514457E21305EF700C0C768 /* HNPastOrderViewController.swift */; };
+		C514458121305F1100C0C768 /* HNOnGoingOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514458021305F1100C0C768 /* HNOnGoingOrderViewController.swift */; };
+		C514458321305F2C00C0C768 /* HNOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514458221305F2C00C0C768 /* HNOrderViewController.swift */; };
+		C514458521305F9B00C0C768 /* OrderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514458421305F9B00C0C768 /* OrderTableView.swift */; };
 		C534290421268FE600D9405C /* Market.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C534290321268FE600D9405C /* Market.storyboard */; };
 		C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5342905212691D600D9405C /* HNSettingViewController.swift */; };
 		C53429082126967200D9405C /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53429072126967200D9405C /* Payment.storyboard */; };
@@ -141,6 +149,14 @@
 		C511902E2128036D009BDEA0 /* ViewAllCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAllCollectionViewCell.swift; sourceTree = "<group>"; };
 		C511902F2128036D009BDEA0 /* ViewAllCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAllCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5119037212825F4009BDEA0 /* HNMarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNMarketDetailViewController.swift; sourceTree = "<group>"; };
+		C514456F212F5A8400C0C768 /* SettingShareTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingShareTableViewCell.swift; sourceTree = "<group>"; };
+		C51445752130412900C0C768 /* OrderVoucherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVoucherTableViewCell.swift; sourceTree = "<group>"; };
+		C51445762130412900C0C768 /* OrderVoucherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderVoucherTableViewCell.xib; sourceTree = "<group>"; };
+		C514457921305CF400C0C768 /* HNHCashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNHCashViewController.swift; sourceTree = "<group>"; };
+		C514457E21305EF700C0C768 /* HNPastOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNPastOrderViewController.swift; sourceTree = "<group>"; };
+		C514458021305F1100C0C768 /* HNOnGoingOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNOnGoingOrderViewController.swift; sourceTree = "<group>"; };
+		C514458221305F2C00C0C768 /* HNOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNOrderViewController.swift; sourceTree = "<group>"; };
+		C514458421305F9B00C0C768 /* OrderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableView.swift; sourceTree = "<group>"; };
 		C534290321268FE600D9405C /* Market.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Market.storyboard; sourceTree = "<group>"; };
 		C5342905212691D600D9405C /* HNSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNSettingViewController.swift; sourceTree = "<group>"; };
 		C53429072126967200D9405C /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
@@ -372,6 +388,50 @@
 			path = "Edit Profile";
 			sourceTree = "<group>";
 		};
+		C514457321303A7100C0C768 /* HCash */ = {
+			isa = PBXGroup;
+			children = (
+				C514457921305CF400C0C768 /* HNHCashViewController.swift */,
+			);
+			path = HCash;
+			sourceTree = "<group>";
+		};
+		C51445742130410A00C0C768 /* Order Voucher Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C51445752130412900C0C768 /* OrderVoucherTableViewCell.swift */,
+				C51445762130412900C0C768 /* OrderVoucherTableViewCell.xib */,
+			);
+			path = "Order Voucher Cell";
+			sourceTree = "<group>";
+		};
+		C514457B21305EC900C0C768 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				C514458221305F2C00C0C768 /* HNOrderViewController.swift */,
+				C514458421305F9B00C0C768 /* OrderTableView.swift */,
+				C514457D21305EE300C0C768 /* Past */,
+				C514457C21305ECF00C0C768 /* On Going */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		C514457C21305ECF00C0C768 /* On Going */ = {
+			isa = PBXGroup;
+			children = (
+				C514458021305F1100C0C768 /* HNOnGoingOrderViewController.swift */,
+			);
+			path = "On Going";
+			sourceTree = "<group>";
+		};
+		C514457D21305EE300C0C768 /* Past */ = {
+			isa = PBXGroup;
+			children = (
+				C514457E21305EF700C0C768 /* HNPastOrderViewController.swift */,
+			);
+			path = Past;
+			sourceTree = "<group>";
+		};
 		C53429092126DF2F00D9405C /* Setting Switch Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +443,8 @@
 		C53E8BBB2119D64A009947F3 /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C51445742130410A00C0C768 /* Order Voucher Cell */,
+				C55B3153212EBD1C0009A9EC /* Settings Cell */,
 				C5B5E5F9212CDA84006318FA /* People Like */,
 				C5B5E5F4212CCA45006318FA /* User Info */,
 				C57576C0212C86B0009ED826 /* Photo Cell */,
@@ -396,6 +458,14 @@
 				C5ED0764211CAC3C00BFB42C /* Feed Cell */,
 			);
 			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		C55B3153212EBD1C0009A9EC /* Settings Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C514456F212F5A8400C0C768 /* SettingShareTableViewCell.swift */,
+			);
+			path = "Settings Cell";
 			sourceTree = "<group>";
 		};
 		C5757698212BEDFB009ED826 /* Claim */ = {
@@ -597,6 +667,8 @@
 		C5C02DD52118A29300CC60FA /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C514457B21305EC900C0C768 /* Order */,
+				C514457321303A7100C0C768 /* HCash */,
 				C5B5E601212CF0D1006318FA /* Work */,
 				C5B5E5FE212CED9E006318FA /* Education */,
 				C57576B8212C7AC3009ED826 /* User Profile */,
@@ -1016,6 +1088,7 @@
 				C5C02DA92118A27600CC60FA /* Main.storyboard in Resources */,
 				C5807B852125E0B4002AB7F3 /* NeighbourTableViewCell.xib in Resources */,
 				C53429082126967200D9405C /* Payment.storyboard in Resources */,
+				C51445782130412900C0C768 /* OrderVoucherTableViewCell.xib in Resources */,
 				C534290421268FE600D9405C /* Market.storyboard in Resources */,
 				C50D09502128ED060008846C /* AboutTableViewCell.xib in Resources */,
 				C5ED0769211CAC5C00BFB42C /* PostTableViewCell.xib in Resources */,
@@ -1190,8 +1263,10 @@
 				C57576C3212C86E3009ED826 /* PhotoTableViewCell.swift in Sources */,
 				C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */,
 				C5C02E202118CAB600CC60FA /* HNMarketPlaceViewController.swift in Sources */,
+				C514458321305F2C00C0C768 /* HNOrderViewController.swift in Sources */,
 				C5C02DF22118B52700CC60FA /* HNAppStoryboard.swift in Sources */,
 				C5ED077E211CF88D00BFB42C /* PollTableViewCell.swift in Sources */,
+				C51445772130412900C0C768 /* OrderVoucherTableViewCell.swift in Sources */,
 				C507364C21261FF2003886DD /* HeaderTableViewCell.swift in Sources */,
 				C5B5E5F7212CCA5C006318FA /* UserInfoTableViewCell.swift in Sources */,
 				C5ED0768211CAC5C00BFB42C /* PostTableViewCell.swift in Sources */,
@@ -1202,9 +1277,12 @@
 				C50D09572128F37E0008846C /* VouchersTableViewCell.swift in Sources */,
 				C5ED077A211CC58000BFB42C /* CellManager.swift in Sources */,
 				C5C02DF62118B56A00CC60FA /* HNMainTabViewController.swift in Sources */,
+				C514457A21305CF400C0C768 /* HNHCashViewController.swift in Sources */,
 				C5ED0772211CB3B300BFB42C /* HNDesignableButton.swift in Sources */,
 				C5C02E282118CF9500CC60FA /* ViewControllerExtension.swift in Sources */,
 				C507364F212632A8003886DD /* HNViewAllMarketViewController.swift in Sources */,
+				C514458521305F9B00C0C768 /* OrderTableView.swift in Sources */,
+				C5144570212F5A8400C0C768 /* SettingShareTableViewCell.swift in Sources */,
 				C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */,
 				C5C02DF02118B4F100CC60FA /* HNDesignableUIImage.swift in Sources */,
 				C534290B2126DF5100D9405C /* SwitchTableViewCell.swift in Sources */,
@@ -1219,6 +1297,7 @@
 				C5D9D7352123ECD80009AF65 /* FBManager.swift in Sources */,
 				C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */,
 				C57576BA212C7AE1009ED826 /* HNUserProfileViewController.swift in Sources */,
+				C514457F21305EF700C0C768 /* HNPastOrderViewController.swift in Sources */,
 				C5ED07A02120697700BFB42C /* HNUserDefaultManager.swift in Sources */,
 				C5C02E1E2118CA9D00CC60FA /* HNPollViewController.swift in Sources */,
 				C5ED0784211D018600BFB42C /* HNOnboardingViewController.swift in Sources */,
@@ -1246,6 +1325,7 @@
 				C5E6BE2B2124307C00519CA4 /* HNCreatePostViewController.swift in Sources */,
 				C5807B842125E0B4002AB7F3 /* NeighbourTableViewCell.swift in Sources */,
 				C5807B7A2124BAD8002AB7F3 /* HNNeighbourViewController.swift in Sources */,
+				C514458121305F1100C0C768 /* HNOnGoingOrderViewController.swift in Sources */,
 				C5C02DF82118B58D00CC60FA /* HNLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

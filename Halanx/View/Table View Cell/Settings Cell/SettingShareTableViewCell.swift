@@ -1,19 +1,17 @@
 //
-//  NotificationTableViewCell.swift
+//  SettingShareTableViewCell.swift
 //  Halanx
 //
-//  Created by Shubham Arora on 15/08/18.
+//  Created by Shubham Arora on 24/08/18.
 //  Copyright © 2018 Shubham Arora. All rights reserved.
 //
 
 import UIKit
 
-class NotificationTableViewCell: UITableViewCell {
+class SettingShareTableViewCell: UITableViewCell {
 
-    
-    @IBOutlet weak var imgNotification: UIImageView!
-    @IBOutlet weak var lblDetail: UILabel!
-    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var imgSocial: UIImageView!
+    @IBOutlet weak var lblSocial: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,5 +23,5 @@ class NotificationTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

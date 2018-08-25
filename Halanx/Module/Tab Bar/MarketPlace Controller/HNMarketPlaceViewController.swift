@@ -63,12 +63,17 @@ class HNMarketPlaceViewController: UIViewController {
     
     @IBAction func btnHcashAction(_ sender: Any) {
         
-        
+        let hcashVC = HNHCashViewController.instantiateViewController(fromAppstoryboard: .Market)
+        hcashVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(hcashVC, animated: true)
     }
     
     @IBAction func btnOrderAction(_ sender: Any) {
         
-        print("Order Clicked")
+        let orderVC = HNOrderViewController.instantiateViewController(fromAppstoryboard: .Market)
+        orderVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(orderVC, animated: true)
+        
     }
     
     @IBAction func btnViewAllCliecked(_ sender: Any) {

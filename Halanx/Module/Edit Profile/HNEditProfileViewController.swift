@@ -29,9 +29,9 @@ class HNEditProfileViewController: UIViewController {
     @IBOutlet weak var viewAddress: HNDesignableView!
     
     @IBOutlet weak var ConstraintRelationX: NSLayoutConstraint!
-    
     @IBOutlet weak var ConstraintAddressX: NSLayoutConstraint!
     
+    fileprivate let datePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,10 @@ class HNEditProfileViewController: UIViewController {
         btnBackground.alpha = 0.0
         self.viewRelation.alpha = 0
         self.viewAddress.alpha = 0
+        
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(datePickerChanged(_:)), for: .valueChanged)
+        txtDOB.inputView = datePicker
         
         txtRelation.inputAccessoryView = UIView(frame: CGRect.zero)
         txtAddress.inputAccessoryView = UIView(frame: CGRect.zero)
@@ -107,6 +111,19 @@ class HNEditProfileViewController: UIViewController {
             self.viewAddress.alpha = 0
             self.view.layoutIfNeeded()
         }
+    }
+    
+    /// Convert Date in Format
+    func singleLineDate(date : Date) -> String {
+        
+        let calender = Calendar.current
+        let year = calender.component(.year, from: date)
+        let month = calender.component(.month, from: date)
+        let day = calender.component(.day, from: date)
+        
+        let dateString = "\(year)-\(month)-\(day)"
+        
+        return dateString
         
     }
     
@@ -125,7 +142,12 @@ class HNEditProfileViewController: UIViewController {
             removeRelationView()
         }
         
+    }
+    
+    @IBAction func datePickerChanged (_ sender: UIDatePicker) {
         
+        let date = singleLineDate(date: sender.date)
+        txtDOB.text = date
     }
     
 }

@@ -275,7 +275,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hii-4E-sQT">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="btnBackgroundAction:" destination="nxg-jQ-gdK" eventType="touchUpInside" id="3Fe-ae-LA6"/>
                                 </connections>
@@ -690,7 +690,7 @@
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HK5-ed-DSh">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="727"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="btnBackgroundClicked:" destination="mfN-OA-a12" eventType="touchUpInside" id="TuY-CP-uID"/>
                                         </connections>
@@ -1395,6 +1395,41 @@
                                         <connections>
                                             <outlet property="lblNotification" destination="o1c-Ck-OxM" id="B0w-X2-Jkn"/>
                                             <outlet property="switchBtn" destination="RSh-jR-NHU" id="hKp-8B-lax"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellShare" rowHeight="44" id="R7R-hP-KVX" customClass="SettingShareTableViewCell" customModule="Halanx" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R7R-hP-KVX" id="FAt-XZ-lGD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-JI-jHo">
+                                                    <rect key="frame" x="20" y="3.5" width="35" height="35"/>
+                                                    <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="aRr-CF-1oP"/>
+                                                        <constraint firstAttribute="height" constant="35" id="hxM-1u-rId"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-XN-WX3">
+                                                    <rect key="frame" x="67" y="11.5" width="42" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HRV-XN-WX3" firstAttribute="leading" secondItem="Q4I-JI-jHo" secondAttribute="trailing" constant="12" id="Gaw-v2-eYh"/>
+                                                <constraint firstItem="Q4I-JI-jHo" firstAttribute="centerY" secondItem="FAt-XZ-lGD" secondAttribute="centerY" id="HXY-7l-u6d"/>
+                                                <constraint firstItem="HRV-XN-WX3" firstAttribute="centerY" secondItem="Q4I-JI-jHo" secondAttribute="centerY" id="aIl-Ff-tnK"/>
+                                                <constraint firstItem="Q4I-JI-jHo" firstAttribute="leading" secondItem="FAt-XZ-lGD" secondAttribute="leading" constant="20" id="c3n-5E-6yv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="imgSocial" destination="Q4I-JI-jHo" id="JA5-NX-bBR"/>
+                                            <outlet property="lblSocial" destination="HRV-XN-WX3" id="FxQ-kR-Gom"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
