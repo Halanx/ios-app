@@ -19,7 +19,7 @@ class HNMeViewController: UIViewController {
     fileprivate let peopleLikeCell = CellIdentifier.peopleLikeCell
     fileprivate let cellPostHeight: CGFloat = 500
     
-    
+    var cellExpand:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,6 +123,26 @@ class HNMeViewController: UIViewController {
         
     }
     
+    // MARK: IBActions
+    @IBAction func btnViewClicked(_ sender: UIButton) {
+        
+        let indexPathUpdate = IndexPath(row: 0, section: 2)
+        
+        if sender.currentTitle == "View less" {
+            
+            cellExpand = false
+            sender.setTitle("View all", for: .normal)
+            
+        }else {
+            
+            cellExpand = true
+            sender.setTitle("View Less", for: .normal)
+        }
+
+        DispatchQueue.main.async { self.tableView.reloadRows(at: [indexPathUpdate], with: UITableViewRowAnimation.none) }
+        
+        
+    }
 
 }
 
@@ -158,6 +178,16 @@ extension HNMeViewController: UITableViewDataSource, UITableViewDelegate {
         else if indexPath.section == 2 {
             
             let cellPeopleLike = tableView.dequeueReusableCell(withIdentifier: peopleLikeCell, for: indexPath) as! PeopleLikeTableViewCell
+            cellPeopleLike.tableView.reloadData()
+            cellPeopleLike.btnView.addTarget(self, action: #selector(btnViewClicked(_:)), for: .touchUpInside)
+            if cellExpand {
+                
+                cellPeopleLike.btnView.setTitle("View less", for: .normal)
+            }
+            else {
+                
+                cellPeopleLike.btnView.setTitle("View all", for: .normal)
+            }
             
             return cellPeopleLike
         }
@@ -178,9 +208,16 @@ extension HNMeViewController: UITableViewDataSource, UITableViewDelegate {
             
             return 150
         }
-        else if indexPath.section == 2{
+        else if indexPath.section == 2 {
             
-            return 240
+            if cellExpand {
+                
+                return 400
+            }else {
+                
+                return 240
+            }
+            
         }
         else {
             

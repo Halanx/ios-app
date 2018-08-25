@@ -33,6 +33,8 @@
 		C514458121305F1100C0C768 /* HNOnGoingOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514458021305F1100C0C768 /* HNOnGoingOrderViewController.swift */; };
 		C514458321305F2C00C0C768 /* HNOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514458221305F2C00C0C768 /* HNOrderViewController.swift */; };
 		C514458521305F9B00C0C768 /* OrderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514458421305F9B00C0C768 /* OrderTableView.swift */; };
+		C5207BB02131C975000A4736 /* StatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5207BAE2131C975000A4736 /* StatementTableViewCell.swift */; };
+		C5207BB12131C975000A4736 /* StatementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5207BAF2131C975000A4736 /* StatementTableViewCell.xib */; };
 		C534290421268FE600D9405C /* Market.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C534290321268FE600D9405C /* Market.storyboard */; };
 		C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5342905212691D600D9405C /* HNSettingViewController.swift */; };
 		C53429082126967200D9405C /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53429072126967200D9405C /* Payment.storyboard */; };
@@ -161,6 +163,8 @@
 		C514458021305F1100C0C768 /* HNOnGoingOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNOnGoingOrderViewController.swift; sourceTree = "<group>"; };
 		C514458221305F2C00C0C768 /* HNOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNOrderViewController.swift; sourceTree = "<group>"; };
 		C514458421305F9B00C0C768 /* OrderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableView.swift; sourceTree = "<group>"; };
+		C5207BAE2131C975000A4736 /* StatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementTableViewCell.swift; sourceTree = "<group>"; };
+		C5207BAF2131C975000A4736 /* StatementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementTableViewCell.xib; sourceTree = "<group>"; };
 		C534290321268FE600D9405C /* Market.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Market.storyboard; sourceTree = "<group>"; };
 		C5342905212691D600D9405C /* HNSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNSettingViewController.swift; sourceTree = "<group>"; };
 		C53429072126967200D9405C /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
@@ -440,6 +444,15 @@
 			path = Past;
 			sourceTree = "<group>";
 		};
+		C5207BAD2131C941000A4736 /* Statement Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5207BAE2131C975000A4736 /* StatementTableViewCell.swift */,
+				C5207BAF2131C975000A4736 /* StatementTableViewCell.xib */,
+			);
+			path = "Statement Cell";
+			sourceTree = "<group>";
+		};
 		C53429092126DF2F00D9405C /* Setting Switch Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +464,7 @@
 		C53E8BBB2119D64A009947F3 /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C5207BAD2131C941000A4736 /* Statement Cell */,
 				C5450EE62131BC6F007E59C0 /* Comment Cell */,
 				C51445742130410A00C0C768 /* Order Voucher Cell */,
 				C55B3153212EBD1C0009A9EC /* Settings Cell */,
@@ -1129,6 +1143,7 @@
 				C50D09502128ED060008846C /* AboutTableViewCell.xib in Resources */,
 				C5ED0769211CAC5C00BFB42C /* PostTableViewCell.xib in Resources */,
 				C5ED076E211CAC7500BFB42C /* NewsTableViewCell.xib in Resources */,
+				C5207BB12131C975000A4736 /* StatementTableViewCell.xib in Resources */,
 				C50D09582128F37E0008846C /* VouchersTableViewCell.xib in Resources */,
 				C5807B772124AA83002AB7F3 /* InterestCollectionViewCell.xib in Resources */,
 				C507364121260FDC003886DD /* MarketCollectionViewCell.xib in Resources */,
@@ -1350,6 +1365,7 @@
 				C50D09532128F1B50008846C /* AddressTableViewCell.swift in Sources */,
 				C5C02E222118CACA00CC60FA /* HNMessagingViewController.swift in Sources */,
 				C5C02DA42118A27600CC60FA /* AppDelegate.swift in Sources */,
+				C5207BB02131C975000A4736 /* StatementTableViewCell.swift in Sources */,
 				C5C02E242118CADB00CC60FA /* HNMeViewController.swift in Sources */,
 				C5C02E042118B8AF00CC60FA /* MBProgressHUD.m in Sources */,
 				C507364021260FDC003886DD /* MarketCollectionViewCell.swift in Sources */,

@@ -15,7 +15,9 @@ class PeopleLikeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        let nib = UINib(nibName: "StatementTableViewCell", bundle: Bundle.main)
+        tableView.register(nib, forCellReuseIdentifier: "cellStatement")
+        
     }
     
 
@@ -27,6 +29,39 @@ class PeopleLikeTableViewCell: UITableViewCell {
     
 }
 
+
+extension PeopleLikeTableViewCell: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellStatement", for: indexPath)
+        cell.textLabel?.text = "Been on my mind very often"
+        cell.imageView?.tintColor = UIColor.red
+        cell.imageView?.image = #imageLiteral(resourceName: "smile")
+        
+        
+        return cell
+    }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        <#code#>
+//    }
+//    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+    
+}
 
 
 

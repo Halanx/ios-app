@@ -90,18 +90,31 @@
                             <constraint firstAttribute="trailing" secondItem="but-zo-5nJ" secondAttribute="trailing" constant="8" id="iNc-Kt-0Uc"/>
                         </constraints>
                     </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOV-cs-ono">
+                        <rect key="frame" x="0.0" y="44" width="320" height="148.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="Iv9-uJ-hcR"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="COn-Yi-ZAG"/>
+                        </connections>
+                    </tableView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="HRK-dg-bmO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GYG-fu-E3q"/>
                     <constraint firstAttribute="bottom" secondItem="1jL-4e-oJ2" secondAttribute="bottom" constant="12" id="Qm7-bL-1yO"/>
                     <constraint firstItem="HRK-dg-bmO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Sl8-Rk-KnM"/>
                     <constraint firstAttribute="trailing" secondItem="HRK-dg-bmO" secondAttribute="trailing" id="cO8-eP-dYi"/>
+                    <constraint firstItem="UOV-cs-ono" firstAttribute="top" secondItem="HRK-dg-bmO" secondAttribute="bottom" id="d5z-q3-k9O"/>
+                    <constraint firstItem="1jL-4e-oJ2" firstAttribute="top" secondItem="UOV-cs-ono" secondAttribute="bottom" constant="8" id="mBg-pE-Bvr"/>
+                    <constraint firstItem="UOV-cs-ono" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="srg-Zm-ZB4"/>
+                    <constraint firstAttribute="trailing" secondItem="UOV-cs-ono" secondAttribute="trailing" id="uuT-QS-jFL"/>
                     <constraint firstItem="1jL-4e-oJ2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vyz-TC-9M0"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="btnView" destination="1jL-4e-oJ2" id="3hY-6G-gDE"/>
+                <outlet property="tableView" destination="UOV-cs-ono" id="Wel-hz-0yo"/>
             </connections>
             <point key="canvasLocation" x="34" y="170"/>
         </tableViewCell>
