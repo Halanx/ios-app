@@ -10,6 +10,9 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var btnComment: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

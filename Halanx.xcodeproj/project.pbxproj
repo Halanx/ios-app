@@ -37,6 +37,8 @@
 		C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5342905212691D600D9405C /* HNSettingViewController.swift */; };
 		C53429082126967200D9405C /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53429072126967200D9405C /* Payment.storyboard */; };
 		C534290B2126DF5100D9405C /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534290A2126DF5100D9405C /* SwitchTableViewCell.swift */; };
+		C5450EE221316D0E007E59C0 /* HNRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE121316D0E007E59C0 /* HNRegisterViewController.swift */; };
+		C5450EE521316D45007E59C0 /* HNCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE421316D45007E59C0 /* HNCommentViewController.swift */; };
 		C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B0212C5803009ED826 /* HNClaimViewController.swift */; };
 		C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B3212C6C42009ED826 /* HNCartViewController.swift */; };
 		C57576B7212C7335009ED826 /* HNPaymentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */; };
@@ -161,6 +163,8 @@
 		C5342905212691D600D9405C /* HNSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNSettingViewController.swift; sourceTree = "<group>"; };
 		C53429072126967200D9405C /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
 		C534290A2126DF5100D9405C /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		C5450EE121316D0E007E59C0 /* HNRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNRegisterViewController.swift; sourceTree = "<group>"; };
+		C5450EE421316D45007E59C0 /* HNCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCommentViewController.swift; sourceTree = "<group>"; };
 		C57576B0212C5803009ED826 /* HNClaimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClaimViewController.swift; sourceTree = "<group>"; };
 		C57576B3212C6C42009ED826 /* HNCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCartViewController.swift; sourceTree = "<group>"; };
 		C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNPaymentOptionsViewController.swift; sourceTree = "<group>"; };
@@ -460,6 +464,22 @@
 			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
+		C5450EDA21314742007E59C0 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C5450EE121316D0E007E59C0 /* HNRegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C5450EE321316D33007E59C0 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				C5450EE421316D45007E59C0 /* HNCommentViewController.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
 		C55B3153212EBD1C0009A9EC /* Settings Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,6 +687,8 @@
 		C5C02DD52118A29300CC60FA /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C5450EE321316D33007E59C0 /* Comment */,
+				C5450EDA21314742007E59C0 /* Register */,
 				C514457B21305EC900C0C768 /* Order */,
 				C514457321303A7100C0C768 /* HCash */,
 				C5B5E601212CF0D1006318FA /* Work */,
@@ -1260,6 +1282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5450EE521316D45007E59C0 /* HNCommentViewController.swift in Sources */,
 				C57576C3212C86E3009ED826 /* PhotoTableViewCell.swift in Sources */,
 				C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */,
 				C5C02E202118CAB600CC60FA /* HNMarketPlaceViewController.swift in Sources */,
@@ -1283,6 +1306,7 @@
 				C507364F212632A8003886DD /* HNViewAllMarketViewController.swift in Sources */,
 				C514458521305F9B00C0C768 /* OrderTableView.swift in Sources */,
 				C5144570212F5A8400C0C768 /* SettingShareTableViewCell.swift in Sources */,
+				C5450EE221316D0E007E59C0 /* HNRegisterViewController.swift in Sources */,
 				C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */,
 				C5C02DF02118B4F100CC60FA /* HNDesignableUIImage.swift in Sources */,
 				C534290B2126DF5100D9405C /* SwitchTableViewCell.swift in Sources */,

@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol TableReloadData {
+    
+    func reloadTableData()
+}
+
 class OrderTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
+    
     
     fileprivate let orderVoucherCell = CellIdentifier.orderVoucherCell
     var vc: String?
@@ -22,12 +28,13 @@ class OrderTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    
+    
     func registerNib() {
         
         let orderVoucherNib = UINib(nibName: CellNib.orderVoucherCell, bundle: Bundle.main)
         self.register(orderVoucherNib, forCellReuseIdentifier: orderVoucherCell)
     }
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         

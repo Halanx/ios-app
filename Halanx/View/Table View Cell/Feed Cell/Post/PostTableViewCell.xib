@@ -148,6 +148,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnComment" destination="IUc-Bb-Aya" id="hSQ-ON-pSV"/>
+            </connections>
             <point key="canvasLocation" x="34" y="266"/>
         </tableViewCell>
     </objects>

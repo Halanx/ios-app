@@ -71,6 +71,11 @@ class HNFeedViewController: UIViewController {
         self.navigationController?.pushViewController(interestVc, animated: true)
     }
     
+    @IBAction func btnCommentClicked(_ sender: UIButton) {
+        
+        let commentVc = HNCommentViewController.instantiateViewController(fromAppstoryboard: .Main)
+        self.navigationController?.pushViewController(commentVc, animated: true)
+    }
     
 }
 
@@ -120,6 +125,8 @@ extension HNFeedViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.section == 0 {
             
             let cell2 = tableView.dequeueReusableCell(withIdentifier: postCellIdentifier, for: indexPath) as! PostTableViewCell
+            
+            cell2.btnComment.addTarget(self, action: #selector(btnCommentClicked(_:)), for: .touchUpInside)
             
             return cell2
         }

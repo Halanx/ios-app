@@ -8,16 +8,22 @@
 
 import UIKit
 
+
 class HNOnGoingOrderViewController: UIViewController {
 
     @IBOutlet weak var tableView: OrderTableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
+        
         tableView.vc = "OnGoing"
     }
 
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -23,6 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cB5-li-qDQ" customClass="HNDesignableView" customModule="Halanx" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="57" width="320" height="63"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btwLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SRV-Ki-k0E">
                         <rect key="frame" x="8" y="57" width="55" height="55"/>
                         <constraints>
@@ -31,14 +43,14 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger King" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtT-iv-Uho">
-                        <rect key="frame" x="71" y="57" width="83" height="18"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <rect key="frame" x="71" y="57" width="85.5" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdX-Mw-Y5T">
-                        <rect key="frame" x="71" y="83" width="31.5" height="16.5"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <rect key="frame" x="71" y="83" width="33" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -56,18 +68,22 @@
                 <constraint firstItem="LdX-Mw-Y5T" firstAttribute="leading" secondItem="SRV-Ki-k0E" secondAttribute="trailing" constant="8" id="DZQ-b0-zdN"/>
                 <constraint firstAttribute="bottom" secondItem="SRV-Ki-k0E" secondAttribute="bottom" constant="8" id="DzB-Ml-hen"/>
                 <constraint firstAttribute="bottom" secondItem="jIS-yx-ram" secondAttribute="bottom" id="Oi8-G0-it7"/>
+                <constraint firstAttribute="trailing" secondItem="cB5-li-qDQ" secondAttribute="trailing" id="TPF-8Z-HGp"/>
                 <constraint firstAttribute="trailing" secondItem="bbA-Dd-AUC" secondAttribute="trailing" constant="8" id="UIA-gy-BLE"/>
                 <constraint firstItem="jIS-yx-ram" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WuL-3m-XhV"/>
+                <constraint firstItem="cB5-li-qDQ" firstAttribute="top" secondItem="SRV-Ki-k0E" secondAttribute="top" id="Yy2-tB-GgT"/>
+                <constraint firstAttribute="bottom" secondItem="cB5-li-qDQ" secondAttribute="bottom" id="ank-DB-4yA"/>
                 <constraint firstAttribute="trailing" secondItem="jIS-yx-ram" secondAttribute="trailing" id="cKS-t9-ojL"/>
                 <constraint firstItem="bbA-Dd-AUC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LdX-Mw-Y5T" secondAttribute="trailing" constant="8" id="eOj-YK-HHA"/>
                 <constraint firstItem="jIS-yx-ram" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="god-vJ-oav"/>
                 <constraint firstItem="SRV-Ki-k0E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="iqU-94-yJd"/>
+                <constraint firstItem="cB5-li-qDQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oOX-8Q-nFc"/>
                 <constraint firstItem="gtT-iv-Uho" firstAttribute="leading" secondItem="SRV-Ki-k0E" secondAttribute="trailing" constant="8" id="vbL-Ho-l7E"/>
                 <constraint firstItem="gtT-iv-Uho" firstAttribute="top" secondItem="SRV-Ki-k0E" secondAttribute="top" id="xeA-rE-WfX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="321" height="133"/>
-            <point key="canvasLocation" x="169.5" y="95.5"/>
+            <point key="canvasLocation" x="169" y="95"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -1322,6 +1322,21 @@
             </objects>
             <point key="canvasLocation" x="-369" y="-916"/>
         </scene>
+        <!--Register View Controller-->
+        <scene sceneID="x7D-r3-erE">
+            <objects>
+                <viewController storyboardIdentifier="HNRegisterViewController" id="lqm-5C-y1E" customClass="HNRegisterViewController" customModule="Halanx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l3c-LF-4vA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TvY-qZ-h6f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7A-Me-bHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="-917"/>
+        </scene>
         <!--Feed-->
         <scene sceneID="NRb-Wl-5bT">
             <objects>
@@ -1330,7 +1345,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="luV-i2-V0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1099" y="-675"/>
+            <point key="canvasLocation" x="1704" y="-874"/>
         </scene>
         <!--Poll-->
         <scene sceneID="ZhH-xe-CXz">

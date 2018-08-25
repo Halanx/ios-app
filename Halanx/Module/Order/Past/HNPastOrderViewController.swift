@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol OnPastTableProtocol {
+    
+    func tableReloadData()
+}
+
 class HNPastOrderViewController: UIViewController {
     
     @IBOutlet weak var tableView: OrderTableView!
@@ -17,6 +22,7 @@ class HNPastOrderViewController: UIViewController {
 
         tableView.vc = "Past"
     }
+
 
     
 

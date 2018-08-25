@@ -122,14 +122,14 @@ class HNClaimViewController: UIViewController {
             self.openCamera()
         }
         
-        let gallery = UIAlertAction(title: "Gallery", style: .default) { (galeryAction) in
-            
-            self.openGallery()
-        }
+//        let gallery = UIAlertAction(title: "Gallery", style: .default) { (galeryAction) in
+//
+//            self.openGallery()
+//        }
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(camera)
-        alertController.addAction(gallery)
+        //alertController.addAction(gallery)
         alertController.addAction(cancel)
         present(alertController, animated: true, completion: nil)
         
@@ -153,17 +153,17 @@ class HNClaimViewController: UIViewController {
         }
     }
     
-    /// Open Gallery
-    func openGallery() {
-        
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
-            pickerController.delegate = self
-            pickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
-            pickerController.allowsEditing = false
-            pickerController.mediaTypes = UIImagePickerController.availableMediaTypes(for: pickerController.sourceType)!
-            self.present(pickerController, animated: true, completion: nil)
-        }
-    }
+//    /// Open Gallery
+//    func openGallery() {
+//
+//        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+//            pickerController.delegate = self
+//            pickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
+//            pickerController.allowsEditing = false
+//            pickerController.mediaTypes = UIImagePickerController.availableMediaTypes(for: pickerController.sourceType)!
+//            self.present(pickerController, animated: true, completion: nil)
+//        }
+//    }
     
     /// Show Rating View
     func showRatingView() {
