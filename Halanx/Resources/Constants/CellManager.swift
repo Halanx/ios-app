@@ -46,6 +46,8 @@ struct CellNib {
     static let peopleLikeCell = "PeopleLikeTableViewCell"
     
     static let orderVoucherCell = "OrderVoucherTableViewCell"
+    
+    static let commentCell = "CommentTableViewCell"
 }
 
 
@@ -95,6 +97,8 @@ struct CellIdentifier {
     static let shareCell = "cellShare"
     
     static let orderVoucherCell = "cellOrderCoucher"
+    
+    static let commentCell = "cellComment"
 }
 
 

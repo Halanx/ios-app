@@ -21,6 +21,7 @@
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jL-4e-oJ2" customClass="HNDesignableButton" customModule="Halanx" customModuleProvider="target">
                         <rect key="frame" x="120" y="200.5" width="80" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="bXO-2B-NCC"/>
                             <constraint firstAttribute="width" constant="80" id="kMK-qH-MUY"/>
@@ -89,112 +90,12 @@
                             <constraint firstAttribute="trailing" secondItem="but-zo-5nJ" secondAttribute="trailing" constant="8" id="iNc-Kt-0Uc"/>
                         </constraints>
                     </view>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HU5-DV-cOF">
-                        <rect key="frame" x="12" y="52" width="296" height="30"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="HMQ-bV-rxr">
-                                <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
-                                <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="HBZ-QC-x9c"/>
-                                    <constraint firstAttribute="width" constant="32" id="ejP-fv-wce"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Been on my mind very often" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEW-cl-ht7">
-                                <rect key="frame" x="42" y="0.0" width="254" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="6j8-EJ-3qJ"/>
-                        </constraints>
-                    </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="55d-nj-tpv">
-                        <rect key="frame" x="12" y="90" width="296" height="30"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-fx-Zom">
-                                <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
-                                <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="k0r-WE-wek"/>
-                                    <constraint firstAttribute="width" constant="32" id="o4e-gD-zqR"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spends whole day in gym" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGe-80-oQ4">
-                                <rect key="frame" x="42" y="0.0" width="254" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="jGG-tg-Pab"/>
-                        </constraints>
-                    </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rPf-4f-e56">
-                        <rect key="frame" x="12" y="128" width="296" height="30"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="jPj-2T-EbW">
-                                <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
-                                <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="LK0-cf-jt7"/>
-                                    <constraint firstAttribute="height" constant="30" id="fBu-kB-m5n"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That person you secretly like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eo8-QC-riZ">
-                                <rect key="frame" x="42" y="0.0" width="254" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="iDr-Oc-BmR"/>
-                        </constraints>
-                    </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-YR-vsL">
-                        <rect key="frame" x="12" y="166" width="296" height="30"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="asG-pF-Ppx">
-                                <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
-                                <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="iUk-mK-5s4"/>
-                                    <constraint firstAttribute="width" constant="32" id="k2P-CL-6eP"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 X7 Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJi-aS-Q7f">
-                                <rect key="frame" x="42" y="0.0" width="254" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="zw3-sQ-Y56"/>
-                        </constraints>
-                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="HU5-DV-cOF" secondAttribute="trailing" constant="12" id="0Ay-G7-ZcW"/>
-                    <constraint firstItem="KmP-YR-vsL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="0mI-W4-vRr"/>
-                    <constraint firstItem="rPf-4f-e56" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="2oy-dG-uMi"/>
-                    <constraint firstAttribute="trailing" secondItem="KmP-YR-vsL" secondAttribute="trailing" constant="12" id="4s0-JX-xzK"/>
-                    <constraint firstItem="KmP-YR-vsL" firstAttribute="top" secondItem="rPf-4f-e56" secondAttribute="bottom" constant="8" id="9dd-Hd-lbl"/>
-                    <constraint firstItem="rPf-4f-e56" firstAttribute="top" secondItem="55d-nj-tpv" secondAttribute="bottom" constant="8" id="EM1-HE-W1k"/>
                     <constraint firstItem="HRK-dg-bmO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GYG-fu-E3q"/>
-                    <constraint firstAttribute="trailing" secondItem="rPf-4f-e56" secondAttribute="trailing" constant="12" id="LHp-5A-m5L"/>
-                    <constraint firstItem="HU5-DV-cOF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="OW4-c5-NSA"/>
                     <constraint firstAttribute="bottom" secondItem="1jL-4e-oJ2" secondAttribute="bottom" constant="12" id="Qm7-bL-1yO"/>
                     <constraint firstItem="HRK-dg-bmO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Sl8-Rk-KnM"/>
-                    <constraint firstItem="55d-nj-tpv" firstAttribute="top" secondItem="HU5-DV-cOF" secondAttribute="bottom" constant="8" id="YA5-p4-HaH"/>
                     <constraint firstAttribute="trailing" secondItem="HRK-dg-bmO" secondAttribute="trailing" id="cO8-eP-dYi"/>
-                    <constraint firstItem="HU5-DV-cOF" firstAttribute="top" secondItem="HRK-dg-bmO" secondAttribute="bottom" constant="8" id="kjG-rb-sTm"/>
-                    <constraint firstItem="55d-nj-tpv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="oJ9-TW-0u2"/>
-                    <constraint firstAttribute="trailing" secondItem="55d-nj-tpv" secondAttribute="trailing" constant="12" id="uFM-2e-jiE"/>
                     <constraint firstItem="1jL-4e-oJ2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vyz-TC-9M0"/>
                 </constraints>
             </tableViewCellContentView>
@@ -207,7 +108,6 @@
     </objects>
     <resources>
         <image name="shareBlack" width="48" height="48"/>
-        <image name="smile" width="32" height="32"/>
         <image name="whatpeoplelike" width="48" height="48"/>
     </resources>
 </document>

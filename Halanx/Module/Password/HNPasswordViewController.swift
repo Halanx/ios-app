@@ -32,6 +32,7 @@ class HNPasswordViewController: UIViewController {
 
     }
     
+    /// Setting Up UI
     func setUpUI() {
         
         otpViewConstraintX.constant = -(view.frame.width)

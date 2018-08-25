@@ -39,6 +39,8 @@
 		C534290B2126DF5100D9405C /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534290A2126DF5100D9405C /* SwitchTableViewCell.swift */; };
 		C5450EE221316D0E007E59C0 /* HNRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE121316D0E007E59C0 /* HNRegisterViewController.swift */; };
 		C5450EE521316D45007E59C0 /* HNCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE421316D45007E59C0 /* HNCommentViewController.swift */; };
+		C5450EE92131BC86007E59C0 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE72131BC86007E59C0 /* CommentTableViewCell.swift */; };
+		C5450EEA2131BC86007E59C0 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */; };
 		C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B0212C5803009ED826 /* HNClaimViewController.swift */; };
 		C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B3212C6C42009ED826 /* HNCartViewController.swift */; };
 		C57576B7212C7335009ED826 /* HNPaymentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */; };
@@ -165,6 +167,8 @@
 		C534290A2126DF5100D9405C /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		C5450EE121316D0E007E59C0 /* HNRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNRegisterViewController.swift; sourceTree = "<group>"; };
 		C5450EE421316D45007E59C0 /* HNCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCommentViewController.swift; sourceTree = "<group>"; };
+		C5450EE72131BC86007E59C0 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		C57576B0212C5803009ED826 /* HNClaimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClaimViewController.swift; sourceTree = "<group>"; };
 		C57576B3212C6C42009ED826 /* HNCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCartViewController.swift; sourceTree = "<group>"; };
 		C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNPaymentOptionsViewController.swift; sourceTree = "<group>"; };
@@ -447,6 +451,7 @@
 		C53E8BBB2119D64A009947F3 /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C5450EE62131BC6F007E59C0 /* Comment Cell */,
 				C51445742130410A00C0C768 /* Order Voucher Cell */,
 				C55B3153212EBD1C0009A9EC /* Settings Cell */,
 				C5B5E5F9212CDA84006318FA /* People Like */,
@@ -478,6 +483,15 @@
 				C5450EE421316D45007E59C0 /* HNCommentViewController.swift */,
 			);
 			path = Comment;
+			sourceTree = "<group>";
+		};
+		C5450EE62131BC6F007E59C0 /* Comment Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5450EE72131BC86007E59C0 /* CommentTableViewCell.swift */,
+				C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */,
+			);
+			path = "Comment Cell";
 			sourceTree = "<group>";
 		};
 		C55B3153212EBD1C0009A9EC /* Settings Cell */ = {
@@ -1119,6 +1133,7 @@
 				C5807B772124AA83002AB7F3 /* InterestCollectionViewCell.xib in Resources */,
 				C507364121260FDC003886DD /* MarketCollectionViewCell.xib in Resources */,
 				C51190312128036D009BDEA0 /* ViewAllCollectionViewCell.xib in Resources */,
+				C5450EEA2131BC86007E59C0 /* CommentTableViewCell.xib in Resources */,
 				C5B5E5FD212CDB27006318FA /* PeopleLikeTableViewCell.xib in Resources */,
 				C5D9D7402123F6600009AF65 /* Chat.storyboard in Resources */,
 				C50D09542128F1B50008846C /* AddressTableViewCell.xib in Resources */,
@@ -1349,6 +1364,7 @@
 				C5E6BE2B2124307C00519CA4 /* HNCreatePostViewController.swift in Sources */,
 				C5807B842125E0B4002AB7F3 /* NeighbourTableViewCell.swift in Sources */,
 				C5807B7A2124BAD8002AB7F3 /* HNNeighbourViewController.swift in Sources */,
+				C5450EE92131BC86007E59C0 /* CommentTableViewCell.swift in Sources */,
 				C514458121305F1100C0C768 /* HNOnGoingOrderViewController.swift in Sources */,
 				C5C02DF82118B58D00CC60FA /* HNLoginViewController.swift in Sources */,
 			);

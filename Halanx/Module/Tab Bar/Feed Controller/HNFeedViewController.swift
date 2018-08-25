@@ -73,7 +73,8 @@ class HNFeedViewController: UIViewController {
     
     @IBAction func btnCommentClicked(_ sender: UIButton) {
         
-        let commentVc = HNCommentViewController.instantiateViewController(fromAppstoryboard: .Main)
+        let commentVc = HNCommentViewController.instantiateViewController(fromAppstoryboard: .Feed)
+        commentVc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(commentVc, animated: true)
     }
     
