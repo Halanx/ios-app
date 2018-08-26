@@ -143,16 +143,11 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-u9-sg6" customClass="StepSlider">
                                         <rect key="frame" x="12" y="150.5" width="232" height="25"/>
+                                        <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="sEz-q6-NFu"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="maxCount">
-                                                <integer key="value" value="46"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                                <integer key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="trackHeight">
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
@@ -160,11 +155,11 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="sliderCircleRadius">
-                                                <real key="value" value="12.5"/>
+                                                <real key="value" value="10.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="dotsInteractionEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="dotsInteractionEnabled" value="NO"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                                <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="0.29727632710000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="sliderCircleColor">
                                                 <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -189,7 +184,7 @@
                                     <constraint firstItem="ra9-3a-sDO" firstAttribute="centerY" secondItem="ktJ-yM-ocn" secondAttribute="centerY" id="28O-GX-xqE"/>
                                     <constraint firstItem="kwq-iL-W5k" firstAttribute="leading" secondItem="n1z-6t-Sqe" secondAttribute="leading" constant="8" id="3D3-AJ-ADg"/>
                                     <constraint firstAttribute="height" constant="230" id="3WW-2K-i8S"/>
-                                    <constraint firstItem="wPh-u9-sg6" firstAttribute="leading" secondItem="n1z-6t-Sqe" secondAttribute="leading" constant="12" id="6pt-f4-P2C"/>
+                                    <constraint firstItem="wPh-u9-sg6" firstAttribute="leading" secondItem="n1z-6t-Sqe" secondAttribute="leading" constant="8" id="6pt-f4-P2C"/>
                                     <constraint firstAttribute="trailing" secondItem="SCy-jy-ebU" secondAttribute="trailing" constant="12" id="84c-ZL-bZr"/>
                                     <constraint firstAttribute="trailing" secondItem="HTd-Xz-pYE" secondAttribute="trailing" constant="12" id="8wf-v4-Enc"/>
                                     <constraint firstItem="wPh-u9-sg6" firstAttribute="top" secondItem="ktJ-yM-ocn" secondAttribute="bottom" constant="12" id="BD6-gF-DCI"/>
@@ -203,7 +198,7 @@
                                     <constraint firstItem="LKB-ZW-5gU" firstAttribute="top" secondItem="Uf6-8d-xAa" secondAttribute="bottom" constant="12" id="XVN-c9-GfA"/>
                                     <constraint firstItem="ktJ-yM-ocn" firstAttribute="top" secondItem="kwq-iL-W5k" secondAttribute="bottom" constant="20" id="blR-9b-Juf"/>
                                     <constraint firstAttribute="trailing" secondItem="ros-rz-rOi" secondAttribute="trailing" constant="12" id="eO5-gU-0LJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="wPh-u9-sg6" secondAttribute="trailing" constant="12" id="jMG-w2-SGW"/>
+                                    <constraint firstAttribute="trailing" secondItem="wPh-u9-sg6" secondAttribute="trailing" constant="8" id="jMG-w2-SGW"/>
                                     <constraint firstItem="Uf6-8d-xAa" firstAttribute="top" secondItem="n1z-6t-Sqe" secondAttribute="top" constant="8" id="mk6-fQ-roy"/>
                                     <constraint firstAttribute="trailing" secondItem="ra9-3a-sDO" secondAttribute="trailing" constant="12" id="vP0-GT-18e"/>
                                     <constraint firstItem="ktJ-yM-ocn" firstAttribute="leading" secondItem="n1z-6t-Sqe" secondAttribute="leading" constant="12" id="y5p-Xp-QyR"/>
@@ -213,7 +208,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="m5c-Q5-JxK" firstAttribute="bottom" secondItem="lBn-eb-Jc1" secondAttribute="bottom" id="A6E-jT-uEh"/>
-                            <constraint firstItem="n1z-6t-Sqe" firstAttribute="width" secondItem="lO4-il-jsr" secondAttribute="width" multiplier="0.8" id="MjP-5d-XQP"/>
+                            <constraint firstItem="n1z-6t-Sqe" firstAttribute="width" secondItem="lO4-il-jsr" secondAttribute="width" multiplier="0.9" id="MjP-5d-XQP"/>
                             <constraint firstItem="1W2-HI-9B0" firstAttribute="leading" secondItem="m5c-Q5-JxK" secondAttribute="leading" id="RFP-xj-4xh"/>
                             <constraint firstItem="1W2-HI-9B0" firstAttribute="top" secondItem="m5c-Q5-JxK" secondAttribute="top" id="Rx3-CV-cq1"/>
                             <constraint firstItem="lBn-eb-Jc1" firstAttribute="top" secondItem="m5c-Q5-JxK" secondAttribute="top" id="WtT-PU-wdl"/>

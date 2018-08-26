@@ -737,7 +737,7 @@
                                     <constraint firstAttribute="height" constant="30" id="djP-5k-EUT"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="On Going"/>
+                                    <segment title="OnGoing"/>
                                     <segment title="Past"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

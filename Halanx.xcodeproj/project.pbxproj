@@ -43,6 +43,7 @@
 		C5450EE521316D45007E59C0 /* HNCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE421316D45007E59C0 /* HNCommentViewController.swift */; };
 		C5450EE92131BC86007E59C0 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE72131BC86007E59C0 /* CommentTableViewCell.swift */; };
 		C5450EEA2131BC86007E59C0 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */; };
+		C550666D2131F1FC0039B76D /* IntroImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */; };
 		C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B0212C5803009ED826 /* HNClaimViewController.swift */; };
 		C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B3212C6C42009ED826 /* HNCartViewController.swift */; };
 		C57576B7212C7335009ED826 /* HNPaymentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */; };
@@ -173,6 +174,7 @@
 		C5450EE421316D45007E59C0 /* HNCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCommentViewController.swift; sourceTree = "<group>"; };
 		C5450EE72131BC86007E59C0 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C57576B0212C5803009ED826 /* HNClaimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClaimViewController.swift; sourceTree = "<group>"; };
 		C57576B3212C6C42009ED826 /* HNCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCartViewController.swift; sourceTree = "<group>"; };
 		C57576B6212C7335009ED826 /* HNPaymentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNPaymentOptionsViewController.swift; sourceTree = "<group>"; };
@@ -581,6 +583,7 @@
 				C511902D21280354009BDEA0 /* View All Cell */,
 				C507363D21260FC0003886DD /* Market Cell */,
 				C5807B732124AA68002AB7F3 /* Interest Cell */,
+				C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */,
 			);
 			path = "Collection View Cell";
 			sourceTree = "<group>";
@@ -1351,6 +1354,7 @@
 				C5D9D7352123ECD80009AF65 /* FBManager.swift in Sources */,
 				C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */,
 				C57576BA212C7AE1009ED826 /* HNUserProfileViewController.swift in Sources */,
+				C550666D2131F1FC0039B76D /* IntroImageCollectionViewCell.swift in Sources */,
 				C514457F21305EF700C0C768 /* HNPastOrderViewController.swift in Sources */,
 				C5ED07A02120697700BFB42C /* HNUserDefaultManager.swift in Sources */,
 				C5C02E1E2118CA9D00CC60FA /* HNPollViewController.swift in Sources */,

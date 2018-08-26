@@ -172,6 +172,7 @@
                             </barButtonItem>
                             <barButtonItem image="edit" id="BOr-MT-8Nb">
                                 <inset key="imageInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="largeContentSizeImageInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="btnEditProfileAction:" destination="4BI-JH-pa9" id="ocz-39-Spw"/>
@@ -461,19 +462,29 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0LH-nO-Ud6" customClass="RSKGrowingTextView" customModule="RSKGrowingTextView">
-                                        <rect key="frame" x="12" y="204" width="296" height="50"/>
+                                        <rect key="frame" x="12" y="204" width="296" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="zqV-Im-jgF"/>
+                                            <constraint firstAttribute="height" constant="40" id="zqV-Im-jgF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type your Bio Here"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="mfN-OA-a12" id="DpG-AE-tLA"/>
+                                        </connections>
                                     </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4t-Tq-RSj">
+                                        <rect key="frame" x="40" y="206" width="240" height="128"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1.5" id="O52-7x-rTA"/>
+                                        </constraints>
+                                    </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5RG-j5-K06" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="12" y="274" width="296" height="40"/>
+                                        <rect key="frame" x="12" y="264" width="296" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="bEv-vi-T7c"/>
                                         </constraints>
@@ -493,12 +504,12 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                 <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Email"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Email"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Htz-S6-1TQ" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="12" y="334" width="296" height="40"/>
+                                        <rect key="frame" x="12" y="324" width="296" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="pzs-f3-7Fc"/>
                                         </constraints>
@@ -518,7 +529,7 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                 <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your DOB"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="DOB"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="DOB"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -566,7 +577,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HnS-Tg-fpz" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="12" y="441" width="296" height="40"/>
+                                        <rect key="frame" x="12" y="431" width="296" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="gdL-z3-Kbz"/>
                                         </constraints>
@@ -586,7 +597,7 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                 <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Relation Status"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Relation Status"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Relation Status"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -594,7 +605,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d6I-4c-P8o" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="12" y="501" width="296" height="40"/>
+                                        <rect key="frame" x="12" y="491" width="296" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nmH-jG-Zgd"/>
                                         </constraints>
@@ -614,7 +625,7 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                 <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Address"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Address"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Address"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -622,7 +633,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4U-5Q-Aho" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="12" y="561" width="296" height="40"/>
+                                        <rect key="frame" x="12" y="551" width="296" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="rs5-Lm-sJL"/>
                                         </constraints>
@@ -642,7 +653,7 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                 <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Education"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Education"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Education"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -650,7 +661,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-gs-GNr" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="12" y="621" width="296" height="40"/>
+                                        <rect key="frame" x="12" y="611" width="296" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="c5B-83-1QZ"/>
                                         </constraints>
@@ -670,7 +681,7 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                 <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Work"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Work"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Work"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -678,7 +689,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFw-Ra-MBC">
-                                        <rect key="frame" x="0.0" y="677" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="667" width="320" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="mz6-eR-025"/>
@@ -689,13 +700,13 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HK5-ed-DSh">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="727"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="717"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="btnBackgroundClicked:" destination="mfN-OA-a12" eventType="touchUpInside" id="TuY-CP-uID"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCG-bf-fB0" customClass="HNDesignableView" customModule="Halanx" customModuleProvider="target">
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCG-bf-fB0" customClass="HNDesignableView" customModule="Halanx" customModuleProvider="target">
                                         <rect key="frame" x="24" y="180" width="272" height="360"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="np6-An-dhR">
@@ -863,7 +874,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XX4-Cc-N0m" customClass="HNDesignableView" customModule="Halanx" customModuleProvider="target">
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XX4-Cc-N0m" customClass="HNDesignableView" customModule="Halanx" customModuleProvider="target">
                                         <rect key="frame" x="24" y="220" width="272" height="280"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Address Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtC-xO-Q1T">
@@ -893,7 +904,7 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                         <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter House Details"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="House Details"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="House Details"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
@@ -918,7 +929,7 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                         <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your City"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="City"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="City"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
@@ -943,7 +954,7 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                         <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Area"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Area"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Area"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
@@ -1011,7 +1022,7 @@
                                     <constraint firstAttribute="trailing" secondItem="HnS-Tg-fpz" secondAttribute="trailing" constant="12" id="0Qd-F2-acc"/>
                                     <constraint firstItem="TFw-Ra-MBC" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" id="2eC-rN-zCR"/>
                                     <constraint firstItem="E4U-5Q-Aho" firstAttribute="top" secondItem="d6I-4c-P8o" secondAttribute="bottom" constant="20" id="61j-3f-loJ"/>
-                                    <constraint firstItem="0vc-R9-0sx" firstAttribute="top" secondItem="Htz-S6-1TQ" secondAttribute="bottom" constant="20" id="9ge-66-v15"/>
+                                    <constraint firstItem="0vc-R9-0sx" firstAttribute="top" secondItem="Htz-S6-1TQ" secondAttribute="bottom" constant="35" id="9ge-66-v15"/>
                                     <constraint firstItem="eCG-bf-fB0" firstAttribute="width" secondItem="7k7-eZ-uBb" secondAttribute="width" multiplier="0.85" id="9vx-aH-1UU"/>
                                     <constraint firstItem="ACK-NL-PMh" firstAttribute="centerY" secondItem="9Mg-YZ-iMe" secondAttribute="centerY" id="ACy-vh-vSe"/>
                                     <constraint firstAttribute="trailing" secondItem="TFw-Ra-MBC" secondAttribute="trailing" id="D0V-QC-7gW"/>
@@ -1021,9 +1032,7 @@
                                     <constraint firstAttribute="trailing" secondItem="6VK-gs-GNr" secondAttribute="trailing" constant="12" id="Itm-aP-fgv"/>
                                     <constraint firstItem="9Mg-YZ-iMe" firstAttribute="centerY" secondItem="0vc-R9-0sx" secondAttribute="centerY" id="KxO-3u-aUF"/>
                                     <constraint firstItem="d6I-4c-P8o" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" constant="12" id="KyW-QJ-0x8"/>
-                                    <constraint firstItem="HnS-Tg-fpz" firstAttribute="top" secondItem="9Mg-YZ-iMe" secondAttribute="bottom" constant="20" id="Le0-8g-a97"/>
                                     <constraint firstItem="ACK-NL-PMh" firstAttribute="leading" secondItem="9Mg-YZ-iMe" secondAttribute="trailing" constant="20" id="PAq-Bh-q9b"/>
-                                    <constraint firstItem="5RG-j5-K06" firstAttribute="top" secondItem="0LH-nO-Ud6" secondAttribute="bottom" constant="20" id="Q0E-O6-5Cj"/>
                                     <constraint firstItem="eCG-bf-fB0" firstAttribute="centerX" secondItem="7k7-eZ-uBb" secondAttribute="centerX" id="Qfv-FS-vVC"/>
                                     <constraint firstAttribute="trailing" secondItem="E4U-5Q-Aho" secondAttribute="trailing" constant="12" id="Rk9-lo-owc"/>
                                     <constraint firstItem="9Mg-YZ-iMe" firstAttribute="leading" secondItem="0vc-R9-0sx" secondAttribute="trailing" constant="20" id="USP-Fe-88e"/>
@@ -1035,7 +1044,9 @@
                                     <constraint firstItem="765-dd-Txh" firstAttribute="trailing" secondItem="Oxa-wf-az5" secondAttribute="trailing" id="aMt-ah-gWm"/>
                                     <constraint firstItem="5RG-j5-K06" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" constant="12" id="aNC-nf-fJz"/>
                                     <constraint firstItem="765-dd-Txh" firstAttribute="bottom" secondItem="Oxa-wf-az5" secondAttribute="bottom" constant="-4" id="aQ1-Fw-0e2"/>
+                                    <constraint firstItem="HnS-Tg-fpz" firstAttribute="top" secondItem="0vc-R9-0sx" secondAttribute="bottom" constant="15" id="bXu-VC-5Nd"/>
                                     <constraint firstItem="Ec9-tu-pxW" firstAttribute="top" secondItem="Oxa-wf-az5" secondAttribute="bottom" constant="12" id="djn-2W-HxE"/>
+                                    <constraint firstItem="y4t-Tq-RSj" firstAttribute="top" secondItem="0LH-nO-Ud6" secondAttribute="bottom" id="ewh-bU-q4t"/>
                                     <constraint firstItem="0LH-nO-Ud6" firstAttribute="top" secondItem="Ec9-tu-pxW" secondAttribute="bottom" constant="12" id="fYP-HX-R3g"/>
                                     <constraint firstItem="XX4-Cc-N0m" firstAttribute="centerY" secondItem="7k7-eZ-uBb" secondAttribute="centerY" id="ffu-IB-E8Q"/>
                                     <constraint firstItem="HK5-ed-DSh" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" id="gFh-y5-Vbk"/>
@@ -1045,6 +1056,7 @@
                                     <constraint firstAttribute="bottom" secondItem="HK5-ed-DSh" secondAttribute="bottom" id="hXT-Gc-I0y"/>
                                     <constraint firstItem="XX4-Cc-N0m" firstAttribute="width" secondItem="7k7-eZ-uBb" secondAttribute="width" multiplier="0.85" id="hgm-gD-rHW"/>
                                     <constraint firstItem="0vc-R9-0sx" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" constant="12" id="j02-VD-k3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="y4t-Tq-RSj" secondAttribute="trailing" constant="12" id="jDN-GN-epW"/>
                                     <constraint firstItem="HnS-Tg-fpz" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" constant="12" id="jVF-hk-k5A"/>
                                     <constraint firstItem="TFw-Ra-MBC" firstAttribute="top" secondItem="6VK-gs-GNr" secondAttribute="bottom" constant="16" id="lNc-Gw-Myv"/>
                                     <constraint firstItem="E4U-5Q-Aho" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" constant="12" id="m0C-IF-8Mw"/>
@@ -1055,7 +1067,9 @@
                                     <constraint firstAttribute="bottom" secondItem="TFw-Ra-MBC" secondAttribute="bottom" id="tE6-PU-xCB"/>
                                     <constraint firstAttribute="trailing" secondItem="Htz-S6-1TQ" secondAttribute="trailing" constant="12" id="u04-Dg-JPN"/>
                                     <constraint firstItem="Oxa-wf-az5" firstAttribute="centerX" secondItem="7k7-eZ-uBb" secondAttribute="centerX" id="vht-OB-uS9"/>
+                                    <constraint firstItem="5RG-j5-K06" firstAttribute="top" secondItem="y4t-Tq-RSj" secondAttribute="bottom" constant="18.5" id="wIW-n2-ay3"/>
                                     <constraint firstItem="XX4-Cc-N0m" firstAttribute="centerX" secondItem="7k7-eZ-uBb" secondAttribute="centerX" id="xjS-WL-kGH"/>
+                                    <constraint firstItem="y4t-Tq-RSj" firstAttribute="leading" secondItem="7k7-eZ-uBb" secondAttribute="leading" constant="12" id="xkJ-Mv-hac"/>
                                     <constraint firstItem="eCG-bf-fB0" firstAttribute="centerY" secondItem="7k7-eZ-uBb" secondAttribute="centerY" id="zwy-9n-fBT"/>
                                 </constraints>
                             </scrollView>
@@ -1079,6 +1093,7 @@
                         <outlet property="imgProfile" destination="Oxa-wf-az5" id="BzI-1m-tk2"/>
                         <outlet property="txtAddress" destination="d6I-4c-P8o" id="dhH-M1-bGa"/>
                         <outlet property="txtBio" destination="0LH-nO-Ud6" id="Rei-uA-vmM"/>
+                        <outlet property="txtBioUnderline" destination="y4t-Tq-RSj" id="gU9-Cl-3HP"/>
                         <outlet property="txtDOB" destination="Htz-S6-1TQ" id="cQW-1G-gvN"/>
                         <outlet property="txtEducation" destination="E4U-5Q-Aho" id="6YU-LH-fJ4"/>
                         <outlet property="txtEmail" destination="5RG-j5-K06" id="ZCx-HQ-TeD"/>
@@ -1128,7 +1143,7 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1Ne-ig-fm0" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="16" y="284" width="288" height="40"/>
+                                <rect key="frame" x="30" y="284" width="260" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RJ2-bq-vB0"/>
                                 </constraints>
@@ -1663,22 +1678,19 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellSwitch" rowHeight="44" id="Qrp-28-Q5l" customClass="SwitchTableViewCell" customModule="Halanx" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellSwitch" rowHeight="50" id="Qrp-28-Q5l" customClass="SwitchTableViewCell" customModule="Halanx" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qrp-28-Q5l" id="cax-DY-5Qh">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RSh-jR-NHU">
-                                                    <rect key="frame" x="259" y="9.5" width="51" height="25"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="dDP-kX-LNo"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="259" y="9.5" width="51" height="31"/>
                                                     <color key="onTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-Ck-OxM">
-                                                    <rect key="frame" x="12" y="11" width="88" height="21"/>
+                                                    <rect key="frame" x="12" y="14.5" width="88" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1698,14 +1710,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellShare" rowHeight="44" id="R7R-hP-KVX" customClass="SettingShareTableViewCell" customModule="Halanx" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="78" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R7R-hP-KVX" id="FAt-XZ-lGD">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-JI-jHo">
-                                                    <rect key="frame" x="20" y="3.5" width="35" height="35"/>
+                                                    <rect key="frame" x="12" y="3.5" width="35" height="35"/>
                                                     <color key="tintColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="aRr-CF-1oP"/>
@@ -1713,7 +1725,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-XN-WX3">
-                                                    <rect key="frame" x="67" y="11.5" width="42" height="20"/>
+                                                    <rect key="frame" x="59" y="11.5" width="42" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1723,7 +1735,7 @@
                                                 <constraint firstItem="HRV-XN-WX3" firstAttribute="leading" secondItem="Q4I-JI-jHo" secondAttribute="trailing" constant="12" id="Gaw-v2-eYh"/>
                                                 <constraint firstItem="Q4I-JI-jHo" firstAttribute="centerY" secondItem="FAt-XZ-lGD" secondAttribute="centerY" id="HXY-7l-u6d"/>
                                                 <constraint firstItem="HRV-XN-WX3" firstAttribute="centerY" secondItem="Q4I-JI-jHo" secondAttribute="centerY" id="aIl-Ff-tnK"/>
-                                                <constraint firstItem="Q4I-JI-jHo" firstAttribute="leading" secondItem="FAt-XZ-lGD" secondAttribute="leading" constant="20" id="c3n-5E-6yv"/>
+                                                <constraint firstItem="Q4I-JI-jHo" firstAttribute="leading" secondItem="FAt-XZ-lGD" secondAttribute="leading" constant="12" id="c3n-5E-6yv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -1754,7 +1766,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57d-G0-YzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1003" y="843"/>
+            <point key="canvasLocation" x="-1003.125" y="842.95774647887322"/>
         </scene>
         <!--Education Detail View Controller-->
         <scene sceneID="DjE-qV-Zp9">
@@ -2279,14 +2291,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Wr-l6-huT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1913" y="843"/>
+            <point key="canvasLocation" x="-1914.375" y="842.95774647887322"/>
         </scene>
     </scenes>
     <resources>
         <image name="addUser" width="48" height="48"/>
         <image name="camera" width="48" height="48"/>
         <image name="drake2" width="80" height="80"/>
-        <image name="edit" width="48" height="48"/>
+        <image name="edit" width="24" height="24"/>
         <image name="facebook" width="16" height="16"/>
         <image name="logo" width="100" height="100"/>
         <image name="meSelect" width="48" height="48"/>

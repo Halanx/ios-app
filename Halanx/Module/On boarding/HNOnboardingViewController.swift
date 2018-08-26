@@ -90,7 +90,6 @@ class HNOnboardingViewController: UIViewController {
     
 }
 
-
 // MARK: Carousel View
 extension HNOnboardingViewController: iCarouselDataSource, iCarouselDelegate {
     
@@ -142,7 +141,6 @@ extension HNOnboardingViewController: iCarouselDataSource, iCarouselDelegate {
             nextCarouselIndex = 0
         }
     }
-
     
 }
 

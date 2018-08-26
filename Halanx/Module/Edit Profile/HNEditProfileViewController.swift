@@ -24,6 +24,7 @@ class HNEditProfileViewController: UIViewController {
     @IBOutlet weak var txtEducation: SkyFloatingLabelTextField!
     @IBOutlet weak var txtWork: SkyFloatingLabelTextField!
     
+    @IBOutlet weak var txtBioUnderline: UIView!
     @IBOutlet weak var btnBackground: UIButton!
     @IBOutlet weak var viewRelation: HNDesignableView!
     @IBOutlet weak var viewAddress: HNDesignableView!
@@ -43,6 +44,11 @@ class HNEditProfileViewController: UIViewController {
         
         //changeNavigationTitle(title: "Edit Profile")
         self.title = "Edit Profile"
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        self.view.endEditing(true)
     }
     
     /// Setiing Up UI
@@ -180,8 +186,6 @@ extension HNEditProfileViewController: UITextFieldDelegate {
         
     }
     
-    
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if textField == txtRelation {
@@ -200,6 +204,16 @@ extension HNEditProfileViewController: UITextFieldDelegate {
     }
 }
 
-
-
-
+extension HNEditProfileViewController: UITextViewDelegate {
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        
+        txtBioUnderline.backgroundColor = UIColor(red: 255.0/255.0, green: 38.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        
+        txtBioUnderline.backgroundColor = UIColor.darkGray
+    }
+    
+}
