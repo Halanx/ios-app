@@ -11,18 +11,32 @@ import Foundation
 
 class HNLoginWebService {
     
-    class func checkUserExist(url: URL, onSuccess: @escaping (Bool)->(), onFailure: @escaping (Error)->()) {
-        
-        let requestManager = AlamoRequestManager()
-        requestManager.requestDataFor(url, methodType: .get, params: nil, headerAuth: nil, onSuccess: { (response) in
+    class func checkUserExist(url: URL, onSuccess: @escaping (String)->(), onFailure: @escaping (Error)->()) {
+        DispatchQueue.global(qos: .userInteractive).async {
             
-            print(response)
+            let requestManager = AlamoRequestManager()
+            requestManager.requestDataFor(url, methodType: .get, params: nil, headerAuth: nil, onSuccess: { (response) in
+                
+                
+                if let result =  response!["exists"] as? String {
+                    
+                    DispatchQueue.main.async {
+                        
+                        onSuccess(result)
+                    }
+                    
+                }
+                
+            }) { (error) in
+                
+                DispatchQueue.main.async {
+                    
+                    onFailure(error!)
+                }
+            }
             
-        }) { (error) in
-            
-            onFailure(error!)
         }
-        
+
     }
     
     

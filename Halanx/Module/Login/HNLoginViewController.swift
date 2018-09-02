@@ -12,7 +12,7 @@ import FacebookLogin
 import SkyFloatingLabelTextField
 
 class HNLoginViewController: UIViewController {
-
+    
     @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var txtMobileNumber: SkyFloatingLabelTextField!
     
@@ -23,10 +23,10 @@ class HNLoginViewController: UIViewController {
         
         
     }
-
-    override func viewDidAppear(_ animated: Bool) {
+    
+    override func viewWillDisappear(_ animated: Bool) {
         
-        
+        self.view.endEditing(true) 
     }
     
     /// Setiing up UI
@@ -66,10 +66,8 @@ class HNLoginViewController: UIViewController {
     @IBAction func btnContinueAction(_ sender: Any) {
         
         checkUserExists()
-//        let passVc = HNPasswordViewController.instantiateViewController(fromAppstoryboard: .Main)
-//        self.navigationController?.pushViewController(passVc, animated: true)
+        
     }
-    
     
     
     @IBAction func btnFbAction(_ sender: UIButton) {
@@ -82,9 +80,14 @@ class HNLoginViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.view.endEditing(true)
+    }
     
 }
 
+// MARK: Request protocol
 extension HNLoginViewController: RequestGeneratorProtocol {
     
     
@@ -93,6 +96,7 @@ extension HNLoginViewController: RequestGeneratorProtocol {
         
         if (txtMobileNumber.text?.isEmpty)! {
             
+            self.displayAlertMessageWithTitle(titleToDisplay: "Login Error", messageToDisplay: "Please Enter your Mobile Number")
             return
         }
         
@@ -102,6 +106,17 @@ extension HNLoginViewController: RequestGeneratorProtocol {
         
         HNLoginWebService.checkUserExist(url: url, onSuccess: { (response) in
             
+            if response == "False" {
+                
+                let registerVc = HNRegisterViewController.instantiateViewController(fromAppstoryboard: .Main)
+                registerVc.mobileNum = mobileNum
+                self.navigationController?.pushViewController(registerVc, animated: true)
+                
+            }else {
+                
+                let passVc = HNPasswordViewController.instantiateViewController(fromAppstoryboard: .Main)
+                self.navigationController?.pushViewController(passVc, animated: true)
+            }
             
         }) { (error) in
             
@@ -113,9 +128,17 @@ extension HNLoginViewController: RequestGeneratorProtocol {
 }
 
 
+// MARK: TextField Delegate
 extension HNLoginViewController: UITextFieldDelegate {
     
-    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = txtMobileNumber.text ?? ""
+        guard let stringRange = Range(range, in: currentText) else { return false }
+        
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+        
+        return updatedText.count <= 10
+    }
     
 }
 

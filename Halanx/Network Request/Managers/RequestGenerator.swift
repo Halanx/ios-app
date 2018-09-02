@@ -14,6 +14,8 @@ var BaseUrl = "https://api.halanx.com"
 enum Endpoint {
     
     case userExist()
+    case getOtp()
+    case registerUser()
 }
 
 // MARK: EndPoint Extension
@@ -27,6 +29,14 @@ extension Endpoint {
         case .userExist:
             
             return "/users/exists/"
+        
+        case .getOtp:
+            
+            return "/users/get_otp/"
+            
+        case .registerUser:
+            
+            return "/users/register/"
             
         }
         
@@ -61,7 +71,7 @@ extension RequestGeneratorProtocol {
     // Get Complete Url
     func completeUrl(endpoint: Endpoint) -> String {
         
-        let urlString = "baseurl" + endpoint.endPoint
+        let urlString = "\(BaseUrl)" + endpoint.endPoint
         return urlString
     }
     

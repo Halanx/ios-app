@@ -63,8 +63,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if HNUserDefaultManager.getBoolValue(key: Key.launchBefore)  {
             
-            let loginVc = HNLoginViewController.instantiateViewController(fromAppstoryboard: .Main)
-            self.window?.rootViewController = loginVc
+            let loginVc = mainStoryboard.instantiateViewController(withIdentifier: "LoginNavigationController") as! UINavigationController
+            appDelegate.window?.rootViewController = loginVc
             
         } else {
             
