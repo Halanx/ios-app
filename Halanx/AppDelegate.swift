@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey(googleApi)
         GMSPlacesClient.provideAPIKey(googleApi)
         
+        showOnbiarding()
+        
         return true
     }
 

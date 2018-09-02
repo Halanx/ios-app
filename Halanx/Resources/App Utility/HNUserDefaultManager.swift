@@ -12,6 +12,7 @@ import UIKit
 struct Key {
     
     static let launchBefore: String = "launchBefore"
+    static let isUserLoggedIn: String = "isUserLoggedIn"
     
 }
 

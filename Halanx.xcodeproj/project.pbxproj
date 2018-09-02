@@ -43,6 +43,9 @@
 		C5450EE521316D45007E59C0 /* HNCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE421316D45007E59C0 /* HNCommentViewController.swift */; };
 		C5450EE92131BC86007E59C0 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5450EE72131BC86007E59C0 /* CommentTableViewCell.swift */; };
 		C5450EEA2131BC86007E59C0 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */; };
+		C54FB62E213C678800286E27 /* AlamofireRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB62D213C678800286E27 /* AlamofireRequestManager.swift */; };
+		C54FB630213C67DA00286E27 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB62F213C67DA00286E27 /* RequestGenerator.swift */; };
+		C54FB636213C6FD300286E27 /* HNLoginWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB635213C6FD300286E27 /* HNLoginWebService.swift */; };
 		C550666D2131F1FC0039B76D /* IntroImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */; };
 		C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B0212C5803009ED826 /* HNClaimViewController.swift */; };
 		C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B3212C6C42009ED826 /* HNCartViewController.swift */; };
@@ -174,6 +177,9 @@
 		C5450EE421316D45007E59C0 /* HNCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCommentViewController.swift; sourceTree = "<group>"; };
 		C5450EE72131BC86007E59C0 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		C54FB62D213C678800286E27 /* AlamofireRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequestManager.swift; sourceTree = "<group>"; };
+		C54FB62F213C67DA00286E27 /* RequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		C54FB635213C6FD300286E27 /* HNLoginWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNLoginWebService.swift; sourceTree = "<group>"; };
 		C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C57576B0212C5803009ED826 /* HNClaimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClaimViewController.swift; sourceTree = "<group>"; };
 		C57576B3212C6C42009ED826 /* HNCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCartViewController.swift; sourceTree = "<group>"; };
@@ -382,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				C5C02DF72118B58D00CC60FA /* HNLoginViewController.swift */,
+				C54FB635213C6FD300286E27 /* HNLoginWebService.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -508,6 +515,23 @@
 				C5450EE82131BC86007E59C0 /* CommentTableViewCell.xib */,
 			);
 			path = "Comment Cell";
+			sourceTree = "<group>";
+		};
+		C54FB62B213C675C00286E27 /* Network Request */ = {
+			isa = PBXGroup;
+			children = (
+				C54FB62C213C676D00286E27 /* Managers */,
+			);
+			path = "Network Request";
+			sourceTree = "<group>";
+		};
+		C54FB62C213C676D00286E27 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C54FB62D213C678800286E27 /* AlamofireRequestManager.swift */,
+				C54FB62F213C67DA00286E27 /* RequestGenerator.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		C55B3153212EBD1C0009A9EC /* Settings Cell */ = {
@@ -679,6 +703,7 @@
 				C5C02DD42118A28B00CC60FA /* View */,
 				C5C02E052118BE1100CC60FA /* Network Requests */,
 				C5C02DD82118A2B000CC60FA /* Resources */,
+				C54FB62B213C675C00286E27 /* Network Request */,
 				C5B5E604212CF76D006318FA /* Assets.xcassets */,
 				C5C02DAF2118A27700CC60FA /* LaunchScreen.storyboard */,
 				C5C02DB22118A27700CC60FA /* Info.plist */,
@@ -1325,6 +1350,7 @@
 				C51445772130412900C0C768 /* OrderVoucherTableViewCell.swift in Sources */,
 				C507364C21261FF2003886DD /* HeaderTableViewCell.swift in Sources */,
 				C5B5E5F7212CCA5C006318FA /* UserInfoTableViewCell.swift in Sources */,
+				C54FB62E213C678800286E27 /* AlamofireRequestManager.swift in Sources */,
 				C5ED0768211CAC5C00BFB42C /* PostTableViewCell.swift in Sources */,
 				C5807B712124A935002AB7F3 /* HNInterestViewController.swift in Sources */,
 				C50D095C212915FF0008846C /* ClaimTableViewCell.swift in Sources */,
@@ -1334,6 +1360,7 @@
 				C5ED077A211CC58000BFB42C /* CellManager.swift in Sources */,
 				C5C02DF62118B56A00CC60FA /* HNMainTabViewController.swift in Sources */,
 				C514457A21305CF400C0C768 /* HNHCashViewController.swift in Sources */,
+				C54FB636213C6FD300286E27 /* HNLoginWebService.swift in Sources */,
 				C5ED0772211CB3B300BFB42C /* HNDesignableButton.swift in Sources */,
 				C5C02E282118CF9500CC60FA /* ViewControllerExtension.swift in Sources */,
 				C507364F212632A8003886DD /* HNViewAllMarketViewController.swift in Sources */,
@@ -1351,6 +1378,7 @@
 				C5ED076D211CAC7500BFB42C /* NewsTableViewCell.swift in Sources */,
 				C5C02DFF2118B74600CC60FA /* HNConstants.swift in Sources */,
 				C5807B762124AA83002AB7F3 /* InterestCollectionViewCell.swift in Sources */,
+				C54FB630213C67DA00286E27 /* RequestGenerator.swift in Sources */,
 				C5D9D7352123ECD80009AF65 /* FBManager.swift in Sources */,
 				C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */,
 				C57576BA212C7AE1009ED826 /* HNUserProfileViewController.swift in Sources */,

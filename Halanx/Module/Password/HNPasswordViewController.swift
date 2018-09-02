@@ -42,6 +42,7 @@ class HNPasswordViewController: UIViewController {
         
     }
     
+    /// Showing Main Tab Bar
     func showMainTabBar() {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
