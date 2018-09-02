@@ -523,23 +523,6 @@
 			path = "Comment Cell";
 			sourceTree = "<group>";
 		};
-		C54FB62B213C675C00286E27 /* Network Request */ = {
-			isa = PBXGroup;
-			children = (
-				C54FB62C213C676D00286E27 /* Managers */,
-			);
-			path = "Network Request";
-			sourceTree = "<group>";
-		};
-		C54FB62C213C676D00286E27 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				C54FB62D213C678800286E27 /* AlamofireRequestManager.swift */,
-				C54FB62F213C67DA00286E27 /* RequestGenerator.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		C55B3153212EBD1C0009A9EC /* Settings Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,7 +692,6 @@
 				C5C02DD42118A28B00CC60FA /* View */,
 				C5C02E052118BE1100CC60FA /* Network Requests */,
 				C5C02DD82118A2B000CC60FA /* Resources */,
-				C54FB62B213C675C00286E27 /* Network Request */,
 				C5B5E604212CF76D006318FA /* Assets.xcassets */,
 				C5C02DAF2118A27700CC60FA /* LaunchScreen.storyboard */,
 				C5C02DB22118A27700CC60FA /* Info.plist */,
@@ -873,6 +855,8 @@
 		C5C02E062118BEC100CC60FA /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C54FB62D213C678800286E27 /* AlamofireRequestManager.swift */,
+				C54FB62F213C67DA00286E27 /* RequestGenerator.swift */,
 				C5D9D7342123ECD80009AF65 /* FBManager.swift */,
 			);
 			path = Managers;
