@@ -13,6 +13,7 @@ struct Key {
     
     static let launchBefore: String = "launchBefore"
     static let isUserLoggedIn: String = "isUserLoggedIn"
+    static let authKey: String = "authKey"
     
 }
 

@@ -51,7 +51,7 @@ class HNPollViewController: UIViewController {
             
             if let error = err {
                 
-                self.displayAlertMessage(messageToDisplay: String(describing: error.localizedDescription))
+                self.displayAlertMessage(messageToDisplay: "\(error.localizedDescription)")
                 return
             }
             

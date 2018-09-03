@@ -115,6 +115,7 @@ extension HNLoginViewController: RequestGeneratorProtocol {
             }else {
                 
                 let passVc = HNPasswordViewController.instantiateViewController(fromAppstoryboard: .Main)
+                passVc.mobileNum = mobileNum
                 self.navigationController?.pushViewController(passVc, animated: true)
             }
             

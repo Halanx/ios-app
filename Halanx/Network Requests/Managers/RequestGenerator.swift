@@ -16,6 +16,7 @@ enum Endpoint {
     case userExist()
     case getOtp()
     case registerUser()
+    case logIn()
 }
 
 // MARK: EndPoint Extension
@@ -37,6 +38,10 @@ extension Endpoint {
         case .registerUser:
             
             return "/users/register/"
+        
+        case .logIn:
+            
+            return "/rest-auth/login/"
             
         }
         

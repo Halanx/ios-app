@@ -12,12 +12,13 @@ import Foundation
 class HNLoginWebService {
     
     class func checkUserExist(url: URL, onSuccess: @escaping (String)->(), onFailure: @escaping (Error)->()) {
+        
+        HNUtility.startLoaderAnimating()
         DispatchQueue.global(qos: .userInteractive).async {
             
             let requestManager = AlamoRequestManager()
             requestManager.requestDataFor(url, methodType: .get, params: nil, headerAuth: nil, onSuccess: { (response) in
-                
-                
+                HNUtility.stopLoaderAnimating()
                 if let result =  response!["exists"] as? String {
                     
                     DispatchQueue.main.async {

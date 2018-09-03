@@ -46,8 +46,8 @@
 		C54FB62E213C678800286E27 /* AlamofireRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB62D213C678800286E27 /* AlamofireRequestManager.swift */; };
 		C54FB630213C67DA00286E27 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB62F213C67DA00286E27 /* RequestGenerator.swift */; };
 		C54FB636213C6FD300286E27 /* HNLoginWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB635213C6FD300286E27 /* HNLoginWebService.swift */; };
-		C54FB639213C90AE00286E27 /* HNRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB638213C90AE00286E27 /* HNRegisterViewModel.swift */; };
 		C54FB63B213C960400286E27 /* HNRegisterWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB63A213C960400286E27 /* HNRegisterWebService.swift */; };
+		C54FB63D213D3C8600286E27 /* HNPasswordWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB63C213D3C8600286E27 /* HNPasswordWebService.swift */; };
 		C550666D2131F1FC0039B76D /* IntroImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */; };
 		C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B0212C5803009ED826 /* HNClaimViewController.swift */; };
 		C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B3212C6C42009ED826 /* HNCartViewController.swift */; };
@@ -182,8 +182,8 @@
 		C54FB62D213C678800286E27 /* AlamofireRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequestManager.swift; sourceTree = "<group>"; };
 		C54FB62F213C67DA00286E27 /* RequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
 		C54FB635213C6FD300286E27 /* HNLoginWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNLoginWebService.swift; sourceTree = "<group>"; };
-		C54FB638213C90AE00286E27 /* HNRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNRegisterViewModel.swift; sourceTree = "<group>"; };
 		C54FB63A213C960400286E27 /* HNRegisterWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNRegisterWebService.swift; sourceTree = "<group>"; };
+		C54FB63C213D3C8600286E27 /* HNPasswordWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNPasswordWebService.swift; sourceTree = "<group>"; };
 		C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C57576B0212C5803009ED826 /* HNClaimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClaimViewController.swift; sourceTree = "<group>"; };
 		C57576B3212C6C42009ED826 /* HNCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCartViewController.swift; sourceTree = "<group>"; };
@@ -401,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				C5ED0789211D0F0A00BFB42C /* HNPasswordViewController.swift */,
+				C54FB63C213D3C8600286E27 /* HNPasswordWebService.swift */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -500,7 +501,6 @@
 			isa = PBXGroup;
 			children = (
 				C5450EE121316D0E007E59C0 /* HNRegisterViewController.swift */,
-				C54FB638213C90AE00286E27 /* HNRegisterViewModel.swift */,
 				C54FB63A213C960400286E27 /* HNRegisterWebService.swift */,
 			);
 			path = Register;
@@ -1361,6 +1361,7 @@
 				C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */,
 				C5C02DF02118B4F100CC60FA /* HNDesignableUIImage.swift in Sources */,
 				C534290B2126DF5100D9405C /* SwitchTableViewCell.swift in Sources */,
+				C54FB63D213D3C8600286E27 /* HNPasswordWebService.swift in Sources */,
 				C5C02E1C2118CA7F00CC60FA /* HNFeedViewController.swift in Sources */,
 				C5ED0788211D097200BFB42C /* iCarousel.m in Sources */,
 				C57576B7212C7335009ED826 /* HNPaymentOptionsViewController.swift in Sources */,
@@ -1374,7 +1375,6 @@
 				C5342906212691D600D9405C /* HNSettingViewController.swift in Sources */,
 				C57576BA212C7AE1009ED826 /* HNUserProfileViewController.swift in Sources */,
 				C550666D2131F1FC0039B76D /* IntroImageCollectionViewCell.swift in Sources */,
-				C54FB639213C90AE00286E27 /* HNRegisterViewModel.swift in Sources */,
 				C514457F21305EF700C0C768 /* HNPastOrderViewController.swift in Sources */,
 				C5ED07A02120697700BFB42C /* HNUserDefaultManager.swift in Sources */,
 				C5C02E1E2118CA9D00CC60FA /* HNPollViewController.swift in Sources */,

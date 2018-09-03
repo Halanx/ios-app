@@ -11,17 +11,24 @@ import Foundation
 
 class HNRegisterWebService {
     
+    var registerParamDict = [String: Any]()
+    var otpParamDict = [String : String]()
+    
     /// Generate OTP
-    class func generateOtp(url: URL,param: [String : String], onSucess: @escaping ([String : Any]?)->(), onFailure: @escaping (Error)->()) {
+    func generateOtp(url: URL, onSucess: @escaping (String)->(), onFailure: @escaping (Error)->()) {
         
         DispatchQueue.global(qos: .userInteractive).async {
-            
+            HNUtility.startLoaderAnimating()
             let requestManager = AlamoRequestManager()
-            requestManager.requestDataFor(url, methodType: .post, params: param, headerAuth: nil, onSuccess: { (response) in
-                
+            requestManager.requestDataFor(url, methodType: .post, params: self.otpParamDict, headerAuth: nil, onSuccess: { (response) in
+                HNUtility.stopLoaderAnimating()
                 DispatchQueue.main.async {
                     
-                    onSucess(response)
+                    if let result = response!["result"] as? String {
+                        
+                        onSucess(result)
+                    }
+                    
                 }
                 
             }, onError: { (error) in
@@ -38,11 +45,53 @@ class HNRegisterWebService {
     }
     
     /// Register User
-    class func registerUser() {
+    func registerUser(url: URL, onSucess: @escaping ([String : Any])->(), onFailure: @escaping (Error)->(), message: @escaping (String)->()) {
         
-        
+        DispatchQueue.global(qos: .userInteractive).async {
+            HNUtility.startLoaderAnimating()
+            let requestManager = AlamoRequestManager()
+            requestManager.requestDataFor(url, methodType: .post, params: self.registerParamDict, headerAuth: nil, onSuccess: { (response) in
+                HNUtility.stopLoaderAnimating()
+                
+                DispatchQueue.main.async {
+                    
+                    if response == nil {
+                        
+                        message("Wrong OTP!")
+                        return
+                    }
+                    
+                    onSucess(response!)
+                    
+                }
+                
+            }, onError: { (error) in
+                
+                DispatchQueue.main.async {
+                    
+                    onFailure(error!)
+                }
+            })
+        }
     }
     
+    
+    func createOtpParamDic(name: String) {
+        
+        otpParamDict = ["first_name": name]
+    }
+    
+    func createResiterParamDic(firstName: String, lastName: String, phoneNum: String, username: String, password: String, email: String, otp: String) {
+        
+        registerParamDict = ["username": "c\(username)",
+                             "phone_no": phoneNum,
+                             "email": email,
+                             "first_name": firstName,
+                             "last_name": lastName,
+                             "password": password,
+                             "otp": Int(otp)!]
+        
+    }
     
 }
 

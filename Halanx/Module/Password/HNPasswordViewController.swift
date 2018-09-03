@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class HNPasswordViewController: UIViewController {
     
@@ -14,11 +15,11 @@ class HNPasswordViewController: UIViewController {
     @IBOutlet weak var btnBackground: UIButton!
     @IBOutlet weak var viewOtp: HNDesignableView!
     @IBOutlet weak var viewLogo: HNDesignableView!
-    @IBOutlet weak var lblCountDown: UILabel!
-    
+    @IBOutlet weak var txtPassword: SkyFloatingLabelTextField!
     // MARK: Variables
-    fileprivate var count = 300
-    fileprivate var timer: Timer?
+    fileprivate let passwordWebService = HNPasswordWebService()
+    var mobileNum: String = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,23 +83,6 @@ class HNPasswordViewController: UIViewController {
         
     }
     
-    /// Add Timer For Countdown
-    func addTimer() {
-        
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCountDown), userInfo: nil, repeats: true)
-    }
-    
-    @IBAction func updateCountDown() {
-        
-        if(count > 0){
-            let minutes = String(count / 60)
-            let seconds = String(count % 60)
-            lblCountDown.text = minutes + ":" + seconds
-            count -= 1
-        }
-        
-    }
-    
     // MARK: IBActions
     @IBAction func btnForgotPassAction(_ sender: Any) {
         
@@ -107,8 +91,18 @@ class HNPasswordViewController: UIViewController {
     
     @IBAction func btnLoginAction(_ sender: Any) {
         
-        showMainTabBar()
-
+        if mobileNum == "" {
+            
+            displayAlertMessageWithTitle(titleToDisplay: "Login Error", messageToDisplay: "Enter valid Mobile Number")
+            return
+        }
+        else if (txtPassword.text?.isEmpty)! {
+            
+            displayAlertMessageWithTitle(titleToDisplay: "Login Error", messageToDisplay: "Enter your Password")
+            return
+        }
+        
+        loginAction()
     }
     
     @IBAction func btnBackgroundAction(_ sender: Any) {
@@ -117,6 +111,40 @@ class HNPasswordViewController: UIViewController {
     }
     
     
+}
+
+// MARK: Request Protocol
+extension HNPasswordViewController: RequestGeneratorProtocol {
+    
+    func loginAction() {
+        
+        guard let url = URL(string: completeUrl(endpoint: .logIn())) else {return}
+        passwordWebService.createParamDic(username: mobileNum, password: txtPassword.text!)
+        passwordWebService.loginAction(url: url, onSucess: { (response) in
+            
+            if let error = response["error"] as? String {
+                
+                self.displayAlertMessageWithTitle(titleToDisplay: "Register Error", messageToDisplay: error)
+                return
+            }
+            if let detail = response["non_field_errors"] as? String {
+                
+                self.displayAlertMessageWithTitle(titleToDisplay: "Register Error", messageToDisplay: detail)
+                return
+            }
+            
+            if let key = response["key"] as? String {
+                
+                HNUserDefaultManager.saveStringValue(value: key, key: Key.authKey)
+                HNUserDefaultManager.saveBoolValue(value: true, key: Key.isUserLoggedIn)
+                self.showMainTabBar()
+            }
+            
+        }) { (error) in
+            
+            self.displayAlertMessageWithTitle(titleToDisplay: "Login Error", messageToDisplay: "\(error.localizedDescription)")
+        }
+    }
 }
 
 

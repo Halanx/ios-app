@@ -237,7 +237,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                         <color key="value" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Your Password"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -409,6 +409,7 @@
                     <connections>
                         <outlet property="btnBackground" destination="hii-4E-sQT" id="HXx-zP-x8f"/>
                         <outlet property="otpViewConstraintX" destination="pqU-NM-1Zl" id="afH-M1-dhI"/>
+                        <outlet property="txtPassword" destination="C9d-ua-Uzb" id="TG1-7N-QbT"/>
                         <outlet property="viewLogo" destination="drQ-ZZ-Iao" id="gri-qc-Q5G"/>
                         <outlet property="viewOtp" destination="Uya-BJ-26T" id="oXK-vG-TfB"/>
                     </connections>
@@ -1376,6 +1377,9 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Mobile Number"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Mobile Number"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="lqm-5C-y1E" id="5YY-E7-2Ct"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-VA-o70" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                         <rect key="frame" x="0.0" y="60" width="288" height="40"/>
@@ -1504,7 +1508,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMy-h8-ogh">
-                                <rect key="frame" x="0.0" y="57" width="320" height="501"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="btnBackgroundAction:" destination="nxg-jQ-gdK" eventType="touchUpInside" id="alM-zv-NSL"/>
@@ -1534,6 +1538,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="lqm-5C-y1E" id="GKF-7O-bKf"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-3q-ncA">
                                         <rect key="frame" x="84" y="191" width="120" height="33"/>
@@ -1653,6 +1660,7 @@
                         <outlet property="txtFirstName" destination="ZGa-ca-uQi" id="d5t-KX-DqT"/>
                         <outlet property="txtLastName" destination="8kF-JA-dce" id="7I1-JN-8Xx"/>
                         <outlet property="txtMobileNum" destination="5ix-bT-lmH" id="LGs-9J-6QS"/>
+                        <outlet property="txtOtp" destination="T8h-ej-iDV" id="3LE-RI-8Gp"/>
                         <outlet property="txtPassword" destination="Qef-VA-o70" id="lWp-87-U44"/>
                         <outlet property="viewLogo" destination="wr7-Cc-WtG" id="79G-Cf-whz"/>
                         <outlet property="viewOtp" destination="Tes-sm-NaN" id="Q3M-cV-fS6"/>
