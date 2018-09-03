@@ -12,14 +12,17 @@ class HNMeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // Variables
     fileprivate let photoCell = CellIdentifier.photoTableCell
     fileprivate let photoCollectionCell = CellIdentifier.photoCollectionCell
     fileprivate let postCell = CellIdentifier.postCell
     fileprivate let userInfoCell = CellIdentifier.userInfoCell
     fileprivate let peopleLikeCell = CellIdentifier.peopleLikeCell
     fileprivate let cellPostHeight: CGFloat = 500
+    fileprivate let meWebService = HNMeWebService()
     
     var cellExpand:Bool = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,9 +102,9 @@ class HNMeViewController: UIViewController {
     /// Sign Out Action
     func signOutAction() {
         
-        let alertController = UIAlertController(title: "Sign Out!", message: "Are you sure to logout?", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .default) { (okAction) in
-            
+        let alertController = UIAlertController(title: "Sign Out!", message: "Are you sure to Sign Ou?", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "YES", style: .destructive) { (okAction) in
+            self.signOut()
             
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -120,6 +123,18 @@ class HNMeViewController: UIViewController {
     /// Open Help
     func openHelp() {
         
+        
+    }
+    
+    /// Show Login Controller
+    func showLoginController() {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            
+            let mainTabBarVc = mainStoryboard.instantiateViewController(withIdentifier: "LoginNavigationController") as! UINavigationController
+            appDelegate.window?.rootViewController = mainTabBarVc
+            
+        }
         
     }
     
@@ -146,7 +161,38 @@ class HNMeViewController: UIViewController {
 
 }
 
+// MARK: Request Protocol
+extension HNMeViewController: RequestGeneratorProtocol {
+    
+    /// Sign Out
+    func signOut() {
+        
+        guard let url = URL(string: completeUrl(endpoint: .logOut())) else {return}
+        meWebService.signOut(url: url, onSuccess: { (response) in
+            
+            if let detail = response["detail"] as? String {
+                
+                if detail == "Successfully logged out." {
+                    HNUserDefaultManager.removeUserDefaultKey()
+                    self.showLoginController()
+                }else {
+                    
+                    self.displayAlertMessageWithTitle(titleToDisplay: "Sign Out Error", messageToDisplay: detail)
 
+                }
+            }
+            
+        }) { (error) in
+            
+            self.displayAlertMessageWithTitle(titleToDisplay: "Sign Out Error", messageToDisplay: "\(error.localizedDescription)")
+        }
+    }
+    
+    
+    
+}
+
+// MARK: Table View
 extension HNMeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -236,6 +282,7 @@ extension HNMeViewController: UITableViewDataSource, UITableViewDelegate {
     
 }
 
+
 extension HNMeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -284,6 +331,8 @@ extension HNMeViewController: UICollectionViewDataSource, UICollectionViewDelega
 //    }
     
 }
+
+
 
 
 

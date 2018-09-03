@@ -17,10 +17,11 @@ class HNRegisterWebService {
     /// Generate OTP
     func generateOtp(url: URL, onSucess: @escaping (String)->(), onFailure: @escaping (Error)->()) {
         
+        HNUtility.startLoaderAnimating()
         DispatchQueue.global(qos: .userInteractive).async {
-            HNUtility.startLoaderAnimating()
+            
             let requestManager = AlamoRequestManager()
-            requestManager.requestDataFor(url, methodType: .post, params: self.otpParamDict, headerAuth: nil, onSuccess: { (response) in
+            requestManager.requestDataFor(url, methodType: .post, params: self.otpParamDict, headerAuth: false, headerParamAuth: false, onSuccess: { (response) in
                 HNUtility.stopLoaderAnimating()
                 DispatchQueue.main.async {
                     
@@ -47,10 +48,11 @@ class HNRegisterWebService {
     /// Register User
     func registerUser(url: URL, onSucess: @escaping ([String : Any])->(), onFailure: @escaping (Error)->(), message: @escaping (String)->()) {
         
+        HNUtility.startLoaderAnimating()
         DispatchQueue.global(qos: .userInteractive).async {
-            HNUtility.startLoaderAnimating()
+    
             let requestManager = AlamoRequestManager()
-            requestManager.requestDataFor(url, methodType: .post, params: self.registerParamDict, headerAuth: nil, onSuccess: { (response) in
+            requestManager.requestDataFor(url, methodType: .post, params: self.registerParamDict, headerAuth: false, headerParamAuth: false, onSuccess: { (response) in
                 HNUtility.stopLoaderAnimating()
                 
                 DispatchQueue.main.async {

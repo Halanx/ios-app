@@ -223,7 +223,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -315,6 +315,9 @@
                                         <state key="normal" title="SUBMIT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnSubmitAction:" destination="nxg-jQ-gdK" eventType="touchUpInside" id="Uwe-Xj-xot"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3K-JW-Chv">
                                         <rect key="frame" x="101.5" y="232" width="86" height="30"/>
@@ -325,6 +328,9 @@
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnResendOtpAction:" destination="nxg-jQ-gdK" eventType="touchUpInside" id="rX1-Cj-CNH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -408,7 +414,9 @@
                     </view>
                     <connections>
                         <outlet property="btnBackground" destination="hii-4E-sQT" id="HXx-zP-x8f"/>
+                        <outlet property="lblNumber" destination="fYh-my-IbF" id="TlB-lC-wwg"/>
                         <outlet property="otpViewConstraintX" destination="pqU-NM-1Zl" id="afH-M1-dhI"/>
+                        <outlet property="txtOtp" destination="OJ6-3Q-nKh" id="Wsr-Rl-ISv"/>
                         <outlet property="txtPassword" destination="C9d-ua-Uzb" id="TG1-7N-QbT"/>
                         <outlet property="viewLogo" destination="drQ-ZZ-Iao" id="gri-qc-Q5G"/>
                         <outlet property="viewOtp" destination="Uya-BJ-26T" id="oXK-vG-TfB"/>

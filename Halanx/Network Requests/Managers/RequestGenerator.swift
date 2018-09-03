@@ -17,6 +17,8 @@ enum Endpoint {
     case getOtp()
     case registerUser()
     case logIn()
+    case loginWithOtp()
+    case logOut()
 }
 
 // MARK: EndPoint Extension
@@ -43,6 +45,13 @@ extension Endpoint {
             
             return "/rest-auth/login/"
             
+        case .loginWithOtp:
+            
+            return "/users/login_otp/"
+            
+        case .logOut:
+            
+            return "/rest-auth/logout/"
         }
         
     }
@@ -67,6 +76,31 @@ extension RequestGeneratorProtocol {
             
             let headerDictionary = [
                 "Content-Type" : "application/json"
+            ]
+            
+            return headerDictionary
+        }
+    }
+    
+    var headerAuthParam: [String : String] {
+        
+        get {
+            
+            let headerDictionary = [
+                "Authorization" : HNUserDefaultManager.getStringValue(key: Key.authKey)
+            ]
+            
+            return headerDictionary
+        }
+    }
+    
+    var headerParamWithAuth: [String : String] {
+        
+        get {
+            
+            let headerDictionary = [
+                 "Content-Type" : "application/json",
+                 "Authorization" : "Token \(HNUserDefaultManager.getStringValue(key: Key.authKey))"
             ]
             
             return headerDictionary

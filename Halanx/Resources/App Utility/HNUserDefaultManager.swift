@@ -37,12 +37,19 @@ struct HNUserDefaultManager {
     
     static func saveBoolValue(value: Bool, key: String) {
         
-        UserDefaults.standard.set(value, forKey: key)
+        userDefault.set(value, forKey: key)
     }
     
     static func getBoolValue(key: String) -> Bool {
         
         return userDefault.bool(forKey:key)
+    }
+    
+    static func removeUserDefaultKey() {
+        
+        userDefault.removeObject(forKey: Key.isUserLoggedIn)
+        userDefault.removeObject(forKey: Key.authKey)
+        
     }
     
 }

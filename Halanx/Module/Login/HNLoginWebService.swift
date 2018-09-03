@@ -17,7 +17,7 @@ class HNLoginWebService {
         DispatchQueue.global(qos: .userInteractive).async {
             
             let requestManager = AlamoRequestManager()
-            requestManager.requestDataFor(url, methodType: .get, params: nil, headerAuth: nil, onSuccess: { (response) in
+            requestManager.requestDataFor(url, methodType: .get, params: nil, headerAuth: false, headerParamAuth: false, onSuccess: { (response) in
                 HNUtility.stopLoaderAnimating()
                 if let result =  response!["exists"] as? String {
                     

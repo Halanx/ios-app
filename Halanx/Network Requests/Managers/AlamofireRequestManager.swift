@@ -11,7 +11,7 @@ import Alamofire
 
 
 struct AlamoRequestManager: RequestGeneratorProtocol {
-    func requestDataFor(_ strURL : URLConvertible, methodType : HTTPMethod, params : [String : Any]?,headerAuth: [String : String]?,
+    func requestDataFor(_ strURL : URLConvertible, methodType : HTTPMethod, params : [String : Any]?,headerAuth: Bool, headerParamAuth: Bool,
                         onSuccess:@escaping ([String: Any]?) -> Void,
                         onError:@escaping (Error?) -> Void ){
         var encode:ParameterEncoding = JSONEncoding.default
@@ -20,12 +20,17 @@ struct AlamoRequestManager: RequestGeneratorProtocol {
         }
         var headerDict = [String : String]()
         
-        if headerAuth == nil {
+        if headerAuth {
+            
+            headerDict = headerAuthParam
+        }
+        else if headerParamAuth {
+            
+            headerDict = headerParamWithAuth
+        }
+        else{
             
             headerDict = headerParams
-        }else{
-            
-            headerDict = headerAuth!
         }
         
         print("header dict::\(headerDict)")

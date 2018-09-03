@@ -13,11 +13,12 @@ class HNPasswordWebService {
     var paramDict = [String : String]()
     
     func loginAction(url: URL, onSucess: @escaping ([String :Any])->(), onFailure: @escaping (Error)->()) {
+       
         HNUtility.startLoaderAnimating()
         DispatchQueue.global(qos: .userInteractive).async {
             
             let requestManager = AlamoRequestManager()
-            requestManager.requestDataFor(url, methodType: .post, params: self.paramDict, headerAuth: nil, onSuccess: { (response) in
+            requestManager.requestDataFor(url, methodType: .post, params: self.paramDict, headerAuth: false, headerParamAuth: false, onSuccess: { (response) in
                 HNUtility.stopLoaderAnimating()
                 DispatchQueue.main.async {
                     
@@ -35,6 +36,36 @@ class HNPasswordWebService {
         
     }
     
+    /// Generate OTP
+    func generateOtp(url: URL, onSucess: @escaping (String)->(), onFailure: @escaping (Error)->()) {
+        
+        HNUtility.startLoaderAnimating()
+        DispatchQueue.global(qos: .userInteractive).async {
+            
+            let requestManager = AlamoRequestManager()
+            requestManager.requestDataFor(url, methodType: .post, params: nil, headerAuth: false, headerParamAuth: false, onSuccess: { (response) in
+                HNUtility.stopLoaderAnimating()
+                DispatchQueue.main.async {
+                    
+                    if let result = response!["result"] as? String {
+                        
+                        onSucess(result)
+                    }
+                    
+                }
+                
+            }, onError: { (error) in
+                
+                DispatchQueue.main.async {
+                    
+                    onFailure(error!)
+                }
+            })
+            
+            
+        }
+        
+    }
     
     func createParamDic(username: String, password: String) {
         

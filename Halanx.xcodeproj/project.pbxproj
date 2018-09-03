@@ -48,6 +48,7 @@
 		C54FB636213C6FD300286E27 /* HNLoginWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB635213C6FD300286E27 /* HNLoginWebService.swift */; };
 		C54FB63B213C960400286E27 /* HNRegisterWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB63A213C960400286E27 /* HNRegisterWebService.swift */; };
 		C54FB63D213D3C8600286E27 /* HNPasswordWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB63C213D3C8600286E27 /* HNPasswordWebService.swift */; };
+		C54FB641213D685100286E27 /* HNMeWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB640213D685100286E27 /* HNMeWebService.swift */; };
 		C550666D2131F1FC0039B76D /* IntroImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */; };
 		C57576B1212C5803009ED826 /* HNClaimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B0212C5803009ED826 /* HNClaimViewController.swift */; };
 		C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57576B3212C6C42009ED826 /* HNCartViewController.swift */; };
@@ -184,6 +185,7 @@
 		C54FB635213C6FD300286E27 /* HNLoginWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNLoginWebService.swift; sourceTree = "<group>"; };
 		C54FB63A213C960400286E27 /* HNRegisterWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNRegisterWebService.swift; sourceTree = "<group>"; };
 		C54FB63C213D3C8600286E27 /* HNPasswordWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNPasswordWebService.swift; sourceTree = "<group>"; };
+		C54FB640213D685100286E27 /* HNMeWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNMeWebService.swift; sourceTree = "<group>"; };
 		C550666C2131F1FC0039B76D /* IntroImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C57576B0212C5803009ED826 /* HNClaimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNClaimViewController.swift; sourceTree = "<group>"; };
 		C57576B3212C6C42009ED826 /* HNCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCartViewController.swift; sourceTree = "<group>"; };
@@ -899,6 +901,7 @@
 			isa = PBXGroup;
 			children = (
 				C5C02E232118CADB00CC60FA /* HNMeViewController.swift */,
+				C54FB640213D685100286E27 /* HNMeWebService.swift */,
 			);
 			path = "Me Controller";
 			sourceTree = "<group>";
@@ -1334,6 +1337,7 @@
 				C57576C3212C86E3009ED826 /* PhotoTableViewCell.swift in Sources */,
 				C57576B4212C6C42009ED826 /* HNCartViewController.swift in Sources */,
 				C5C02E202118CAB600CC60FA /* HNMarketPlaceViewController.swift in Sources */,
+				C54FB641213D685100286E27 /* HNMeWebService.swift in Sources */,
 				C514458321305F2C00C0C768 /* HNOrderViewController.swift in Sources */,
 				C5C02DF22118B52700CC60FA /* HNAppStoryboard.swift in Sources */,
 				C5ED077E211CF88D00BFB42C /* PollTableViewCell.swift in Sources */,
